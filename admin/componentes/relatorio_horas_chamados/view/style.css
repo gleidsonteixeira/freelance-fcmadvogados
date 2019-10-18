@@ -1,0 +1,11 @@
+#chamados{
+    display: table;width: 90%;margin: 0 auto;border-radius: 5px;background-color: white;padding:16px;
+}
+
+.ul-imprimir{
+    list-style:none;overflow: hidden;padding: 0;
+}
+
+.ul-imprimir li{
+    float: left;border: 1px solid #dedede;border-radius: 5px;padding: 10px;min-width: 100px;margin-right: 10px;
+}

@@ -11,9 +11,8 @@
             $clicks_post = $post->listar_clicks_post_por_id($_POST["ID"]);
             $clicks_mes_post = $post->listar_clicks_mes_post_por_id($_POST["ID"]);
             
-            // $retorno = array("status" => 0, "mensagem" => "Listagem realizada com sucesso", "lista_post" => $lista_post, "clicks_post" => $clicks_post, "clicks_mes_post" => $clicks_mes_post);
 
-             $retorno = array("status" => 0, "mensagem" => "Listagem realizada com sucessooo", "lista_post" => $lista_post, "clicks_post" => $clicks_post, "clicks_mes_post" => $clicks_mes_post);
+             $retorno = array("status" => 0, "mensagem" => "Listagem realizada com sucesso", "lista_post" => $lista_post, "clicks_post" => $clicks_post, "clicks_mes_post" => $clicks_mes_post);
              echo json_encode($retorno);
         }else{
             $retorno = array("status" => 2, "mensagem" => "Ação não encontrada");

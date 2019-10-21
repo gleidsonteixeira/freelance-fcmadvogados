@@ -42,29 +42,6 @@ class CAT{
       $this->CAT_STATUS = $CAT_STATUS;
 
    }
-
-
-
-
-
-   // public function buscar_nome_setor($FAQ_STO) {
-   //    $STO_NOME = ""; 
-   //    try{
-   //       $sql = "SELECT STO_NOME FROM STO WHERE STO_COD = $FAQ_STO";
-   //       $rs = $this->con->prepare($sql);
-   //       $rs->execute();
-
-   //       if($rs->rowCount() > 0){
-   //          $row = $rs->fetch(PDO::FETCH_OBJ);
-   //          $STO_NOME = utf8_encode($row->STO_NOME);
-   //       }
-
-   //       return $STO_NOME;
-   //    } catch (PDOException $e){
-   //       return $STO_NOME;
-   //    }
-   // }
-
    public function listar_cat_ativos($limit) {
       $lista_cat = array(); 
       try{
@@ -76,7 +53,8 @@ class CAT{
          while ($row = $rs->fetch(PDO::FETCH_OBJ)) {
             $lista_cat[$i] = array(
                "CAT_COD" => $row->CAT_COD,
-               "CAT_NOME" => utf8_encode($row->CAT_NOME)
+               "CAT_NOME" => utf8_encode($row->CAT_NOME),
+               "CAT_POSTS" => $row->CAT_POSTS
       
             );
             $i++;
@@ -99,7 +77,8 @@ class CAT{
          while ($row = $rs->fetch(PDO::FETCH_OBJ)) {
             $lista_cat[$i] = array(
                "CAT_COD" => $row->CAT_COD,
-               "CAT_NOME" => utf8_encode($row->CAT_NOME)
+               "CAT_NOME" => utf8_encode($row->CAT_NOME),
+               "CAT_POSTS" => $row->CAT_POSTS
             );
             $i++;
          }
@@ -122,7 +101,8 @@ class CAT{
          while ($row = $rs->fetch(PDO::FETCH_OBJ)) {
             $lista_cat[$i] = array(
                "CAT_COD" => $row->CAT_COD,
-               "CAT_NOME" => utf8_encode($row->CAT_NOME)
+               "CAT_NOME" => utf8_encode($row->CAT_NOME),
+               "CAT_POSTS" => $row->CAT_POSTS
             );
             $i++;
          }
@@ -133,7 +113,8 @@ class CAT{
          while ($o < count($lista_cat)) {
             $lista_cat_order[$o] = array(
                "CAT_COD" => $lista_cat[$i]['CAT_COD'],
-               "CAT_NOME" => $lista_cat[$i]['CAT_NOME']
+               "CAT_NOME" => $lista_cat[$i]['CAT_NOME'],
+               "CAT_POSTS" => $lista_cat[$i]['CAT_POSTS']
             );
             $o++;
             $i--;
@@ -223,6 +204,17 @@ class CAT{
       } catch (PDOException $e){
          return array("status" => 2, "mensagem" => "Erro no deletar o Categoria.");
       }  
+   }
+
+   public function deletarPostsCategoria($CAT_COD){
+      try {
+         $sql = "UPDATE `BLO` SET `BLO_STATUS` = 2 WHERE `BLO_CATEGORIA` = $CAT_COD";
+         $rs = $this->con->prepare($sql);
+         $rs->execute();
+         return array("status" => 0, "mensagem" => "Posts deletado com sucesso");
+      } catch (PDOException $e) {
+         echo "Error".$e->getMessage();
+      }
    }
 
  }                                                                                                        

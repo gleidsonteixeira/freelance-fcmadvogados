@@ -88,10 +88,10 @@ textarea{border: 2px solid #ededed !important;width: 100% !important;box-sizing:
 textarea{min-height: 130px;padding: 16px;border-radius: 5px;display: block;}
 input:focus,
 .oInput:focus,
-textarea:focus{border: 2px solid #a933cb !important;outline: none !important;box-shadow: none !important;}
+textarea:focus{border: 2px solid #673ab7 !important;outline: none !important;box-shadow: none !important;}
 input[type="file"]{height: auto;padding: 8px 16px;}
 select{width: 100%;border: 2px solid #ededed;}
-select:focus{width: 100%;border: 2px solid #a933cb;}
+select:focus{width: 100%;border: 2px solid #673ab7;}
 @media only screen and (min-width:1367px){}
 @media only screen and (min-width:993px){}
 @media only screen and (max-width:768px){}

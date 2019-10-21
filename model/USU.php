@@ -132,7 +132,7 @@ class USU{
 
                $_SESSION['A_USU_COD'] = $row->USU_COD;
                $_SESSION['A_USU_TIPO'] = $row->USU_TIPO;
-               $_SESSION['A_USU_EMP'] = $row_sa1->SA1_EMP;
+               //$_SESSION['A_USU_EMP'] = $row_sa1->SA1_EMP;
                $redirect = "admin/";
             }else if($row->USU_TIPO == "CLI"){
                $sql = "SELECT SA1.SA1_EMP FROM SA1 WHERE SA1.SA1_USU = :SA1_USU AND SA1.SA1_STATUS = 1;";

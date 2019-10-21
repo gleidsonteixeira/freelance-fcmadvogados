@@ -1,54 +1,18 @@
+<link rel="stylesheet" href="../css/ckeditor.css" type="text/css"/>
 <div id="posts-componente" class="posts-componente">    
     <div class="box dados produtos">
         <div class="box-head">
             <h5 class="suave font">Resumo</h5>
-            <button class="cta right suave mini-title upper">aplicar período <i class="fa fa-redo-alt"></i></button>
-            <div class="box-period suave">
-                <i class="fa fa-chevron-down suave click escolher-periodo"></i>
-                <span class="right-align" style="line-height: 15px;">Período escolhido:</span>
-                <h6 class="mini-title upper right-align nm">mês atual</h6>
-                <div class="box-period-content suave">
-                    <div class="box-filter">
-                        <span>Períodos pré-definidos:</span>
-                        <select class="browser-default">
-                            <option value="1">Mês atual</option>
-                            <option value="2">Mês passado</option>
-                            <option value="3">Últimos 30 dias</option>
-                            <option value="4">Últimos 3 meses</option>
-                            <option value="5">Últimos 6 meses</option>
-                            <option value="6">Este ano</option>
-                        </select>
-                        <i class="fa fa-calendar-day suave"></i>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="divider"></div>
-                    <div class="check left">
-                        <i class="fa fa-check"></i>
-                    </div>
-                    <div class="metade right">
-                        <span>Data até:</span>
-                        <input type="text" id="dataAte" class="oInput" placeholder="00-00-0000" disabled>
-                    </div>
-                    <div class="metade right" style="margin-right:10px;">
-                        <span>Data de:</span>
-                        <input type="text" id="dataDe" class="oInput" placeholder="00-00-0000" disabled>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
         </div>
+        <div class="clear hide-on-med-and-up"></div>
         <ul>
             <li class="center-align">
                 <h5 class="condesed posts-cadastrados">0</h5>
-                <h6 class="mini-title upper">Posts cadastrados</h6>
+                <h6 class="mini-title upper truncate">Posts cadastrados</h6>
             </li>
             <li class="center-align">
                 <h5 class="condesed total-clicks">0</h5>
-                <h6 class="mini-title upper">Total de clicks</h6>
-            </li>
-            <li class="center-align hide">
-                <h5 class="condesed">0</h5>
-                <h6 class="mini-title upper">Lucro estimado</h6>
+                <h6 class="mini-title upper truncate">Total de clicks</h6>
             </li>
         </ul>
     </div>
@@ -74,19 +38,22 @@
             </div>
             <div class="box-actions-extra">
                 <button class="cta suave hide"><i class="fa fa-print"></i></button>
-                <button class="cta suave deletar-posts"><i class="fa fa-trash"></i></button>
+                <button class="cta suave deletar-posts">OI<i class="fa fa-trash"></i></button>
             </div>
         </div>
-        <div id="banner">
+        <div id="post_blog">
             <ul class="lista-head">
-                <li>
-                    <h6><div class="check"><i class="fa fa-check"></i></div></h6>
+                <li class="hide-on-small-only">
                     <h6 class="mini-title upper">cod</h6>
                     <h6 class="mini-title upper">titulo</h6>
+                    <h6 class="mini-title upper">Categoria</h6>
                     <h6 class="mini-title upper">data</h6>
                     <h6 class="mini-title upper">visível ?</h6>
                     <h6 class="mini-title upper">clicks</h6>
                     <h6 class="mini-title upper">-</h6>
+                </li>
+                <li class="hide-on-med-and-up">
+                    <h6 class="mini-title upper">Posts Cadastrados</h6>
                 </li>
             </ul>
             <ul class="lista-body loading suave active"></ul>
@@ -126,10 +93,7 @@
                     <h6 class="mini-title upper">Autor</h6>
                     <p class="post-autor"></p>
                 </div>
-             <!--    <div class="metade esquerda">
-                    <h6 class="mini-title upper">Link</h6>
-                    <a class="post-link cta suave" target="_blank">link</a>
-                </div> -->
+
                 <div class="clear"></div>
                 <span>Métricas</span>
                 <h6 class="mini-title upper">Clicks por dia da semana</h6>
@@ -150,40 +114,56 @@
 
     <div id="gaveta" class="suave">
         <div class="fechar-gaveta"></div>
-        <form id="novoPost" class="suave novo-post" enctype="multipart/form-data">
+        <form id="novoPost" class="suave novoPost" enctype="multipart/form-data">
             <h5 class="suave font">Novo posts <i class="material-icons right click suave">close</i></h5>
             <div class="form-content suave">
                 <span>Dados do post</span>
                 <div class="clear"></div>
-                <h6 class="mini-title upper">Titulo</h6>
-                <input type="text" name="blog-titulo" class="blog-titulo" required>
-
-                <h6 class="mini-title upper">Pre texto</h6>
-                <input type="text" name="pre-texto" class="blog-frase-principal" required>
-
-                <h6 class="mini-title upper">texto</h6>
-                <textarea name="texto" class="blog-sub-titulo"></textarea>
-
-
-                <h6 class="mini-title upper">Autor</h6>
-                <input type="text" name="blog-autor" class="blog-autor" required>
-
-                <h6 class="mini-title upper">Categoria</h6>
-                <select name="categoria" class="categoria browser-default">
-                    
-                </select>
-
-                <h6 class="mini-title upper">Imagem</h6>
-                <input type="file" name="post-imagem" class="post-imagem" required>
-
-                <h6 class="mini-title upper">Visível ?</h6>
                 <div class="metade esquerda">
-                    <input type="radio" name="post-status" value='1' class="left" style="margin-right:10px;" checked>
-                    <span style="line-height: 40px;">Sim</span>
+                    <h6 class="mini-title upper">Titulo</h6>
+                    <input type="text" name="blog-titulo" class="blog-titulo" required>
                 </div>
                 <div class="metade direita">
-                    <input type="radio" name="post-status" value='2' class="left" style="margin-right:10px;">
-                    <span style="line-height: 40px;">Não</span>
+                    <h6 class="mini-title upper">Pre texto</h6>
+                    <input type="text" name="pre-texto" class="blog-frase-principal" required>
+                </div>
+                <div class="metade esquerda">
+                    <h6 class="mini-title upper">Titulo SEO</h6>
+                    <input type="text" name="titulo-seo" class="titulo-seo" required>
+                </div>
+                <div class="metade direita">
+                    <h6 class="mini-title upper">Frase chave</h6>
+                    <input type="text" name="frase-chave" class="frase-chave" required>
+                </div>
+                <h6 class="mini-title upper">Meta descrição</h6>
+                <textarea name="meta-descricao" class="meta-descricao" maxlength="160"></textarea>
+                
+                <h6 class="mini-title upper">texto</h6>
+                <textarea name="blo_texto_cad" id="blo_texto_cad" class="form-control ckeditor"></textarea>
+                <div class="metade esquerda">
+                    <h6 class="mini-title upper">Autor</h6>
+                    <input type="text" name="blog-autor" class="blog-autor" required>
+                </div>
+                <div class="metade direita">   
+                    <h6 class="mini-title upper">Categoria</h6>
+                    <select name="categoria" class="categoria browser-default" required>
+                        
+                    </select>
+                </div>
+                <div class="metade esquerda">
+                    <h6 class="mini-title upper">Imagem</h6>
+                    <input type="file" name="post-imagem" class="post-imagem" required>
+                </div>
+                <div class="metade direita">
+                    <h6 class="mini-title upper">Visível ?</h6>
+                    <div class="metade esquerda">
+                        <input type="radio" name="post-status" value='1' class="left" style="margin-right:10px;" checked >
+                        <span style="line-height: 40px;">Sim</span>
+                    </div>
+                    <div class="metade direita">
+                        <input type="radio" name="post-status" value='2' class="left" style="margin-right:10px;">
+                        <span style="line-height: 40px;">Não</span>
+                    </div>
                 </div>
                 <button type="submit" class="cta mini-title upper suave">confirmar</button>
             </div>
@@ -191,45 +171,79 @@
         <form id="editaPost" class="suave" enctype="multipart/form-data">
             <h5 class="suave font">Editar post <i class="material-icons right click suave">close</i></h5>
             <div class="form-content suave">
+                <input type="hidden" name="post-cod" class="post-cod">
                 <span>Dados do post</span>
                 <div class="clear"></div>
-                <h6 class="mini-title upper">Titulo</h6>
-                <input type="text" name="blog-titulo" class="blog-titulo" required>
-
-                <h6 class="mini-title upper">Pre texto</h6>
-                <input type="text" name="blog-frase-principal" class="blog-frase-principal" required>
-
-                <h6 class="mini-title upper">texto</h6>
-                <textarea name="blog-sub-titulo" class="blog-sub-titulo"></textarea>
-
-
-                <h6 class="mini-title upper">Autor</h6>
-                <input type="text" name="blog-autor" class="blog-autor" required>
-
-                <h6 class="mini-title upper">Categoria</h6>
-                <select name="categoria" class="categoria browser-default">
-                    
-                </select>
-
-                <h6 class="mini-title upper">Imagem</h6>
-                <input type="file" name="post-imagem" class="post-imagem">
-
-                <h6 class="mini-title upper">Visível ?</h6>
                 <div class="metade esquerda">
-                    <input type="radio" name="post-status" value='1' class="left posts-status-esq" style="margin-right:10px;">
-                    <span style="line-height: 40px;">Sim</span>
+                    <h6 class="mini-title upper">Titulo</h6>
+                    <input type="text" name="blog-titulo" class="blog-titulo" required>
                 </div>
                 <div class="metade direita">
-                    <input type="radio" name="post-status" value='2' class="left posts-status-dir" style="margin-right:10px;">
-                    <span style="line-height: 40px;">Não</span>
+                    <h6 class="mini-title upper">Pre texto</h6>
+                    <input type="text" name="blog-pre-texto" class="blog-pre-texto" required>
                 </div>
-                <input type="hidden" name="post-cod" class="post-cod">
+                <div class="metade esquerda">
+                    <h6 class="mini-title upper">Titulo SEO</h6>
+                    <input type="text" name="blog-titulo-seo" class="blog-titulo-seo" required>
+                </div>
+                <div class="metade direita">
+                    <h6 class="mini-title upper">Frase chave</h6>
+                    <input type="text" name="blog-frase-chave" class="blog-frase-chave" required>
+                </div>
+                <h6 class="mini-title upper">Meta descrição</h6>
+                <textarea name="meta-descricao" class="blog-meta-descricao" maxlength="160"></textarea>
+                
+                <h6 class="mini-title upper">texto</h6>
+                <textarea name="blog_texto_edi" id="blog_texto_edi" class="form-control blog_texto_edi ckeditor ">
+                   
+                </textarea>
+
+                <div class="metade esquerda">
+                    <h6 class="mini-title upper">Autor</h6>
+                    <input type="text" name="blog-autor" class="blog-autor" required>
+                </div>
+                <div class="metade direita">   
+                    <h6 class="mini-title upper">Categoria</h6>
+                    <select name="categoria" class="categoria browser-default">
+                        
+                    </select>
+                </div>
+                <div class="metade esquerda">
+                    <h6 class="mini-title upper">Imagem</h6>
+                    <input type="file" name="post-imagem" class="post-imagem">
+                </div>
+                <div class="metade direita">
+                    <h6 class="mini-title upper">Visível ?</h6>
+                    <div class="metade esquerda status-esq">
+                        <input type="radio" name="post-status" value='1' class="left" style="margin-right:10px;" checked>
+                        <span style="line-height: 40px;">Sim</span>
+                    </div>
+                    <div class="metade direita status-dir">
+                        <input type="radio" name="post-status" value='2' class="left" style="margin-right:10px;">
+                        <span style="line-height: 40px;">Não</span>
+                    </div>
+                </div>
                 <button type="submit" class="cta mini-title upper suave">confirmar</button>
             </div>
         </form>
     </div>
 </div>
+
+<script>
+    CKEDITOR.replace( 'blo_texto_cad', {
+        height: 200,
+        filebrowserUploadUrl: "componentes/posts_blog/control/postCreate.php?ACAO=SALVAR_IMAGEM"
+    });
+ </script>
+ <script>
+    CKEDITOR.replace( 'blog_texto_edi', {
+        height: 200,
+        filebrowserUploadUrl: "componentes/posts_blog/control/postCreate.php?ACAO=SALVAR_IMAGEM"
+    });
+ </script>
+
 <script type="text/javascript">
+
     $(".posts-componente .box-paginadores i b").text(pagination_posts);
     $(".posts-componente #dataDe, .posts-componente #dataAte").datepicker({
         dateFormat: "dd-mm-yy",
@@ -238,4 +252,5 @@
         monthNames: [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ]
     });
     listarPosts();
+    listarCategoriasForm();
 </script>

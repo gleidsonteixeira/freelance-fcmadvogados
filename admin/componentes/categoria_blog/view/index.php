@@ -34,10 +34,14 @@
         </div>
         <div id="categorias">
             <ul class="lista-head">
-                <li>
+                <li class="hide-on-small-only">
                     <h6 class="mini-title upper">cod</h6>
                     <h6 class="mini-title upper">Nome</h6>
+                    <h6 class="mini-title upper">Qtd. Posts</h6>
                     <h6 class="mini-title upper">-</h6>
+                </li>
+                <li class="hide-on-med-and-up">
+                    <h6 class="mini-title upper">Categorias Cadastrados</h6>
                 </li>
             </ul>
             <ul class="lista-body loading suave active"></ul>

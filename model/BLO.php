@@ -8,6 +8,9 @@ class BLO{
    private $BLO_AUTOR;
    private $BLO_DATA;
    private $BLO_P_TEXTO;
+   private $BLO_SEO;
+   private $BLO_FRASE_CHAVE;
+   private $BLO_META_DESC;
    private $BLO_TEXTO;
    private $BLO_VISIBILIT;
    private $BLO_CLICKS;
@@ -140,6 +143,9 @@ class BLO{
                "BLO_TITULO" => utf8_encode($row->BLO_TITULO),
                "BLO_AUTOR" => utf8_encode($row->BLO_AUTOR),
                "BLO_P_TEXTO" => utf8_encode($row->BLO_P_TEXTO),
+               "BLO_SEO" => utf8_encode($row->BLO_SEO),
+               "BLO_META_DESC" => utf8_encode($row->BLO_META_DESC),
+               "BLO_FRASE_CHAVE" => utf8_encode($row->BLO_FRASE_CHAVE),
                "BLO_CATEGORIA" => utf8_encode($row->BLO_CATEGORIA),
                "BLO_IMAGEM" => $row->BLO_IMAGEM,
                "BLO_DATA" => date("d/m/Y",strtotime($row->BLO_DATA)),
@@ -167,6 +173,9 @@ class BLO{
             "BLO_TEXTO" => utf8_encode($row->BLO_TEXTO),
             "BLO_AUTOR" => utf8_encode($row->BLO_AUTOR),
             "BLO_P_TEXTO" => utf8_encode($row->BLO_P_TEXTO),
+            "BLO_SEO" => utf8_encode($row->BLO_SEO),
+            "BLO_META_DESC" => utf8_encode($row->BLO_META_DESC),
+            "BLO_FRASE_CHAVE" => utf8_encode($row->BLO_FRASE_CHAVE),
             "BLO_STATUS" => $row->BLO_STATUS,
             "BLO_CATEGORIA" => utf8_encode($row->BLO_CATEGORIA),
             "BLO_DATA" => date('d/m/Y', strtotime($row->BLO_DATA)),

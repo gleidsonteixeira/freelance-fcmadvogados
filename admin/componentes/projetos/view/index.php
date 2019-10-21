@@ -78,12 +78,15 @@
         </div>
         <div id="projetos">
             <ul class="lista-head">
-                <li>
+                <li class="hide-on-small-only">
                     <h6 class="mini-title upper">cod</h6>
                     <h6 class="mini-title upper">projeto</h6>
                     <h6 class="mini-title upper">empresa</h6>
                     <h6 class="mini-title upper">data</h6>
                     <h6 class="mini-title upper">-</h6>
+                </li>
+                <li class="hide-on-med-and-up">
+                    <h6 class="mini-title upper">Projetos Cadastrados</h6>
                 </li>
             </ul>
             <ul class="lista-body loading active"></ul>

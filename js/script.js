@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $('.slider').slider();
     inserirVideo();
     menu();
     expandir();

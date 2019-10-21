@@ -26,33 +26,33 @@ function listarPosts(){
                     tituloPost = response.lista_posts[i].BLO_TITULO;
                    $('#blog .posts').append(
                         '<article>'+
-                            '<a href="blogpost.php?post='+response.lista_posts[i].BLO_COD +'">'+
+                            '<a href="blogpost/'+response.lista_posts[i].BLO_TITULO.toLowerCase().replace(/ /g, "-").replace(":", "")+'/'+response.lista_posts[i].BLO_COD+'"'+
                                 '<figure>'+
-                                    '<img class="responsive-img" src="img/posts/'+ response.lista_posts[i].BLO_IMAGEM +'" alt="banner">'+
+                                    '<img src="img/posts/'+ response.lista_posts[i].BLO_IMAGEM +'" alt="'+ response.lista_posts[i].BLO_IMAGEM +'">'+
                                 '</figure>'+
                                 '<header>'+
                                     '<h6 class="categoria">'+ response.lista_posts[i].BLO_CATEGORIA +' </h6>'+
                                     '<h2 class="font">'+ response.lista_posts[i].BLO_TITULO +'</h2>'+
-                                    '<h6 class="mini-title upper">por'+ response.lista_posts[i].BLO_AUTOR +' em '+ response.lista_posts[i].BLO_DATA +'</h6>'+
+                                    '<h6 class="mini-title upper">por '+ response.lista_posts[i].BLO_AUTOR +' em '+ response.lista_posts[i].BLO_DATA +'</h6>'+
                                 '</header>'+
                                 '<p>'+ response.lista_posts[i].BLO_P_TEXTO +'</p>'+
                             '</a>'+
                         '</article>'
                 );
                 }
-                $('#blog .posts').append(
-                	'<div class="paginacao">'+
-                        '<ul>'+
-                            '<li class="active">1</li>'+
-                            '<li>2</li>'+
-                            '<li>3</li>' +
-                            '<li>4</li>' +
-                            '<li>5</li>' +
-                            '<li>Última >></li>'+
-                        '</ul>'+
-                        '<h6 class="mini-title upper">pág. 1 de 1000</h6>'+
-                    '</div>'
-                );
+                // $('#blog .posts').append(
+                // 	'<div class="paginacao">'+
+                //         '<ul>'+
+                //             '<li class="active">1</li>'+
+                //             '<li>2</li>'+
+                //             '<li>3</li>' +
+                //             '<li>4</li>' +
+                //             '<li>5</li>' +
+                //             '<li>Última >></li>'+
+                //         '</ul>'+
+                //         '<h6 class="mini-title upper">pág. 1 de 1000</h6>'+
+                //     '</div>'
+                // );
                 if(i == 0){
                     $('.lista-body').append('<li><h3 style="width: 100%;text-align:center;">Nenhum empresa cadastrado.</h3></li>');
                 }

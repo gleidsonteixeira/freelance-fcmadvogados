@@ -44,24 +44,6 @@
                             <h3>Checklist - Montando minha marca</h3>
                         </a>
                     </li>
-                    <!-- <li class="suave">
-                        <a href="#!">
-                            <h6 class="upper mini-title">categoria</h6>
-                            <figure>
-                                <img src="img/loginBg.jpg" alt="" class="suave">
-                            </figure>
-                            <h3>Titulo do banner 5</h3>
-                        </a>
-                    </li>
-                    <li class="suave">
-                        <a href="#!">
-                            <h6 class="upper mini-title">categoria</h6>
-                            <figure>
-                                <img src="img/loginBg.jpg" alt="" class="suave">
-                            </figure>
-                            <h3>Titulo do banner 6</h3>
-                        </a>
-                    </li> -->
                 </ul>
             </div>
         </section>
@@ -194,6 +176,13 @@
         quadrado("#portfolio li");
 
         function carrosel(){
+            var tamanho = 0;
+            $("#banner-carrosel .slides ul li").each(function(){
+                $(this).each(function(){
+                    tamanho += $(this).width() + 40;
+                });
+                $("#banner-carrosel .slides ul").width(tamanho);
+            });
             $("#banner-carrosel .next").click(function(){
                 $("#banner-carrosel .slides").animate({
                     scrollLeft: $("#banner-carrosel .slides").scrollLeft() + 300

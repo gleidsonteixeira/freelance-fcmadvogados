@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Admin | Objetive TI</title>
+	<title>Pombo Criativo</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="expires" content="Tue, 01 Jan 2019 12:12:12 GMT">
@@ -39,7 +39,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/materialize.css" type="text/css"/>
 	<link rel="stylesheet" href="../css/materialize.css" type="text/css"/>
 	<link rel="stylesheet" href="../css/jquery-ui.css" type="text/css"/>
 	<link rel="stylesheet" href="../css/admin-extras.css" type="text/css"/>
@@ -171,6 +170,7 @@
 	<script src="../js/jquery.mask.js"></script>
 	<script src="../js/default.js"></script>
 	<script src="../js/chart.js"></script>
+	<script src="https://cdn.ckeditor.com/4.6.2/full/ckeditor.js"></script>
 	<?php
 		$path = "componentes/";
 		$diretorio = dir($path);

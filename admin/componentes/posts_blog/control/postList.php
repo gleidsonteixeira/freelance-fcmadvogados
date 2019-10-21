@@ -48,4 +48,3 @@
         $retorno = array("status" => 1, "mensagem" => "Ação não encontrada");
         echo json_encode($retorno);     
     }
-?>

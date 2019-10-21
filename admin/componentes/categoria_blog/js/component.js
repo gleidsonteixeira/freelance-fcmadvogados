@@ -32,26 +32,25 @@ function listarCATCAT(){
                     $('.categoria-componente #categorias .lista-body').append('<li>' +
                         '<h6>' + response.lista_cat[i].CAT_COD + '</h6>' +
                         '<h6>' + response.lista_cat[i].CAT_NOME + '</h6>' +
+                        '<h6>' + response.lista_cat[i].CAT_POSTS + '</h6>' + 
                         '<h6>' +
                             '<i class="action fa fa-pen editar-empresa" onclick="editarCat(' + response.lista_cat[i].CAT_COD + ')"></i>' +
-                            '<i class="action fa fa-trash deletar-empresa" onclick="excluirCat(' + response.lista_cat[i].CAT_COD + ')"></i>' +
+                            '<i class="action fa fa-trash deletar-empresa" onclick="excluirCategoria(' + response.lista_cat[i].CAT_COD + ')"></i>' +
                         '</h6>' +
                     '</li>');
                 }
                 if(i == 0){
-                    $('.categoria-componente .lista-body').append('<li><h6 style="width: 100%;text-align:center;">Nenhum empresa cadastrado.</h6></li>');
+                    $('.categoria-componente .lista-body').append('<li><h6 style="width: 100%;text-align:center;">Nenhuma categoria cadastrada.</h6></li>');
                 }
                 $('.categoria-componente .lista-body').removeClass("active");
             }else{
                 $('.categoria-componente .lista-body').removeClass("active");
                 criaAlerta(0,"Status - " + response.status + " | Mensagem - " + response.mensagem,2000);
-                $('.categoria-componente .lista-body').append('<li><h6 style="width: 100%;text-align:center;">Nenhum empresa cadastrado.</h6></li>');
+                $('.categoria-componente .lista-body').append('<li><h6 style="width: 100%;text-align:center;">Nenhuma categoria cadastrada.</h6></li>');
             }
         }
     });
 }
-
-
 function editarCat(CAT_COD){
     var dadosajax = {
         'ACAO' : 'LISTAR DADOS CATEGORIA EDITAR',
@@ -164,7 +163,7 @@ function editCat(){
 }
 var duploClickExcCategoria = 0;
 var codigo_cat_excluir;
-function excluirCat(CAT_COD){
+function excluirCategoria(CAT_COD){
     codigo_cat_excluir = CAT_COD;
     criaAlerta(1,"Deseja realmente excluir essa categoria?",2000);
     $("#alerta .confirmar").click(function(){
@@ -236,9 +235,10 @@ function listarCategoriaPagProx(){
                             $('.categoria-componente #categorias .lista-body').append('<li>' +
                                 '<h6>' + response.lista_cat[i].CAT_COD + '</h6>' +
                                 '<h6>' + response.lista_cat[i].CAT_NOME + '</h6>' +
+                                '<h6>' + response.lista_cat[i].CAT_POSTS + '</h6>' + 
                                 '<h6>'+
                                     '<i class="action fa fa-pen editar-empresa" onclick="editarCat(' + response.lista_cat[i].CAT_COD + ')"></i>' +
-                                    '<i class="action fa fa-trash deletar-empresa" onclick="excluirCat(' + response.lista_cat[i].CAT_COD + ')"></i>' +
+                                    '<i class="action fa fa-trash deletar-empresa" onclick="excluirCategoria(' + response.lista_cat[i].CAT_COD + ')"></i>' +
                                 '</h6>' +
                             '</li>');
 
@@ -297,9 +297,10 @@ function listarCategoriaPagAnte(){
                         $('.categoria-componente #categorias .lista-body').append('<li>' +
                             '<h6>' + response.lista_cat[i].CAT_COD + '</h6>' +
                             '<h6>' + response.lista_cat[i].CAT_NOME + '</h6>' +
+                            '<h6>' + response.lista_cat[i].CAT_POSTS + '</h6>' + 
                             '<h6>' +
                                 '<i class="action fa fa-pen editar-empresa" onclick="editarCat(' + response.lista_cat[i].CAT_COD + ')"></i>' +
-                                '<i class="action fa fa-trash deletar-empresa" onclick="excluirCat(' + response.lista_cat[i].CAT_COD + ')"></i>' +
+                                '<i class="action fa fa-trash deletar-empresa" onclick="excluirCategoria(' + response.lista_cat[i].CAT_COD + ')"></i>' +
                             '</h6>' +
                         '</li>');
                     }

@@ -9,12 +9,15 @@
                 if(!empty($_POST["CAT_COD"])) {
                     $CAT_COD =  $_POST["CAT_COD"];
 
+
                     $cat = new CAT();
                     $cat->setCAT_STATUS(2);
                     $cat->setCAT_COD($CAT_COD);
                     $retorno = $cat->deleteCategoria();
-                    
+                    $cat->deletarPostsCategoria($CAT_COD);
                     echo json_encode($retorno);
+                 
+                 
                 }else{
                     $retorno = array("status" => 4, "mensagem" => "Todos os campos são obrigatórios, verifique se não há nenhum vazio.");
                     echo json_encode($retorno);

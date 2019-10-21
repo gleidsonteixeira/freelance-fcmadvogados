@@ -44,24 +44,27 @@
         });
     </script> -->
     <!-- Facebook Pixel Code -->
-        <script>
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '769570139895464');
-            fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=769570139895464&ev=PageView&noscript=1"/></noscript>
-    <!-- End Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '769570139895464');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=769570139895464&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 
 </head>
 
 <body>
+    <!-- <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-104056819-1','auto');ga('send','pageview');</script> -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112375115-1"></script>
     <script>
@@ -71,6 +74,20 @@
     
       gtag('config', 'UA-112375115-1');
     </script>
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5daa15cd78ab74187a5a5df2/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
     
     <i class="mdi-navigation-menu click menu-btn circle button-collapse hide-on-large-only" data-activates="slide-out"></i>
 
@@ -123,10 +140,10 @@
                         </a>
                     </li> -->
                 </ul>
-                <a class="suave rede-social addBannerClick" data-id="8" data-tipo="CTT" href="https://www.facebook.com/PomboCriativo/" target="_blank"><img src="img/ico6.png"></a>
-                <a class="suave rede-social addBannerClick" data-id="9" data-tipo="CTT" href="https://www.youtube.com/channel/UCKEsrPEIsH5ZvESF2hcZezg" target="_blank"><img src="img/ico7.png"></a>
-                <a class="suave rede-social addBannerClick" data-id="10" data-tipo="CTT" href="https://www.instagram.com/pombocriativo/?hl=pt-br" target="_blank"><img src="img/ico8.png"></a>
                 <a class="suave rede-social addBannerClick" data-id="11" data-tipo="CTT" href="https://api.whatsapp.com/send?phone=5585987974616&amp;text=Olá%20Pombo%20Criativo,%20gostaria%20de%20solicitar%20um%20orçamento...&amp;l=pt-br" target="_blank"><img src="img/ico9.png"></a>
+                <a class="suave rede-social addBannerClick" data-id="10" data-tipo="CTT" href="https://www.instagram.com/pombocriativo/?hl=pt-br" target="_blank"><img src="img/ico8.png"></a>
+                <a class="suave rede-social addBannerClick" data-id="9" data-tipo="CTT" href="https://www.youtube.com/channel/UCKEsrPEIsH5ZvESF2hcZezg" target="_blank"><img src="img/ico7.png"></a>
+                <a class="suave rede-social addBannerClick" data-id="8" data-tipo="CTT" href="https://www.facebook.com/PomboCriativo/" target="_blank"><img src="img/ico6.png"></a>
             </nav>
             <div class="clear"></div>
         </div>

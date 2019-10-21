@@ -2,7 +2,7 @@
 
 #login{width: 100%;height: 100%;position: relative;}
 #login:before,
-#login:after{content: "";width: 100%;height: 100%;background-color: #673ab7;background-image: -webkit-linear-gradient(-45deg, #673ab7, #8824a3);opacity: .8;position: absolute;top: 0;left: 0;z-index: 2;}
+#login:after{content: "";width: 100%;height: 100%;background-color: #673ab7;background-image: -webkit-linear-gradient(-45deg, #673ab7, #4a148c);opacity: .8;position: absolute;top: 0;left: 0;z-index: 2;}
 #login:after{background-image: url("../img/bg.jpg");background-position: center right;background-size: cover;z-index: 1;opacity: 1;filter: grayscale(1);}
 #login .header{position: absolute;top: 50%;left: 100px;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);z-index: 3;text-shadow: 0 1px 5px rgba(0, 0, 0, .4);}
 #login .header .divider{width: 80px;height: 6px;margin-top: 20px;border-radius: 3px;box-shadow: 0 1px 5px rgba(0, 0, 0, .4);}
@@ -30,7 +30,7 @@
 #login .form input:hover,
 #login .form input:focus{border-color: #673ab7;}
 #login .form .btn{width: 100%;height: 40px;background-color: #673ab7;line-height: 40px;border-radius: 5px;margin-top: 10px;display: block;font-size: 14px;color: white;text-transform: capitalize;letter-spacing: 1px;box-shadow: 0px 10px 25px -10px rgba(0, 0, 0, .4);}
-#login .form .btn:hover{background-color: #8824a3 !important;}
+#login .form .btn:hover{background-color: #4a148c !important;}
 
 #loading{width: 100%;height: 100%;position: absolute;z-index: 999;top: 0;left: 0;opacity: 0;visibility: hidden;}
 #loading.active{opacity: 1;visibility: visible;}
@@ -82,8 +82,8 @@ main{margin-top: 120px;}
 
 #banner-carrosel{overflow: hidden;position: relative;}
 #banner-carrosel .slides{overflow: hidden;}
-#banner-carrosel ul{overflow: hidden;padding:16px 0 16px 10%;width: 1650px;position: relative;}/*width: 2350px;*/
-#banner-carrosel ul li{width: 350px;height: 520px;box-sizing: border-box;float: left;margin-right: 16px;position: relative;border-radius: 10px;}
+#banner-carrosel ul{overflow: hidden;padding:16px 0 16px 10%;width: auto;position: relative;}/*width: 2350px;*/
+#banner-carrosel ul li{width: 320px;height: 480px;box-sizing: border-box;float: left;margin-right: 16px;position: relative;border-radius: 10px;}
 #banner-carrosel ul li:hover{box-shadow: 0px 6px 10px rgba(0, 0, 0, .15);}
 #banner-carrosel ul li a{display: block;}
 #banner-carrosel ul li a figure{position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding: 0;margin: 0;overflow: hidden;border-radius: 10px;}
@@ -124,7 +124,7 @@ main{margin-top: 120px;}
 #portfolio{position: relative;overflow: hidden;}
 #portfolio h2{font-size: 48px;text-align: center;margin-bottom: 60px;color: #4a148c;font-weight: 600;}
 #portfolio ul{overflow: hidden;}
-#portfolio ul li{width: 33.333%;float: left;position: relative;overflow: hidden;}
+#portfolio ul li{width: 33.333%;float: left;position: relative;overflow: hidden;background-color: white;}
 #portfolio ul li .frente{width: 100%;position: absolute;bottom: 0;right: 0;padding: 0 26px;box-sizing: border-box;z-index: 2;transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);}
 #portfolio ul li:hover .frente{right: 100%;}
 #portfolio ul li .verso{width: 100%;position: absolute;bottom: 0;left: 100%;padding: 26px;box-sizing: border-box;z-index: 2;transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);background-color: rgba(255, 255, 255, .8);border-radius: 20px 20px 0 0;}
@@ -142,19 +142,19 @@ main{margin-top: 120px;}
 #portfolio ul li:hover a{transform: scale(1,1);}
 
 #blog{padding: 60px 10%;overflow: hidden;}
-#blog form.busca{width: 800px;margin: 0 auto;overflow: hidden;margin-bottom: 60px;}
-#blog form.busca input{height: 80px !important;font-size: 36px;color:#673ab7;float: left;width: calc(100% - 216px) !important;}
-#blog form.busca button{width:200px;height: 80px;line-height: 80px;border-radius: 5px;background-color: #673ab7;font-size: 36px;color:white;float: right;outline: none;}
-#blog form.busca button:hover{background-color: #8824a3;}
+#blog form.busca{width: 100%;margin: 0 auto;overflow: hidden;margin-bottom: 60px;background-color: white;border-radius: 5px;padding: 16px;box-sizing: border-box;}
+#blog form.busca input{height: 50px !important;font-size: 18px;color:#673ab7;}
+#blog form.busca button{width:100%;height: 50px;line-height: 50px;border-radius: 5px;background-color: #673ab7;font-size: 18px;color:white;outline: none;text-align: center;margin-top: 10px;}
+#blog form.busca button:hover{background-color: #4a148c;}
 #blog .posts{width: calc(100% - 316px);float: left;}
 #blog .posts article{overflow: hidden;margin-bottom: 26px;background-color: white;border-radius: 5px;}
 #blog .posts article a{display: block;}
 #blog .posts article figure{width: 250px;height: 250px;overflow: hidden;position: relative;float: left;margin: 0;margin-right: 16px;border-radius: 5px;}
-#blog .posts article figure::after{content: "";background-color: rgb(169, 51, 203,.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
-#blog .posts article figure img{height: 100%;display: block;position: absolute;top: 0;left: -25%;filter: grayscale(1);}
+/* #blog .posts article figure::after{content: "";background-color: rgb(103, 58, 183,.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;} */
+#blog .posts article figure img{height: 100%;display: block;position: absolute;top: 0;left: 50%;transform: translateX(-50%);}
 #blog .posts article header{float: left;width: calc(100% - 266px);}
-#blog .posts article header .categoria{border-radius: 5px;display: inline-block;line-height: 30px;padding: 0 16px;background-color: #673ab7;color: white;font-size: 18px;margin-top: 26px;}
-#blog .posts article header h2{font-size: 28px;margin-top: 10px;margin-bottom: 0;color: #673ab7;}
+#blog .posts article header .categoria{border-radius: 5px;display: inline-block;line-height: 30px;padding: 0 16px;background-color: #673ab7;color: white;font-size: 14px;margin-top: 26px;}
+#blog .posts article header h2{font-size: 28px;margin-top: 10px;margin-bottom: 0;color: #673ab7;font-weight: bold;}
 #blog .posts article header h6{color: #673ab7;}
 #blog .posts article p{float: left;width: calc(100% - 266px);margin-top: 16px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;padding-right: 16px;box-sizing: border-box;color: #999;}
 #blog .posts .paginacao{overflow: hidden;text-align: center;margin-top: 50px;}
@@ -162,43 +162,47 @@ main{margin-top: 120px;}
 #blog .posts .paginacao ul li{display: inline-block;border-radius: 5px;background-color: #ededed;color: #666;font-size: 14px;padding: 5px 10px;cursor: pointer;margin: 0 5px;}
 #blog .posts .paginacao ul li.active{background-color: #673ab7;color: white;font-weight: bold;}
 
-#blog .post{width: calc(100% - 316px);float: left;}
+#blog .post{width: 100%;}
 #blog .post article{overflow: hidden;margin-bottom: 26px;}
-#blog .post article figure{width: 100%;overflow: hidden;position: relative;border-radius: 5px;margin-bottom: 16px;margin-top: 16px;}
-#blog .post article figure::after{content: "";background-color: rgb(169, 51, 203,.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
-#blog .post article figure img{width: 100%;display: block;filter: grayscale(1);}
+#blog .post article figure{width: 100%;overflow: hidden;position: relative;border-radius: 5px;margin: 0;}
+/* #blog .post article figure::after{content: "";background-color: rgb(103, 58, 183,.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;} */
+#blog .post article figure img{width: 100%;display: block;}
+#blog .post article header{width: 80%;margin: 0 auto;background: white;padding: 16px 50px;box-sizing: border-box;border-radius: 10px 10px 0 0;}
 #blog .post article header .categoria{border-radius: 5px;display: inline-block;line-height: 30px;padding: 0 16px;}
-#blog .post article header h2{font-size: 38px;line-height: 44px;margin-bottom: 16px;color: #673ab7;}
-#blog .post article header h6{margin-bottom: 16px;}
-#blog .post article header p{font-size: 22px;font-weight: bold;}
+#blog .post article header h2{font-size: 36px;line-height: 44px;color: #673ab7;font-weight: bold;margin-bottom: 0;}
+#blog .post article header h6{margin-bottom: 16px;color: #673ab7;}
+#blog .post article header p{font-size: 22px;font-weight: bold;line-height: 28px;}
 #blog .post article h3{font-weight: bold;font-size: 28px;margin-top: 16px;}
 #blog .post article p{overflow: hidden;box-sizing: border-box;font-size: 18px;margin: 16px 0;}
+#blog .post article .conteudo{width: 80%;margin: 0 auto;background: white;padding: 16px 50px;box-sizing: border-box;border-radius: 0 0 10px 10px;}
+#blog .post article .conteudo h2{font-size: 28px;font-weight: bold;margin-top: 50px;}
+#blog .post article .conteudo p{color: #666;}
 #blog .post article blockquote{color: #999;border-left: 3px solid #673ab7;padding: 26px 20px;font-style: italic;position: relative;font-weight: bold;}
 #blog .post article blockquote::before{content:'"';position:absolute;top:0;left:4px;font-size:50px;line-height: 45px;}
 #blog .post article .marcadores{margin: 26px 0;}
 #blog .post article .marcadores span{display: block;font-size: 12px;color: #666;margin-bottom: 6px;}
-#blog .post article .marcadores h6{border-radius: 5px;display: inline-block;line-height: 30px;padding: 0 16px;}
+#blog .post article .marcadores h6{border-radius: 5px;display: inline-block;line-height: 30px;padding: 0 16px;background-color: #673ab7;color: white;margin: 0 10px 10px 0;}
 #blog .post article .avaliacao{display: block;text-align: center;background-color: #ededed;border-radius: 5px;padding: 16px 0;}
 #blog .post article .avaliacao p{margin-top: 0;}
 #blog .post article .avaliacao i{display: inline-block;width:50px;height:50px;line-height:50px;text-align: center;background-color: rgba(0, 0, 0, .15);border-radius: 25px;}
 #blog .post article .avaliacao i:hover{background-color: #673ab7;color: white;}
-#blog .post .aviso{padding: 16px;border-radius: 5px;background-color: rgba(169, 51, 203,.15);margin: 10px 0;}
-#blog .newslatter{float: right;width: 300px;box-sizing: border-box;padding: 26px 16px;border-radius: 5px;margin-bottom: 26px;background-color: rgba(169, 51, 203,.5);}
-#blog .newslatter h2{font-size: 36px;line-height:40px;text-align: center;}
-#blog .newslatter p{margin:16px 0;text-align: center;}
+#blog .post .aviso{padding: 16px;border-radius: 5px;background-color: rgba(103, 58, 183,.15);margin: 10px 0;}
+#blog .newslatter{float: left;width: 300px;box-sizing: border-box;padding: 16px;border-radius: 5px;margin-bottom: 26px;background-color: white;}
+#blog .newslatter h2{font-size: 18px;line-height:22px;text-align: center;margin: 0;color: #673ab7;font-weight: bold;}
+#blog .newslatter p{text-align: center;color: #999;margin: 16px 0;}
 #blog .newslatter input{margin-bottom:16px !important;}
-#blog .newslatter button{display: block;background-color: #fdc010;border-radius:5px;width: 100%;}
-#blog .newslatter button:hover{background-color: #F7931E;}
+#blog .newslatter button{display: block;background-color: #673ab7;border-radius:5px;width: 100%;}
+#blog .newslatter button:hover{background-color: #4a148c;}
 #blog .anuncio{float: right;width: 300px;}
 #blog .anuncio img{display: block;margin: 0 auto;border-radius: 10px;box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .15);}
-#blog .anuncio img:hover{box-shadow: 0px 10px 20px -5px rgba(169, 51, 203, .5);}
-#blog .relacionados{float: right;width: 300px;box-sizing: border-box;}
-#blog .relacionados ul{margin-top: 20px;}
-#blog .relacionados ul li{overflow: hidden;margin-bottom: 16px;}
-#blog .relacionados ul li figure{width: 80px;height: 80px;position: relative;overflow: hidden;border-radius: 5px;margin-right: 16px;float: left;}
-#blog .relacionados ul li figure::after{content: "";background-color: rgb(169, 51, 203,.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+#blog .anuncio img:hover{box-shadow: 0px 10px 20px -5px rgba(103, 58, 183, .5);}
+#blog .relacionados{float: left;width: calc(100% - 300px);box-sizing: border-box;}
+#blog .relacionados ul{}
+#blog .relacionados ul li{overflow: hidden;width: calc(33.333% - 16px);margin-left: 16px;float: left;background-color: white;border-radius: 5px;}
+#blog .relacionados ul li figure{width: 100%;height: 192px;position: relative;overflow: hidden;border-radius: 5px 5px 0 0;margin: 0;margin-right: 16px;}
+#blog .relacionados ul li figure::after{content: "";background-color: rgb(103, 58, 183,.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
 #blog .relacionados ul li figure img{height: 100%;position: absolute;top: 0;left: -25%;}
-#blog .relacionados ul li h6{font-size: 15px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;}
+#blog .relacionados ul li h6{font-size: 15px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;padding: 0 16px;color: #999;margin-bottom: 16px;margin-top: 10px;}
 
 footer{overflow: hidden;position: relative;overflow: hidden;border: 1px solid #dedede;background-color: white;}
 footer .conteudo{width: 100%;height: auto;padding: 0 10%;box-sizing: border-box;position: relative;overflow: hidden;}
@@ -212,7 +216,7 @@ footer .conteudo .pombo a{width: 40px;height: 40px;display: inline-block;border-
 footer .conteudo .pombo a img{width: 100%;}
 footer .conteudo .pombo a:hover{background-color: #4a148c;}
 footer .conteudo .infos{width: calc(100% - 400px);float:right;overflow: hidden;padding: 60px 0 0 60px;}
-footer .conteudo .infos ul{width: 33.333% !important;float: left;margin-bottom: 16px;}
+footer .conteudo .infos ul{width: 40% !important;float: left;margin-bottom: 16px;}
 footer .conteudo .infos ul:last-of-type{width: 100%;}
 footer .conteudo .infos ul li.title{font-size: 16px;font-weight: bold;padding-bottom: 16px;color: #444;opacity: .9;}
 footer .conteudo .infos ul li{color: #444;opacity: .9;}
@@ -369,7 +373,7 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
 #faq .faqs ul li .opniao span{display: block;font-size: 12px;color:#666;}
 #faq .faqs ul li .opniao i{width: 40px;height: 40px;line-height: 40px;border-radius: 20px;text-align: center;}
 #faq .faqs ul li .opniao i.active,
-#faq .faqs ul li .opniao i:hover{background-color: rgba(169, 51, 203,.15);color: #673ab7;}
+#faq .faqs ul li .opniao i:hover{background-color: rgba(103, 58, 183,.15);color: #673ab7;}
 #faq .categorias{width: 300px;float: right;border: 1px solid #dedede;border-radius: 5px;padding: 10px;box-sizing: border-box;}
 #faq .categorias ul li{line-height: 50px;padding-left: 16px;border-radius: 5px;}
 #faq .categorias ul li h6{color: #673ab7;}
@@ -450,13 +454,8 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
     #topo .action a.active{background-color: #29c1af;color: white;}
     #topo .action a.active:hover{background-color: #25a592;color: white;}
 
-    
-
-    
     #beneficios h2{font-size: 36px;}
     #beneficios ul{width: 800px;margin: 26px auto;}
-
-    
 
     #depoimentos{padding-top: 250px;padding-left: 60px;padding-right: 60px;}
     #depoimentos h2{font-size: 48px;}
@@ -476,8 +475,6 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
 
     #clientes.interno h2{font-size: 36px;}
     #clientes.interno ul li{width: 25%;}
-
-    
 
     .whatsapp{bottom: 30px;right: 30px;}
     .voltar{bottom: 86px;right: 30px;}
@@ -519,10 +516,49 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
     #portfolio h2{font-size: 36px;margin-bottom: 16px;}
     #portfolio ul li{width: 100%;float: none;}
 
+    #blog{padding: 16px;}
+    #blog form.busca{width: 100%;margin-bottom: 30px;}
+    #blog form.busca button,
+    #blog form.busca input{width: 100% !important;height:60px !important;float: none;line-height: 60px;font-size: 24px;}
+    #blog form.busca button{margin-top: 16px;}
+    #blog .anuncio{display: none;}
+    #blog .posts{width: 100%;}
+    #blog .posts article{padding-bottom: 10px;}
+    #blog .posts article figure,
+    #blog .posts article header,
+    #blog .posts article p{float: none;width: 100%;}
+    #blog .posts article header{padding: 0 10px;}
+    #blog .posts article header .categoria{margin: 0;}
+    #blog .posts article p{padding: 0 10px;}
+    #blog .posts article figure{margin-bottom: 16px;}
+    #blog .posts article header h2{line-height: 30px;margin-bottom: 10px;}
+    
+    #blog .post{width: 100%;float: none;}
+    #blog .post article figure,
+    #blog .post article header,
+    #blog .post article p{float: none;width: 100%;}
+    #blog .post article header{padding: 16px 10px;}
+    #blog .post article .conteudo{width: 100%;margin: 0;padding: 16px 10px;}
+    #blog .post article header h2{line-height: 30px;margin-bottom: 10px;font-size: 24px;margin-top: 0;}
+    #blog .post article header p{font-size: 16px;}
+    #blog .post article .conteudo h2{font-size: 18px;margin: initial;}
+    #blog .post article h3{font-size: 20px;}
+    #blog .post article p{font-size: 14px;}
+    #blog .post article blockquote{font-size: 14px;}
+    #blog .aviso{font-size: 14px;}
+    #blog .relacionados ul li{width: 100%;float: none;margin: 0;margin-bottom: 16px;}
+
+    #blog .anuncio,
+    #blog .relacionados,
+    #blog .newslatter{width: 100%;float: none;}
+
     footer .conteudo{padding: 0 16px;}
     footer .conteudo .pombo{width: 100%;float: none;padding: 0;border: 0;}
     footer .conteudo .infos{width: 100%;padding: 16px 0;float: none;}
     footer .conteudo .infos ul{width: 50% !important;}
+    footer .rodape{padding-right: 16px;padding-left: 16px;}
+
+    .voltar{right: 40px;bottom: 90px;}
 
 
 
@@ -606,34 +642,7 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
     #faq .faqs{float: none;width: 100%;}
     #faq .faqs ul li p{text-align: justify;}
 
-    #blog{padding: 16px;}
-    #blog form.busca{width: 100%;margin-bottom: 30px;}
-    #blog form.busca button,
-    #blog form.busca input{width: 100% !important;height:60px !important;float: none;line-height: 60px;font-size: 24px;}
-    #blog form.busca button{margin-top: 16px;}
-    #blog .anuncio{display: none;}
-    #blog .posts{width: 100%;}
-    #blog .posts article figure,
-    #blog .posts article header,
-    #blog .posts article p{float: none;width: 100%;}
-    #blog .posts article figure{margin-bottom: 16px;}
-    #blog .posts article header h2{line-height: 30px;margin-bottom: 10px;}
     
-    #blog .post{width: 100%;float: none;}
-    #blog .post article figure,
-    #blog .post article header,
-    #blog .post article p{float: none;width: 100%;}
-    #blog .post article figure{margin-bottom: 16px;}
-    #blog .post article header h2{line-height: 30px;margin-bottom: 10px;font-size: 24px;}
-    #blog .post article header p{font-size: 16px;}
-    #blog .post article h3{font-size: 20px;}
-    #blog .post article p{font-size: 14px;}
-    #blog .post article blockquote{font-size: 14px;}
-    #blog .aviso{font-size: 14px;}
-
-    #blog .anuncio,
-    #blog .relacionados,
-    #blog .newslatter{width: 100%;float: none;}
 
     .obrigado{width: 100%;transform: translate(-50%,5%);}
     #portifolio ul li{width: 100%;float: none;}

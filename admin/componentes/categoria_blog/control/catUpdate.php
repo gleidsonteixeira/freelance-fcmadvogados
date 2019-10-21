@@ -13,7 +13,7 @@
                 $cat->setCAT_COD($cat_cod);
                 $cat->updateCAT();
 
-                $retorno = array("status" => 0, "mensagem" => "Edição da categoria realizado com sucesso!");
+                $retorno = array("status" => 0, "mensagem" => "Atualização realizado com sucesso!");
                 echo json_encode($retorno); 
             
 

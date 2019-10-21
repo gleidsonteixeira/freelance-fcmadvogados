@@ -12,7 +12,7 @@
 
 <html>
     <head>
-        <title>Objetive TI - Login</title>
+        <title>Pombo Criativo</title>
         <!-- METAS -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -20,8 +20,8 @@
         <meta name="msapplication-navbutton-color" content="#a933cb">
         <meta name="apple-mobile-web-app-status-bar-style" content="#a933cb">
         <!-- CSS -->
-        <link rel="canonical" href="https://www.objetiveti.com.br" />
-        <link rel="shortlink" href="https://www.objetiveti.com.br" />
+        <link rel="canonical" href="https://www.pombocriativo.com" />
+        <link rel="shortlink" href="https://www.pombocriativo.com" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
@@ -29,6 +29,9 @@
         <link href="css/ionicons.css" rel="stylesheet" type="text/css">
         <link href="css/extras.css" rel="stylesheet" type="text/css">
         <link href="css/site.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="img/favicon.png" sizes="32x32" />
+        <link rel="icon" href="img/favicon.png" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="img/favicon.png" />
     </head>
 
     <body>
@@ -37,7 +40,7 @@
         <div id="login">
             <div class="header">
                 <h1 class="font white-text suave">
-                    Objetive TI
+                    Pombo Criativo
                     <div class="divider white"></div>
                 </h1>
                 <p class="white-text suave condesed">
@@ -57,7 +60,7 @@
                     <h6 class="cor1-text center-align">
                         <b class="condesed purple-text">Atendimento ao Cliente</b>
                     </h6>
-                    <img src="img/logo-grande.png" class="responsive-img">
+                    <img src="img/logo_pombo_criativo.png" class="responsive-img">
                     <div class="input-field">
                         <h6><b class="condesed purple-text">Email:</b></h6>
                         <input type="text" name="email" id="email" placeholder="email@email.com" required>

@@ -3,7 +3,7 @@
     include('model/BLO.php');
     $conexao = new Conexao();
     $con = $conexao->conectar();
-    $cod = $_GET['cod'];
+    $cod = $_GET['post'];
     $blo = new BLO();
     $resultado = $blo->buscar_dados_post($cod);
     $urlAtual= "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -38,38 +38,41 @@
     <meta name="robots" content="index, follow">
     <meta name="language" content="pt-br" />
     
-    <meta property=og:locale content=pt_BR />
-    <meta property=og:type content=article />
+    <meta property=og:locale content="pt_BR"/>
+    <meta property=og:type content="article"/>
     <meta property=og:title content="<?php echo $titulo ?>"/>
     <meta property=og:description content="<?php echo $pre_texto ?>"/>
-    <meta property=og:url content="https://www.objetiveti.com.br/<?php echo $urlAtual ?>/"/>
-    <meta property=og:site_name content="Objetive TI"/>
-    <meta property=article:publisher content="https://www.facebook.com/ObjetiveTI/"/>
+    <meta property=og:url content="https://www.pombocriativo.com/<?php echo $urlAtual ?>/"/>
+    <meta property=og:site_name content="Pombo Criativo"/>
+    <meta property=article:publisher content="https://www.facebook.com/PomboCriativo/"/>
     <meta property=article:tag content="<?php echo $categoria ?>"/>
     <meta property=article:section content="<?php echo $categoria ?>"/>
     <meta property=article:published_time content="2019-07-15T18:16:18+00:00"/>
     <meta property=article:modified_time content="2019-07-15T18:16:25+00:00"/>
     <meta property=og:updated_time content="2019-07-15T18:16:25+00:00"/>
-    <meta property=og:image content="https://www.objetiveti.com.br/<?php echo $imagem?>"/>
-    <meta property=og:image:secure_url content="https://www.objetiveti.com.br/<?php echo $imagem?>"/>
+    <meta property=og:image content="https://www.pombocriativo.com/<?php echo $imagem?>"/>
+    <meta property=og:image:secure_url content="https://www.pombocriativo.com/<?php echo $imagem?>"/>
     <meta property=og:image:width content=1000 />
     <meta property=og:image:height content=1000 />
     <meta name=twitter:card content=summary_large_image />
     <meta name=twitter:description content="<?php echo $pre_texto ?>"/>
     <meta name=twitter:title content="<?php echo $titulo ?>"/>
-    <meta name=twitter:image content="https://www.objetiveti.com.br/<?php echo $imagem?>"/>
+    <meta name=twitter:image content="https://www.pombocriativo.com/<?php echo $imagem?>"/>
 
-    <link rel="canonical" href="https://www.objetiveti.com.br/<?php echo $urlAtual ?>" />
-    <link rel="shortlink" href="https://www.objetiveti.com.br/<?php echo $urlAtual ?>" />
-
+    <link rel="canonical" href="https://pombocriativo.com" />
+    <link rel="shortlink" href="https://pombocriativo.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:400,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="css/extras.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="css/site.css" media="all"/>
     <link rel="icon" href="img/favicon.png" sizes="32x32" />
     <link rel="icon" href="img/favicon.png" sizes="192x192" />
     <link rel="apple-touch-icon-precomposed" href="img/favicon.png" />
-    <link rel="manifest" href="manifest.json" />
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap"> -->
+    <!-- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
         var OneSignal = window.OneSignal || [];
         OneSignal.push(function() {
@@ -77,105 +80,68 @@
             appId: "a7ee881a-1d96-41af-91bb-d3019bbc0408",
             });
         });
-    </script>
+    </script> -->
+    <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '769570139895464');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=769570139895464&ev=PageView&noscript=1"/></noscript>
+    <!-- End Facebook Pixel Code -->
 
 </head>
 
 <body>
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-104056819-1','auto');ga('send','pageview');</script>
-
-    <ul id="slide-out" class="side-nav suave">
-        <div class="gradi3 perfil">
-            <i class="material-icons fechar click">close</i>
-            <img src="img/logo-objetive-ti-branca.png" class="z-depth-2"/>
-            <p class="white-text mini-title upper">
-                <a href="tel:8530477001">(85) 3047-7001</a><br>
-                <a href="mailto:contato@objetiveti.com.br">contato@objetiveti.com.br</a>
-            </p>
-        </div>
-        <li>
-            <a href="sobre.php" class="active suave">
-                Sobre
-            </a>
-        </li>
-        <li>
-            <a href="data-center.php" class="suave">
-                Data center
-            </a>
-        </li>
-        <li>
-            <a href="consultoria.php" class="suave">
-                Consultoria ERP
-            </a>
-        </li>
-        <li>
-            <a href="fabrica.php" class="suave">
-                Fábrica de software
-            </a>
-        </li>
-        <li>
-            <a href="infraestrutura.php" class="suave">
-                Infraestrutura
-            </a>
-        </li>
-        <li>
-            <a href="cameras.php" class="suave">
-                Instalação de câmeras
-            </a>
-        </li>
-        <li>
-            <a href="https://objetiveti.com.br/blog" class="suave">
-                Blog
-            </a>
-        </li>
-        <!-- <li>
-            <a href="faq.php" class="suave">
-                Faq
-            </a>
-        </li> -->
-        <li>
-            <a href="sistema" class="suave">
-                Área do cliente
-            </a>
-        </li>
-    </ul>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112375115-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-112375115-1');
+    </script>
     
     <i class="mdi-navigation-menu click menu-btn circle button-collapse hide-on-large-only" data-activates="slide-out"></i>
 
-    <header id="topo" class="suave white">
-        <div class="container">
+    <header id="topo" class="suave">
+        <div class="header">
             <div class="mini-menu">
                 <i class="material-icons suave click">menu</i>
             </div>
             <div class="logo suave">
                 <a href="index.php" class="suave">
-                    <img src="img/logo-objetive-ti.png" alt="Objetive TI" title="Objetive TI" class="" />
+                    <img src="img/logo_pombo_criativo.png" alt="Pombo_Criativo_Logo" title="Pombo Criativo" />
                 </a>
+                <a class="hide-on-small-only suave addBannerClick" data-id="6" data-tipo="CTT" href="tel:85987974616" style="margin-top: 10px;">(85) 98797-4616</a>
+                <a class="hide-on-small-only suave addBannerClick" data-id="7" data-tipo="CTT" href="mailto:contato@pombocriativo.com.br">contato@pombocriativo.com</a>
             </div>
-            <div class="links">
-                <a class="hide-on-small-only addBannerClick" data-id="6" data-tipo="CTT" href="tel:8530477001"><i class="material-icons">phone</i>(85) 3047-7001</a>
-                <a class="hide-on-small-only addBannerClick" data-id="7" data-tipo="CTT" href="mailto:contato@objetiveti.com.br"><i class="material-icons">mail</i>contato@objetiveti.com.br</a>
-                <a target="_blank" class="suave rede-social addBannerClick" style="background-color: rgba(66,103,178,1) !important;margin-left:0;" data-id="8" data-tipo="CTT" href="https://www.facebook.com/ObjetiveTI/"><img src="img/ico6.png"></a>
-                <a target="_blank" class="suave rede-social addBannerClick" style="background-color: rgba(255,0,0,1) !important;" data-id="9" data-tipo="CTT" href="https://www.youtube.com/channel/UCqEzLbAtRRACyG-jpCN2W5A"><img src="img/ico7.png"></a>
-                <a target="_blank" class="suave rede-social addBannerClick" style="background-color: rgba(169,51,203,1) !important;" data-id="10" data-tipo="CTT" href="https://www.instagram.com/objetiveti/"><img src="img/ico8.png"></a>
-                <a target="_blank" class="suave rede-social addBannerClick" style="background-color: rgba(88,232,112,1) !important;" data-id="11" data-tipo="CTT" href="https://api.whatsapp.com/send?phone=5585988147192&amp;text=Olá%20Objetive%20TI,%20gostaria%20de%20solicitar%20um%20orçamento...&amp;l=pt-br"><img src="img/ico9.png"></a>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="container">
-            <nav class="menu suave hide-on-small-only">
+            <nav class="menu suave">
                 <ul>
                     <li>
-                        <a href="index.php" class="suave mini-title upper">
+                        <a href="index.php" class="suave">
                             Início
                         </a>
-                    </li>
+                    </li>    
                     <li>
-                        <a href="sobre.php" class="suave mini-title upper">
-                            Sobre
+                        <a href="#servicos" class="suave scrollto">
+                            Serviços
                         </a>
                     </li>
                     <li>
+                        <a href="#portfolio" class="suave scrollto">
+                            Portfólio
+                        </a>
+                    </li>
+                    <!-- <li>
                         <a class="suave mini-title upper click">
                             Nossos Serviços
                         </a>
@@ -186,24 +152,19 @@
                             <li class="suave"><a href="infraestrutura.php" class="suave mini-title upper">Infraestrutura</a></li>
                             <li class="suave"><a href="cameras.php" class="suave mini-title upper">Instalação de Câmeras</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="https://objetiveti.com.br/blog" class="suave mini-title upper">
-                            blog
-                        </a>
-                    </li>
-                    <!-- <li>
-                        <a href="faq.php" class="suave scrollto mini-title upper">
-                            FAQ
-                        </a>
                     </li> -->
-                    <li style="float: right;">
-                        <a href="sistema" class="cta suave mini-title upper">
+                    
+                    <!-- <li style="float: right;">
+                        <a href="login.php" class="cta suave mini-title upper">
                             <i class="material-icons">account_circle</i>
                             área do cliente
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
+                <a class="suave rede-social addBannerClick" data-id="8" data-tipo="CTT" href="https://www.facebook.com/PomboCriativo/" target="_blank"><img src="img/ico6.png"></a>
+                <a class="suave rede-social addBannerClick" data-id="9" data-tipo="CTT" href="https://www.youtube.com/channel/UCKEsrPEIsH5ZvESF2hcZezg" target="_blank"><img src="img/ico7.png"></a>
+                <a class="suave rede-social addBannerClick" data-id="10" data-tipo="CTT" href="https://www.instagram.com/pombocriativo/?hl=pt-br" target="_blank"><img src="img/ico8.png"></a>
+                <a class="suave rede-social addBannerClick" data-id="11" data-tipo="CTT" href="https://api.whatsapp.com/send?phone=5585987974616&amp;text=Olá%20Pombo%20Criativo,%20gostaria%20de%20solicitar%20um%20orçamento...&amp;l=pt-br" target="_blank"><img src="img/ico9.png"></a>
             </nav>
             <div class="clear"></div>
         </div>

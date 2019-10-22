@@ -200,6 +200,14 @@
         }
         carrosel();
 
+        var tamanhoNav = 0;
+        $("nav ul li").each(function(){
+            $(this).each(function(){
+                tamanhoNav += $(this).width();
+            });
+            $("nav ul").width(tamanhoNav);
+        });
+
         // function pesquisaExterna(){
         //     $(".pesquisa-externa i").click(function(){
         //         $(".pesquisa-externa i").removeClass("active");

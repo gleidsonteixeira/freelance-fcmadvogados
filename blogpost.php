@@ -258,7 +258,7 @@
                             <i class="material-icons click suave" data-id="5" title="Muito Satisfeito">sentiment_very_satisfied</i>
                         </div>
                         <h3 class="font cor1-text">Deixe seu comentário</h3>
-                        <div class="aviso"><b>Atenção:</b> Os comentários abaixo são de inteira responsabilidade de seus respectivos autores e não representam, necessariamente, a opinião da Resultados Digitais.</div>
+                        <div class="aviso"><b>Atenção:</b> Os comentários abaixo são de inteira responsabilidade de seus respectivos autores e não representam, necessariamente, a opinião do Pombo Criativo.</div>
                         <div class="fb-comments" data-href="<?php echo $urlAtual; ?>" data-width="650" data-numposts="5"></div>
                     </div>
                 </article>
@@ -303,16 +303,19 @@
     
     <?php include("control/footer.php"); ?>
 
-	<script src="https://pombocriativo.com/js/jquery.js" type="application/javascript"></script>
-    <script src="https://pombocriativo.com/js/jquery.mask.js" type="application/javascript"></script>
-    <script src="https://pombocriativo.com/js/script.js" type="application/javascript"></script>
-    <script src="https://pombocriativo.com/js/default.js" type="application/javascript"></script>
+	<script type="application/javascript" src="https://pombocriativo.com/js/jquery.js"></script>
+    <script type="application/javascript" src="https://pombocriativo.com/js/jquery.mask.js"></script>
+    <script type="application/javascript" src="https://pombocriativo.com/js/script.js"></script>
+    <script type="application/javascript" src="https://pombocriativo.com/js/default.js"></script>
     
     <script>
-        // function mudarUrl(e){
-        //     window.location.href = "blogpost.php?post="+<?php echo $cod;?>+"&titulo=<?php echo str_replace(" ", "-", $titulo);?>";
-        //     e.preventDefault();
-        // }
+        var tamanhoNav = 0;
+        $("nav ul li").each(function(){
+            $(this).each(function(){
+                tamanhoNav += $(this).width();
+            });
+            $("nav ul").width(tamanhoNav);
+        });
     </script>
 </body>
 </html>

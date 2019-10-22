@@ -169,18 +169,23 @@
             <nav class="menu suave">
                 <ul>
                     <li>
-                        <a href="index.php" class="suave">
+                        <a href="inicio" class="suave">
                             Início
                         </a>
                     </li>    
                     <li>
-                        <a href="index.php#servicos" class="suave scrollto">
+                        <a href="https://pombocriativo.com/index.php#servicos" class="suave scrollto">
                             Serviços
                         </a>
                     </li>
                     <li>
-                        <a href="index.php#portfolio" class="suave scrollto">
+                        <a href="https://pombocriativo.com/index.php#portfolio" class="suave scrollto">
                             Portfólio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pombo-news" class="suave">
+                            Pombo news
                         </a>
                     </li>
                     <!-- <li>
@@ -309,10 +314,13 @@
     <script src="https://pombocriativo.com/js/default.js" type="application/javascript"></script>
     
     <script>
-        // function mudarUrl(e){
-        //     window.location.href = "blogpost.php?post="+<?php echo $cod;?>+"&titulo=<?php echo str_replace(" ", "-", $titulo);?>";
-        //     e.preventDefault();
-        // }
+        var tamanhoNav = 0;
+        $("nav ul li").each(function(){
+            $(this).each(function(){
+                tamanhoNav += $(this).width();
+            });
+            $("nav ul").width(tamanhoNav);
+        });
     </script>
 </body>
 </html>

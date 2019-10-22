@@ -111,12 +111,12 @@
                         </a>
                     </li>    
                     <li>
-                        <a href="#servicos" class="suave scrollto">
+                        <a href="https://pombocriativo.com/index.php#servicos" class="suave scrollto">
                             Serviços
                         </a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="suave scrollto">
+                        <a href="https://pombocriativo.com/index.php#portfolio" class="suave scrollto">
                             Portfólio
                         </a>
                     </li>

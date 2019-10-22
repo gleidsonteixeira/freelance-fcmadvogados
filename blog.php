@@ -1,5 +1,5 @@
 <?php
-    include("control/header.php");
+    include("control/header2.php");
 ?>
 
     <main>
@@ -35,7 +35,13 @@
     <script src="js/blogpost.js" type="text/javascript"></script>
 
     <script>
-        
+        var tamanhoNav = 0;
+        $("nav ul li").each(function(){
+            $(this).each(function(){
+                tamanhoNav += $(this).width();
+            });
+            $("nav ul").width(tamanhoNav);
+        });
     </script>
 </body>
 </html>

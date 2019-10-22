@@ -26,7 +26,7 @@ function listarPosts(){
                     tituloPost = response.lista_posts[i].BLO_TITULO;
                    $('#blog .posts').append(
                         '<article>'+
-                            '<a href="blogpost/'+response.lista_posts[i].BLO_TITULO.toLowerCase().replace(/ /g, "-").replace(":", "")+'/'+response.lista_posts[i].BLO_COD+'"'+
+                            '<a href="blogpost/'+response.lista_posts[i].BLO_TITULO.toLowerCase().replace(/ /g, "-").replace(":", "")+'/'+response.lista_posts[i].BLO_COD+'">'+
                                 '<figure>'+
                                     '<img src="img/posts/'+ response.lista_posts[i].BLO_IMAGEM +'" alt="'+ response.lista_posts[i].BLO_IMAGEM +'">'+
                                 '</figure>'+

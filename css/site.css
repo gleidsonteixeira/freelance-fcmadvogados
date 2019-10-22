@@ -446,6 +446,7 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
 
 @media only screen and (min-width:769px){
     
+    
     #topo .mini-menu{display: none;}
     #topo .action{height: 50px;float: right;border-radius: 35px;margin-top: 16px;display: initial;}
     #topo .action:hover{background-color: rgba(0, 0, 0, .05);}
@@ -491,6 +492,7 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
 @media only screen and (min-width:993px){}
 @media only screen and (max-width:480px){
     #topo .header{padding: 0;}
+    #topo .menu{overflow: auto;}
     #topo .menu ul{width: 100%;}
     #topo .mini-menu{display: none;}
     #topo .logo{margin-left: 12px;}

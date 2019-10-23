@@ -26,7 +26,7 @@ function listarPosts(){
                     tituloPost = response.lista_posts[i].BLO_TITULO;
                    $('#blog .posts').append(
                         '<article>'+
-                            '<a href="blogpost/'+response.lista_posts[i].BLO_TITULO.toLowerCase().replace(/ /g, "-").replace(":", "")+'/'+response.lista_posts[i].BLO_COD+'">'+
+                            '<a href="blogpost/'+response.lista_posts[i].BLO_TITULO.toLowerCase().replace(/ /g, "-").replace(":", "").replace("?", "")+'/'+response.lista_posts[i].BLO_COD+'">'+
                                 '<figure>'+
                                     '<img src="img/posts/'+ response.lista_posts[i].BLO_IMAGEM +'" alt="'+ response.lista_posts[i].BLO_IMAGEM +'">'+
                                 '</figure>'+
@@ -98,7 +98,7 @@ function buscar(){
                         $('#blog .posts').append('<article>'+
                         '<a href="">'+
                             '<figure  onclick="abrirPost('+response.lista_posts[i].BLO_COD +')">'+
-                                '<img class="responsive-img" src="img/posts/'+ response.lista_posts[i].BLO_IMAGEM +'" alt="banner">'+
+                                '<img class="responsive-img" src="https://www.pombocriativo.com/img/posts/'+ response.lista_posts[i].BLO_IMAGEM +'" alt="banner">'+
                             '</figure>'+
                             '<header>'+
                                 '<h6 class="mini-title upper categoria white-text cor1" >'+ response.lista_posts[i].BLO_CATEGORIA +' </h6>'+

@@ -2,7 +2,7 @@
     <div class="conteudo">
         <div class="pombo">
             <figure>
-                <img src="img/pombo_criativo_logo.png" alt="">
+                <img src="https://pombocriativo.com/img/pombo_criativo_logo.png" alt="">
             </figure>
             <p>O Pombo Criativo é uma empresa nascida da imensa vontade de mudar o ambiente digital em Fortaleza nossa terra natal, atuamos com criatividade, conhecimento e responsabilidade para entregar soluções digitais que ajude nossos clientes a crescer e prosperar.</p>
             <a target="_blank" href="https://www.facebook.com/PomboCriativo/" class="suave addBannerClick" data-id="8" data-tipo="CTT" target="_blank"><img src="https://pombocriativo.com/img/ico6.png"></a>
@@ -44,7 +44,3 @@
     </h6>
 </footer>
 <a class="voltar suave click"><i class="material-icons">arrow_forward</i></a>
-
-<script>
-    
-</script>

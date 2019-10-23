@@ -47,20 +47,20 @@
     <meta property=og:description content="<?php echo $pre_texto ?>"/>
     <meta property=og:url content="<?php echo $urlAtual ?>/"/>
     <meta property=og:site_name content="Pombo Criativo"/>
+    <meta property=og:updated_time content="<?php echo date('Y-m-d')?>"/>
+    <meta property=og:image content="https://www.pombocriativo.com/img/posts/<?php echo $imagem?>"/>
+    <meta property=og:image:secure_url content="https://www.pombocriativo.com/img/posts/<?php echo $imagem?>"/>
+    <meta property=og:image:width content=1000 />
+    <meta property=og:image:height content=1000 />
     <meta property=article:publisher content="https://www.facebook.com/PomboCriativo/"/>
     <meta property=article:tag content="<?php echo $categoria ?>"/>
     <meta property=article:section content="<?php echo $categoria ?>"/>
     <meta property=article:published_time content="<?php echo date('Y-m-d')?>"/>
     <meta property=article:modified_time content="<?php echo date('Y-m-d')?>"/>
-    <meta property=og:updated_time content="<?php echo date('Y-m-d')?>"/>
-    <meta property=og:image content="https://www.pombocriativo.com/img/post/<?php echo $imagem?>"/>
-    <meta property=og:image:secure_url content="https://www.pombocriativo.com/img/post/<?php echo $imagem?>"/>
-    <meta property=og:image:width content=1000 />
-    <meta property=og:image:height content=1000 />
     <meta name=twitter:card content=summary_large_image />
     <meta name=twitter:description content="<?php echo $pre_texto ?>"/>
     <meta name=twitter:title content="<?php echo $titulo ?>"/>
-    <meta name=twitter:image content="https://www.pombocriativo.com/img/post/<?php echo $imagem?>"/>
+    <meta name=twitter:image content="https://www.pombocriativo.com/img/posts/<?php echo $imagem?>"/>
     <meta property="og:type" content="business">
     <meta property="business:contact_data:street_address" content="R. Cidade Ecológica 80">
     <meta property="business:contact_data:locality" content="Fortaleza">
@@ -139,6 +139,15 @@
         </script>
         <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=769570139895464&ev=PageView&noscript=1"/></noscript>
     <!-- End Facebook Pixel Code -->
+    
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-2653308576379313",
+              enable_page_level_ads: true
+         });
+    </script>
 
 </head>
 
@@ -160,7 +169,7 @@
                 <i class="material-icons suave click">menu</i>
             </div>
             <div class="logo suave">
-                <a href="inicio" class="suave">
+                <a href="https://pombocriativo.com/" class="suave">
                     <img src="https://pombocriativo.com/img/logo_pombo_criativo.png" alt="Pombo_Criativo_Logo" title="Pombo Criativo" />
                 </a>
                 <a class="hide-on-small-only suave addBannerClick" data-id="6" data-tipo="CTT" href="tel:85987974616" style="margin-top: 10px;">(85) 98797-4616</a>
@@ -169,7 +178,7 @@
             <nav class="menu suave">
                 <ul>
                     <li>
-                        <a href="inicio" class="suave">
+                        <a href="https://pombocriativo.com/index.php" class="suave">
                             Início
                         </a>
                     </li>    
@@ -184,7 +193,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="pombo-news" class="suave">
+                        <a href="https://pombocriativo.com/pombo-news" class="suave scrollto">
                             Pombo news
                         </a>
                     </li>
@@ -263,7 +272,7 @@
                             <i class="material-icons click suave" data-id="5" title="Muito Satisfeito">sentiment_very_satisfied</i>
                         </div>
                         <h3 class="font cor1-text">Deixe seu comentário</h3>
-                        <div class="aviso"><b>Atenção:</b> Os comentários abaixo são de inteira responsabilidade de seus respectivos autores e não representam, necessariamente, a opinião da Resultados Digitais.</div>
+                        <div class="aviso"><b>Atenção:</b> Os comentários abaixo são de inteira responsabilidade de seus respectivos autores e não representam, necessariamente, a opinião do Pombo Criativo.</div>
                         <div class="fb-comments" data-href="<?php echo $urlAtual; ?>" data-width="650" data-numposts="5"></div>
                     </div>
                 </article>
@@ -295,29 +304,41 @@
                 
                     <li>
                         <figure>
-                            <img  src="img/posts/<?php echo $lista[$i]['BLO_IMAGEM'] ?>" alt="">
+                            <img  src="https://www.pombocriativo.com/img/posts/<?php echo $lista[$i]['BLO_IMAGEM'] ?>" alt="">
                         </figure>
                         <h6 style="cursor:pointer" onclick="abrirPost(<?php echo $lista[$i]['BLO_COD'] ?>)"><?php echo $lista[$i]['BLO_TITULO'] ?></h6>
                     </li>
                 <?php  $i++; } ?>
                 </ul>
             </div>
-            <div class="anuncio"></div>
+            <div class="anuncio">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- pombo criativo blog -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2653308576379313"
+                     data-ad-slot="7372615801"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
         </section>
     </main>
     
     <?php include("control/footer.php"); ?>
 
-	<script src="https://pombocriativo.com/js/jquery.js" type="application/javascript"></script>
-    <script src="https://pombocriativo.com/js/jquery.mask.js" type="application/javascript"></script>
-    <script src="https://pombocriativo.com/js/script.js" type="application/javascript"></script>
-    <script src="https://pombocriativo.com/js/default.js" type="application/javascript"></script>
+	<script type="application/javascript" src="https://pombocriativo.com/js/jquery.js"></script>
+    <script type="application/javascript" src="https://pombocriativo.com/js/jquery.mask.js"></script>
+    <script type="application/javascript" src="https://pombocriativo.com/js/script.js"></script>
+    <script type="application/javascript" src="https://pombocriativo.com/js/default.js"></script>
     
     <script>
         var tamanhoNav = 0;
         $("nav ul li").each(function(){
             $(this).each(function(){
-                tamanhoNav += $(this).width();
+                tamanhoNav += $(this).width() + 3;
             });
             $("nav ul").width(tamanhoNav);
         });

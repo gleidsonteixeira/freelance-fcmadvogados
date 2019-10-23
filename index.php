@@ -203,7 +203,7 @@
         var tamanhoNav = 0;
         $("nav ul li").each(function(){
             $(this).each(function(){
-                tamanhoNav += $(this).width();
+                tamanhoNav += $(this).width() + 3;
             });
             $("nav ul").width(tamanhoNav);
         });

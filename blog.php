@@ -11,6 +11,18 @@
                     <input type="text" name="postbusca" id="faqbusca" class="font" placeholder="Estou procurando...">
                     <button type="submit" class="suave font click">Procurar</button>
                 </form>
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- pombo criativo blog -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2653308576379313"
+                     data-ad-slot="7372615801"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </section>
     </main>
@@ -38,7 +50,7 @@
         var tamanhoNav = 0;
         $("nav ul li").each(function(){
             $(this).each(function(){
-                tamanhoNav += $(this).width();
+                tamanhoNav += $(this).width() + 3;
             });
             $("nav ul").width(tamanhoNav);
         });

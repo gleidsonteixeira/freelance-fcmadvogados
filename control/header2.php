@@ -23,10 +23,10 @@
 
     <link rel="canonical" href="https://pombocriativo.com" />
     <link rel="shortlink" href="https://pombocriativo.com" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:400,800&display=swap">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:400,800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all"/> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="css/materialize.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="css/extras.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="css/site.css" media="all"/>
@@ -107,10 +107,10 @@
             </div>
             <div class="logo suave">
                 <a href="inicio" class="suave">
-                    <img src="img/logo_pombo_criativo.png" alt="Pombo_Criativo_Logo" title="Pombo Criativo" />
+                    <img src="img/logo_pombo_criativo.webp" alt="Pombo_Criativo_Logo" title="Pombo Criativo" />
                 </a>
                 <a class="hide-on-small-only suave addBannerClick" data-id="6" data-tipo="CTT" href="tel:85987974616" style="margin-top: 10px;">(85) 98797-4616</a>
-                <a class="hide-on-small-only suave addBannerClick" data-id="7" data-tipo="CTT" href="mailto:contato@pombocriativo.com.br">contato@pombocriativo.com</a>
+                <a class="hide-on-small-only suave addBannerClick" data-id="7" data-tipo="CTT" href="mailto:contato@pombocriativo.com">contato@pombocriativo.com</a>
             </div>
             <nav class="menu suave">
                 <ul>
@@ -154,10 +154,10 @@
                         </a>
                     </li> -->
                 </ul>
-                <a class="suave rede-social addBannerClick" data-id="11" data-tipo="CTT" href="https://api.whatsapp.com/send?phone=5585987974616&amp;text=Olá%20Pombo%20Criativo,%20gostaria%20de%20solicitar%20um%20orçamento...&amp;l=pt-br" target="_blank"><img src="img/ico9.png"></a>
-                <a class="suave rede-social addBannerClick" data-id="10" data-tipo="CTT" href="https://www.instagram.com/pombocriativo/?hl=pt-br" target="_blank"><img src="img/ico8.png"></a>
-                <a class="suave rede-social addBannerClick" data-id="9" data-tipo="CTT" href="https://www.youtube.com/channel/UCKEsrPEIsH5ZvESF2hcZezg" target="_blank"><img src="img/ico7.png"></a>
-                <a class="suave rede-social addBannerClick" data-id="8" data-tipo="CTT" href="https://www.facebook.com/PomboCriativo/" target="_blank"><img src="img/ico6.png"></a>
+                <a class="suave rede-social addBannerClick" data-id="11" data-tipo="CTT" href="https://api.whatsapp.com/send?phone=5585987974616&amp;text=Olá%20Pombo%20Criativo,%20gostaria%20de%20solicitar%20um%20orçamento...&amp;l=pt-br" target="_blank"><img src="img/ico9.webp"></a>
+                <a class="suave rede-social addBannerClick" data-id="10" data-tipo="CTT" href="https://www.instagram.com/pombocriativo/?hl=pt-br" target="_blank"><img src="img/ico8.webp"></a>
+                <a class="suave rede-social addBannerClick" data-id="9" data-tipo="CTT" href="https://www.youtube.com/channel/UCKEsrPEIsH5ZvESF2hcZezg" target="_blank"><img src="img/ico7.webp"></a>
+                <a class="suave rede-social addBannerClick" data-id="8" data-tipo="CTT" href="https://www.facebook.com/PomboCriativo/" target="_blank"><img src="img/ico6.webp"></a>
             </nav>
             <div class="clear"></div>
         </div>

@@ -160,7 +160,7 @@
                 <i class="material-icons suave click">menu</i>
             </div>
             <div class="logo suave">
-                <a href="inicio" class="suave">
+                <a href="https://pombocriativo.com/" class="suave">
                     <img src="https://pombocriativo.com/img/logo_pombo_criativo.png" alt="Pombo_Criativo_Logo" title="Pombo Criativo" />
                 </a>
                 <a class="hide-on-small-only suave addBannerClick" data-id="6" data-tipo="CTT" href="tel:85987974616" style="margin-top: 10px;">(85) 98797-4616</a>
@@ -169,18 +169,23 @@
             <nav class="menu suave">
                 <ul>
                     <li>
-                        <a href="index.php" class="suave">
+                        <a href="https://pombocriativo.com/index.php" class="suave">
                             Início
                         </a>
                     </li>    
                     <li>
-                        <a href="index.php#servicos" class="suave scrollto">
+                        <a href="https://pombocriativo.com/index.php#servicos" class="suave scrollto">
                             Serviços
                         </a>
                     </li>
                     <li>
-                        <a href="index.php#portfolio" class="suave scrollto">
+                        <a href="https://pombocriativo.com/index.php#portfolio" class="suave scrollto">
                             Portfólio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pombo-news" class="suave scrollto">
+                            Pombo news
                         </a>
                     </li>
                     <!-- <li>
@@ -312,7 +317,7 @@
         var tamanhoNav = 0;
         $("nav ul li").each(function(){
             $(this).each(function(){
-                tamanhoNav += $(this).width();
+                tamanhoNav += $(this).width() + 3;
             });
             $("nav ul").width(tamanhoNav);
         });

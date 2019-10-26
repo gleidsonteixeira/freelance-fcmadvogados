@@ -1,5 +1,5 @@
 <?php
-    include("control/header.php");
+    include("control/header2.php");
 ?>
 
     <main>
@@ -11,6 +11,18 @@
                     <input type="text" name="postbusca" id="faqbusca" class="font" placeholder="Estou procurando...">
                     <button type="submit" class="suave font click">Procurar</button>
                 </form>
+                
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- pombo criativo blog -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-2653308576379313"
+                     data-ad-slot="7372615801"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </section>
     </main>
@@ -42,6 +54,34 @@
             });
             $("nav ul").width(tamanhoNav);
         });
+        function loadCss(css) {
+            var added = false;
+
+            function trigger()
+            {
+                if (added) return;
+
+                added = true;
+
+                var css = document.createElement("link");
+
+                css.onload = function() {
+                    document.body.appendChild(css);
+                };
+
+                css.rel = "stylesheet";
+                css.src = css;
+            }
+
+            if (document.readyState !== "loading") {
+                trigger();
+            } else {
+                document.addEventListener("DOMContentLoaded", trigger);
+            }
+        }
+
+        loadCss("css/https://fonts.googleapis.com/css?family=Comfortaa:400,800&display=swap");
+        loadCss("css/https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
     </script>
 </body>
 </html>

@@ -201,11 +201,11 @@ main{margin-top: 120px;}
 #blog .relacionados ul li{overflow: hidden;width: calc(33.333% - 16px);margin-left: 16px;float: left;background-color: white;border-radius: 5px;}
 #blog .relacionados ul li figure{width: 100%;height: 192px;position: relative;overflow: hidden;border-radius: 5px 5px 0 0;margin: 0;margin-right: 16px;}
 #blog .relacionados ul li figure::after{content: "";background-color: rgb(103, 58, 183,.5);width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
-#blog .relacionados ul li figure img{height: 100%;position: absolute;top: 0;left: -25%;}
+#blog .relacionados ul li figure img{height: 100%;position: absolute;top: 0;left: 50%;transform: translateX(-50%);}
 #blog .relacionados ul li h6{font-size: 15px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;padding: 0 16px;color: #999;margin-bottom: 16px;margin-top: 10px;}
 
 footer{overflow: hidden;position: relative;overflow: hidden;border: 1px solid #dedede;background-color: white;}
-footer .conteudo{width: 100%;height: auto;padding: 0 10%;box-sizing: border-box;position: relative;overflow: hidden;}
+footer .conteudo{width: 100%;height: auto;padding: 0 10%;padding-right:0;box-sizing: border-box;position: relative;overflow: hidden;}
 footer .conteudo p{color: #444;font-size: 14px;opacity: .9;text-align: left;}
 footer .conteudo h3{margin-bottom: 26px;}
 footer .conteudo .pombo{width: 400px;float: left;border-right: 1px solid #dedede;box-sizing: border-box;}
@@ -215,8 +215,8 @@ footer .conteudo .pombo p{margin-bottom: 16px;padding-right: 10px;font-size: 12p
 footer .conteudo .pombo a{width: 40px;height: 40px;display: inline-block;border-radius: 20px;background-color: #673ab7;margin-right: 6px;margin-bottom: 36px;}
 footer .conteudo .pombo a img{width: 100%;}
 footer .conteudo .pombo a:hover{background-color: #4a148c;}
-footer .conteudo .infos{width: calc(100% - 400px);float:right;overflow: hidden;padding: 60px 0 0 60px;}
-footer .conteudo .infos ul{width: 40% !important;float: left;margin-bottom: 16px;}
+footer .conteudo .infos{width: calc(100% - 400px);float:right;overflow: hidden;padding: 60px 60px 0 60px;}
+footer .conteudo .infos ul{width: 33.333% !important;float: left;margin-bottom: 16px;}
 footer .conteudo .infos ul:last-of-type{width: 100%;}
 footer .conteudo .infos ul li.title{font-size: 16px;font-weight: bold;padding-bottom: 16px;color: #444;opacity: .9;}
 footer .conteudo .infos ul li{color: #444;opacity: .9;}
@@ -446,6 +446,7 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
 
 @media only screen and (min-width:769px){
     
+    
     #topo .mini-menu{display: none;}
     #topo .action{height: 50px;float: right;border-radius: 35px;margin-top: 16px;display: initial;}
     #topo .action:hover{background-color: rgba(0, 0, 0, .05);}
@@ -491,6 +492,7 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
 @media only screen and (min-width:993px){}
 @media only screen and (max-width:480px){
     #topo .header{padding: 0;}
+    #topo .menu{overflow: auto;}
     #topo .menu ul{width: 100%;}
     #topo .mini-menu{display: none;}
     #topo .logo{margin-left: 12px;}

@@ -12,7 +12,7 @@
                         <a target="_blank" href="http://www.agendabrindes.com.br/">
                             <h6 class="upper mini-title">Projetos</h6>
                             <figure>
-                                <img src="img/banner/agenda-brindes.png" alt="agenda-brindes" class="suave">
+                                <img src="img/banner/agenda-brindes.webp" alt="agenda-brindes" class="suave">
                             </figure>
                             <h3>Agenda brindes, plataforma para gerenciar pedidos</h3>
                         </a>
@@ -21,7 +21,7 @@
                         <a target="_blank" href="https://www.youtube.com/watch?v=xlIM2rX15gg&t=1s">
                             <h6 class="upper mini-title">youtube</h6>
                             <figure>
-                                <img src="img/banner/video-dicas-chart-js.png" alt="youtube-4-dicas-indispensaveis-para-usar-chart-js" class="suave">
+                                <img src="img/banner/video-dicas-chart-js.webp" alt="youtube-4-dicas-indispensaveis-para-usar-chart-js" class="suave">
                             </figure>
                             <h3>4 Dicas indispensáveis para usar Chart JS</h3>
                         </a>
@@ -30,7 +30,7 @@
                         <a target="_blank" href="https://www.youtube.com/watch?v=bm3xjdZ1dZE">
                             <h6 class="upper mini-title">youtube</h6>
                             <figure>
-                                <img src="img/banner/video-wireframes.png" alt="youtube-wireframes" class="suave">
+                                <img src="img/banner/video-wireframes.webp" alt="youtube-wireframes" class="suave">
                             </figure>
                             <h3>Desenhando wireframe de dashboard</h3>
                         </a>
@@ -39,7 +39,7 @@
                         <a target="_blank" href="http://pombocriativo.com/materiais/checklist-marca.pdf">
                             <h6 class="upper mini-title">material</h6>
                             <figure>
-                                <img src="img/banner/montando-minha-marca.png" alt="montando-minha-marca" class="suave">
+                                <img src="img/banner/montando-minha-marca.webp" alt="montando-minha-marca" class="suave">
                             </figure>
                             <h3>Checklist - Montando minha marca</h3>
                         </a>
@@ -92,7 +92,7 @@
             <ul>
                 <li>
                     <figure>
-                        <img src="img/clientes/ame-clinica.png" alt="ame-clinica" class="suave">
+                        <img src="img/clientes/ame-clinica.webp" alt="ame-clinica" class="suave">
                     </figure>
                     <div class="suave frente">
                         <h6 class="mini-title upper">website</h6>
@@ -106,7 +106,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="img/clientes/direto-na-midia.png" alt="direto-na-midia" class="suave">
+                        <img src="img/clientes/direto-na-midia.webp" alt="direto-na-midia" class="suave">
                     </figure>
                     <div class="suave frente">
                         <h6 class="mini-title upper">Logo e website</h6>
@@ -120,7 +120,7 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="img/clientes/locus-br.png" alt="locus-escritorio-virtual" class="suave">
+                        <img src="img/clientes/locus-br.webp" alt="locus-escritorio-virtual" class="suave">
                     </figure>
                     <div class="suave frente">
                         <h6 class="mini-title upper">website</h6>
@@ -166,9 +166,9 @@
     ?>
 
 	<script src="js/jquery.js" type="application/javascript"></script>
-    <script src="js/materialize.js" type="application/javascript"></script>
-    <script src="js/goodscroll.js" type="application/javascript"></script>
-    <script src="js/script.js" type="application/javascript"></script>
+    <script async defer src="js/materialize.min.js" type="application/javascript"></script>
+    <script async defer src="js/goodscroll.js" type="application/javascript"></script>
+    <script async defer src="js/script.js" type="application/javascript"></script>
     <script>
         function quadrado(a){
             return $(a).height($(a).width());
@@ -207,7 +207,6 @@
             });
             $("nav ul").width(tamanhoNav);
         });
-
         // function pesquisaExterna(){
         //     $(".pesquisa-externa i").click(function(){
         //         $(".pesquisa-externa i").removeClass("active");
@@ -225,7 +224,37 @@
         //         $(".pesquisa-externa").addClass("active");
         //     }
         // })
+        function loadCss(css) {
+            var added = false;
+
+            function trigger()
+            {
+                if (added) return;
+
+                added = true;
+
+                var css = document.createElement("link");
+
+                css.onload = function() {
+                    document.body.appendChild(css);
+                };
+
+                css.rel = "stylesheet";
+                css.src = css;
+            }
+
+            if (document.readyState !== "loading") {
+                trigger();
+            } else {
+                document.addEventListener("DOMContentLoaded", trigger);
+            }
+        }
+
+        loadCss("css/https://fonts.googleapis.com/css?family=Comfortaa:400,800&display=swap");
+        loadCss("css/https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
+        // loadCss("css/font-awesome.css");
     </script>
+    
 
 </body>
 </html>

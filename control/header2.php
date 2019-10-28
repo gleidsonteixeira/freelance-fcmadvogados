@@ -43,6 +43,36 @@
             });
         });
     </script> -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://www.pombocriativo.com/",
+            "logo": "https://www.pombocriativo.com/img/logo_pombo_criativo.webp",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+55-85-98797-4616",
+                "contactType": "customer service"
+            }]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Início",
+                "item": "https://www.pombocriativo.com"
+            },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Pombo News",
+                "item": "https://www.pombocriativo.com/blog.php"
+            }]
+        }
+    </script>
     <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)

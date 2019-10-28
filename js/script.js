@@ -65,6 +65,9 @@ function click(){
     });
     $(".addBlogClick").click(function(){
         addBlogClick($(this).attr("data-id"),$(this).attr("data-nota"));
+        $(".agradecer").addClass("active");
+        $(".avaliacao i").addClass("hide");
+
     });
 
     $(".pesquisa-externa .enviar").click(function(){
@@ -101,10 +104,10 @@ function addBannerClick(click_id, click_tipo){
 function addBlogClick(click_id, click_nota){
     var dadosajax = {
         'ID'   : click_id,
-        'TIPO' : click_tipo,
+        'TIPO' : 'BLO',
         'NOTA' : click_nota
     };
-    pageurl = 'control/insertClick.php';
+    pageurl = 'https://www.pombocriativo.com/control/insertClick.php';
     $.ajax({
         url: pageurl,
         data: dadosajax,

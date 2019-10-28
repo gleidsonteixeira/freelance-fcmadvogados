@@ -285,6 +285,7 @@
                             <i class="material-icons click suave addBlogClick" data-id="<?php echo $cod;?>" data-nota="3" title="Regular">sentiment_satisfied</i>
                             <i class="material-icons click suave addBlogClick" data-id="<?php echo $cod;?>" data-nota="4" title="Pouco satisfeito">sentiment_satisfied_alt</i>
                             <i class="material-icons click suave addBlogClick" data-id="<?php echo $cod;?>" data-nota="5" title="Muito Satisfeito">sentiment_very_satisfied</i>
+                            <span class="agradecer">Obrigado por sua avaliação!</span>
                         </div>
                         <h3 class="font cor1-text">Deixe seu comentário</h3>
                         <div class="aviso"><b>Atenção:</b> Os comentários abaixo são de inteira responsabilidade de seus respectivos autores e não representam, necessariamente, a opinião do Pombo Criativo.</div>
@@ -292,7 +293,7 @@
                     </div>
                 </article>
             </div>
-            <div class="newslatter">
+            <!-- <div class="newslatter">
                 <h2 class="font">Inscreva-se em<br>nossa newsletter</h2>
                 <p>E receba por email nossos conteúdos.</p>
                 <form method="post" action="https://www.pombocriativo.com/enviarNewsletter.php" enctype="multipart/form-data">
@@ -300,7 +301,7 @@
                     <input type="text" name="email" id="newsletter_email" placeholder="Email">
                     <button class="mini-title upper white-text suave click">Quero receber</button>
                 </form>
-            </div>
+            </div> -->
             <div class="relacionados">
                 <ul>
                     <?php
@@ -329,8 +330,8 @@
                 </ul>
             </div>
             <div class="anuncio">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- pombo criativo blog -->
+                <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                pombo criativo blog
                 <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-2653308576379313"
@@ -339,7 +340,7 @@
                      data-full-width-responsive="true"></ins>
                 <script>
                      (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
+                </script> -->
             </div>
         </section>
     </main>

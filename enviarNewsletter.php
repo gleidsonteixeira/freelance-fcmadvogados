@@ -41,19 +41,19 @@
 </head>
 <?php
 // Adiciona o arquivo class.phpmailer.php - você deve especificar corretamente o caminho da pasta com o este arquivo.
-require_once("autenvio/PHPMailerAutoload.php");
+require_once("https://pombocriativo.com/autenvio/PHPMailerAutoload.php");
 // Inicia a classe PHPMailer
 $mail = new PHPMailer();
  
 // DEFINIÇÃO DOS DADOS DE AUTENTICAÇÃO - Você deve auterar conforme o seu domínio!
 $mail->IsSMTP(); // Define que a mensagem será SMTP
-$mail->Host = "smtp.pombocriativo.com"; // Seu endereço de host SMTP
+$mail->Host = "smtp.gmail.com"; // Seu endereço de host SMTP
 $mail->SMTPAuth = true; // Define que será utilizada a autenticação -  Mantenha o valor "true"
 $mail->Port = 587; // Porta de comunicação SMTP - Mantenha o valor "587"
 $mail->SMTPSecure = false; // Define se é utilizado SSL/TLS - Mantenha o valor "false"
 $mail->SMTPAutoTLS = false; // Define se, por padrão, será utilizado TLS - Mantenha o valor "false"
-$mail->Username = 'contato@pombocriativo.com'; // Conta de email existente e ativa em seu domínio
-$mail->Password = 'pasok2015'; // Senha da sua conta de email
+$mail->Username = 'pombocriativo@gmail.com'; // Conta de email existente e ativa em seu domínio
+$mail->Password = 'coelce01'; // Senha da sua conta de email
  
 // DADOS DO REMETENTE
 $mail->Sender = "contato@pombocriativo.com"; // Conta de email existente e ativa em seu domínio

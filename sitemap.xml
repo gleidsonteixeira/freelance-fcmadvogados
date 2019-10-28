@@ -9,29 +9,34 @@
 <!-- URL DO SITE -->
 <url>
   <loc>https://www.pombocriativo.com</loc>
-  <lastmod>2019-07-20T14:21:13+00:00</lastmod>
+  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.pombocriativo.com/inicio</loc>
-  <lastmod>2019-07-20T14:21:13+00:00</lastmod>
+  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.pombocriativo.com/blog.php</loc>
+  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.pombocriativo.com/pombo-news</loc>
-  <lastmod>2019-07-20T14:21:13+00:00</lastmod>
+  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <!-- URL DO BLOG -->
 <url>
   <loc>https://www.pombocriativo.com/blogpost/como-patentear-minha-marca/29</loc>
-  <lastmod>2019-07-20T14:21:13+00:00</lastmod>
+  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.pombocriativo.com/blogpost/marca-para-que-serve-e-como-fazer/27</loc>
-  <lastmod>2019-07-20T14:21:13+00:00</lastmod>
+  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

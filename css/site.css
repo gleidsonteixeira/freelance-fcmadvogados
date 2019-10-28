@@ -186,6 +186,8 @@ main{margin-top: 120px;}
 #blog .post article .avaliacao p{margin-top: 0;}
 #blog .post article .avaliacao i{display: inline-block;width:50px;height:50px;line-height:50px;text-align: center;background-color: rgba(0, 0, 0, .15);border-radius: 25px;}
 #blog .post article .avaliacao i:hover{background-color: #673ab7;color: white;}
+#blog .post article .avaliacao .agradecer{display: none;text-align: center;width: 100%;}
+#blog .post article .avaliacao .agradecer.active{display: block;}
 #blog .post .aviso{padding: 16px;border-radius: 5px;background-color: rgba(103, 58, 183,.15);margin: 10px 0;}
 #blog .newslatter{float: left;width: 300px;box-sizing: border-box;padding: 16px;border-radius: 5px;margin-bottom: 26px;background-color: white;}
 #blog .newslatter h2{font-size: 18px;line-height:22px;text-align: center;margin: 0;color: #673ab7;font-weight: bold;}

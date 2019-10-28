@@ -87,7 +87,7 @@ function buscar(){
             dataType: 'json',
             error: function (){
                 $('.lista-body').removeClass("active");
-                criaAlerta(0,"Falha ao buscar Faqs!",2000);
+                criaAlerta(0,"Falha ao buscar Publicações",2000);
                 duploClickBuscar = 0;
             },
             success: function (response){
@@ -96,33 +96,33 @@ function buscar(){
                     var i = 0;
                     for (i = 0; i < response.lista_posts.length; i++) {
                         $('#blog .posts').append('<article>'+
-                        '<a href="">'+
-                            '<figure  onclick="abrirPost('+response.lista_posts[i].BLO_COD +')">'+
+                        '<a href="blogpost/'+response.lista_posts[i].BLO_TITULO.toLowerCase().replace(/ /g, "-").replace(":", "").replace("?", "")+'/'+response.lista_posts[i].BLO_COD+'">'+
+                            '<figure>'+
                                 '<img class="responsive-img" src="https://www.pombocriativo.com/img/posts/'+ response.lista_posts[i].BLO_IMAGEM +'" alt="banner">'+
                             '</figure>'+
                             '<header>'+
                                 '<h6 class="mini-title upper categoria white-text cor1" >'+ response.lista_posts[i].BLO_CATEGORIA +' </h6>'+
-                                '<h2 class="font" onclick="abrirPost('+response.lista_posts[i].BLO_COD +')">'+ response.lista_posts[i].BLO_TITULO +'</h2>'+
+                                '<h2 class="font">'+ response.lista_posts[i].BLO_TITULO +'</h2>'+
                                 '<h6 class="mini-title upper">por <span class="cor1-text">'+ response.lista_posts[i].BLO_AUTOR +'</span> em <span class="cor1-text">'+ response.lista_posts[i].BLO_DATA +'</span></h6>'+
                             '</header>'+
-                            '<p  onclick="abrirPost('+response.lista_posts[i].BLO_COD +')">'+ response.lista_posts[i].BLO_P_TEXTO +'</p>'+
+                            '<p>'+ response.lista_posts[i].BLO_P_TEXTO +'</p>'+
                         '</a>'+
                     '</article>'
                     );   
                     }
-                    $('#blog .posts').append(
-                        '<div class="paginacao">'+
-                        '<ul>'+
-                            '<li class="active">1</li>'+
-                            '<li>2</li>'+
-                            '<li>3</li>' +
-                            '<li>4</li>' +
-                            '<li>5</li>' +
-                            '<li>Última >></li>'+
-                        '</ul>'+
-                        '<h6 class="mini-title upper">pág. 1 de 1000</h6>'+
-                    '</div>'
-                        );
+                    // $('#blog .posts').append(
+                    //     '<div class="paginacao">'+
+                    //     '<ul>'+
+                    //         '<li class="active">1</li>'+
+                    //         '<li>2</li>'+
+                    //         '<li>3</li>' +
+                    //         '<li>4</li>' +
+                    //         '<li>5</li>' +
+                    //         '<li>Última >></li>'+
+                    //     '</ul>'+
+                    //     '<h6 class="mini-title upper">pág. 1 de 1000</h6>'+
+                    // '</div>'
+                    //     );
                     if(i == 0){
                         $('.lista-body').append('<li><h3 style="width: 100%;text-align:center;">Nenhum empresa cadastrado.</h3></li>');
                     }

@@ -29,6 +29,16 @@
         }else{
             echo '1';
         }
+    }else if($click_tipo == "BLO"){
+        $sql = "UPDATE CTA SET CTA_QNTCLICK = CTA_QNTCLICK + 1 WHERE CTA_COD = $click_id";
+        if($con->query($sql)){
+            $sqlClick = "INSERT INTO CLI (CLI_CTA, CLI_DTCLICK, CLI_HRCLICK, CLI_DAYCLICK, CLI_TIPO) VALUES ($click_id, '$click_data', '$click_hora', $click_dia, '$click_tipo')";
+            if($con->query($sqlClick)){
+                echo '0';
+            }
+        }else{
+            echo '1';
+        }
     }else if($click_tipo == "PES"){
         $click_mensagem = utf8_decode($_REQUEST['MENSAGEM']);
         $sql = "UPDATE CTA SET CTA_QNTCLICK = CTA_QNTCLICK + 1 WHERE CTA_COD = $click_id";

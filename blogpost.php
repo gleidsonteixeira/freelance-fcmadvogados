@@ -37,7 +37,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="description" content="<?php echo $pre_texto?>"/>
     <meta name="keywords" content="<?php echo $keywords ?>"/>
-    <meta name="author" content="<?php echo $autor ?>"/>
+    <meta name="author" content="<?php echo $autor ?>, contato@pombocriativo.com"/>
     <meta name="robots" content="index, follow">
     <meta name="language" content="pt-BR" />
     
@@ -155,11 +155,26 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112375115-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-112375115-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-112375115-1');
     </script>
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5daa15cd78ab74187a5a5df2/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
     
     <i class="mdi-navigation-menu click menu-btn circle button-collapse hide-on-large-only" data-activates="slide-out"></i>
 
@@ -265,11 +280,11 @@
                         </div>
                         <div class="avaliacao">
                             <p>O que achou deste conteúdo?</p>
-                            <i class="material-icons click suave" data-id="1" title="Muito Insatisfeito">sentiment_very_dissatisfied</i>
-                            <i class="material-icons click suave" data-id="2" title="Pouco Insatisfeito">sentiment_dissatisfied</i>
-                            <i class="material-icons click suave" data-id="3" title="Regular">sentiment_satisfied</i>
-                            <i class="material-icons click suave" data-id="4" title="Pouco satisfeito">sentiment_satisfied_alt</i>
-                            <i class="material-icons click suave" data-id="5" title="Muito Satisfeito">sentiment_very_satisfied</i>
+                            <i class="material-icons click suave addBlogClick" data-id="<?php echo $cod;?>" data-nota="1" title="Muito Insatisfeito">sentiment_very_dissatisfied</i>
+                            <i class="material-icons click suave addBlogClick" data-id="<?php echo $cod;?>" data-nota="2" title="Pouco Insatisfeito">sentiment_dissatisfied</i>
+                            <i class="material-icons click suave addBlogClick" data-id="<?php echo $cod;?>" data-nota="3" title="Regular">sentiment_satisfied</i>
+                            <i class="material-icons click suave addBlogClick" data-id="<?php echo $cod;?>" data-nota="4" title="Pouco satisfeito">sentiment_satisfied_alt</i>
+                            <i class="material-icons click suave addBlogClick" data-id="<?php echo $cod;?>" data-nota="5" title="Muito Satisfeito">sentiment_very_satisfied</i>
                         </div>
                         <h3 class="font cor1-text">Deixe seu comentário</h3>
                         <div class="aviso"><b>Atenção:</b> Os comentários abaixo são de inteira responsabilidade de seus respectivos autores e não representam, necessariamente, a opinião do Pombo Criativo.</div>
@@ -280,9 +295,9 @@
             <div class="newslatter">
                 <h2 class="font">Inscreva-se em<br>nossa newsletter</h2>
                 <p>E receba por email nossos conteúdos.</p>
-                <form action="">
-                    <input type="text" placeholder="Nome">
-                    <input type="text" placeholder="Email">
+                <form method="post" action="https://www.pombocriativo.com/enviarNewsletter.php" enctype="multipart/form-data">
+                    <input type="text" name="nome" id="newsletter_nome" placeholder="Nome">
+                    <input type="text" name="email" id="newsletter_email" placeholder="Email">
                     <button class="mini-title upper white-text suave click">Quero receber</button>
                 </form>
             </div>
@@ -295,18 +310,20 @@
                     $lista = array();
                     $i = 0;
                     while ($row = $rs->fetch(PDO::FETCH_OBJ)) {
-                       $lista[$i] = array(
-                        "BLO_COD" => $row->BLO_COD,
-                        "BLO_TITULO" => utf8_encode($row->BLO_P_TEXTO),
-                        "BLO_IMAGEM" => utf8_encode($row->BLO_IMAGEM)
-                       );
+                        $lista[$i] = array(
+                            "BLO_COD" => $row->BLO_COD,
+                            "BLO_TITULO" => utf8_encode($row->BLO_TITULO),
+                            "BLO_IMAGEM" => utf8_encode($row->BLO_IMAGEM)
+                        );
                     ?>
                 
                     <li>
-                        <figure>
-                            <img  src="https://www.pombocriativo.com/img/posts/<?php echo $lista[$i]['BLO_IMAGEM'] ?>" alt="">
-                        </figure>
-                        <h6 style="cursor:pointer" onclick="abrirPost(<?php echo $lista[$i]['BLO_COD'] ?>)"><?php echo $lista[$i]['BLO_TITULO'] ?></h6>
+                        <a href="https://www.pombocriativo.com/blogpost/<?php $rTitulo = strtolower($lista[$i]['BLO_TITULO']); $rTitulo2 = str_replace("?","",$rTitulo); $rTitulo3 = str_replace(":","",$rTitulo2); echo str_replace(" ","-",$rTitulo3).'/'.$lista[$i]['BLO_COD']; ?>">
+                            <figure>
+                                <img  src="https://www.pombocriativo.com/img/posts/<?php echo $lista[$i]['BLO_IMAGEM'];?>" alt="">
+                            </figure>
+                            <h6><?php echo $lista[$i]['BLO_TITULO'];?></h6>
+                        </a>
                     </li>
                 <?php  $i++; } ?>
                 </ul>
@@ -345,22 +362,16 @@
         function loadCss(css) {
             var added = false;
 
-            function trigger()
-            {
+            function trigger(){
                 if (added) return;
-
-                added = true;
-
-                var css = document.createElement("link");
-
-                css.onload = function() {
-                    document.body.appendChild(css);
-                };
-
-                css.rel = "stylesheet";
-                css.src = css;
+                    added = true;
+                    var css = document.createElement("link");
+                    css.onload = function() {
+                        document.body.appendChild(css);
+                    };
+                    css.rel = "stylesheet";
+                    css.src = css;
             }
-
             if (document.readyState !== "loading") {
                 trigger();
             } else {

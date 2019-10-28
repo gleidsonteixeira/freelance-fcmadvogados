@@ -59,23 +59,50 @@ function banner(){
         }
     },6000);
 }
-
 function click(){
     $(".addBannerClick").click(function(){
         addBannerClick($(this).attr("data-id"),$(this).attr("data-tipo"));
+    });
+    $(".addBlogClick").click(function(){
+        addBlogClick($(this).attr("data-id"),$(this).attr("data-nota"));
     });
 
     $(".pesquisa-externa .enviar").click(function(){
         addNotaClick($(".pesquisa-externa i.active").attr("data-id"),"PES", $(".pesquisa-externa textarea").val());
     });
 
-
 } click();
 
 function addBannerClick(click_id, click_tipo){
     var dadosajax = {
         'ID'   : click_id,
-        'TIPO' : click_tipo
+        'TIPO' : 'BLO'
+    };
+    pageurl = 'control/insertClick.php';
+    $.ajax({
+        url: pageurl,
+        data: dadosajax,
+        type: 'POST',
+        cache: false,
+        dataType: 'json',
+        error: function(){
+            console.log("deu pau");
+        },
+        success: function(response){ 
+            if(response == 0){
+                console.log("ok");
+            }else{
+                console.log("deu pau");
+            }
+        }
+    });
+}
+
+function addBlogClick(click_id, click_nota){
+    var dadosajax = {
+        'ID'   : click_id,
+        'TIPO' : click_tipo,
+        'NOTA' : click_nota
     };
     pageurl = 'control/insertClick.php';
     $.ajax({

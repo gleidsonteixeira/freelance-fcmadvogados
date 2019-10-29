@@ -71,8 +71,8 @@
     <meta property="place:location:latitude" content="-3.772929">
     <meta property="place:location:longitude" content="-38.469697">
 
-    <link rel="canonical" href="https://pombocriativo.com"/>
-    <link rel="shortlink" href="https://pombocriativo.com"/>
+    <link rel="canonical" href="<?php echo $urlAtual ?>"/>
+    <link rel="shortlink" href="<?php echo $urlAtual ?>"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:400,800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
@@ -98,6 +98,7 @@
         {
             "@context": "https://schema.org",
             "@type": "Organization",
+            "name": "Pombo Criativo",
             "url": "https://pombocriativo.com/",
             "logo": "https://pombocriativo.com/img/logo_pombo_criativo.png",
             "contactPoint": [{
@@ -119,7 +120,7 @@
             },{
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Sobre",
+                "name": "Blog",
                 "item": "https://www.pombocriativo.com/blog.php"
             }]
         }

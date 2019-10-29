@@ -8,7 +8,7 @@
 <html dir="ltr" lang="pt-BR">
 <head>
     
-    <title>Pombo Criativo</title>
+    <title>Criação de Sites, Blogs, E-commerce, landpages | Pombo Criativo</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="expires" content="Tue, 01 Jan 2020 12:12:12 GMT">
@@ -16,7 +16,7 @@
     <meta http-equiv="Pragma" content="public">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="description" content="Empresa de soluções tecnológicas como softwares, cloud, rede e cabeamento, suporte com ERP, solucione hoje!"/>
-    <meta name="keywords" content="desenvolvimento, fortaleza, ecommerce, marketing, loja online, blogs, criar site, protheus, totvs, erp, infraestrutura, instalação de câmeras, ceará, aplicativo, ios, android, suporte, pfsense, design"/>
+    <meta name="keywords" content="desenvolvimento, fortaleza, ecommerce, marketing, loja online, blogs, criar site, ceará, aplicativo, android, design"/>
     <meta name="author" content="Gleidson Teixeira, contato@pombocriativo.com"/>
     <meta name="robots" content="index, follow">
     <meta name="language" content="pt-br" />    
@@ -47,6 +47,7 @@
         {
             "@context": "https://schema.org",
             "@type": "Organization",
+            "name": "Pombo Criativo",
             "url": "https://www.pombocriativo.com/",
             "logo": "https://www.pombocriativo.com/img/logo_pombo_criativo.webp",
             "contactPoint": [{

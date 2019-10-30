@@ -21,8 +21,8 @@
     <meta name="robots" content="index, follow">
     <meta name="language" content="pt-br" />    
 
-    <link rel="canonical" href="https://pombocriativo.com" />
-    <link rel="shortlink" href="https://pombocriativo.com" />
+    <link rel="canonical" href="https://pombocriativo.com/inicio" />
+    <link rel="shortlink" href="https://pombocriativo.com/inicio" />
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:400,800&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all"/> -->

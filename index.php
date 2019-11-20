@@ -3,178 +3,309 @@
 ?>
 
     <main>
-        <section id="banner-carrosel">
-            <div class="prev click"><i class="material-icons">keyboard_arrow_left</i></div>
-            <div class="next click"><i class="material-icons">keyboard_arrow_right</i></div>
-            <div class="slides">
-                <ul>
-                    <li class="suave">
-                        <a target="_blank" href="http://www.agendabrindes.com.br/">
-                            <h6 class="upper mini-title">Projetos</h6>
-                            <figure>
-                                <img src="img/banner/agenda-brindes.webp" alt="agenda-brindes" class="suave">
-                            </figure>
-                            <h3>Agenda brindes, plataforma para gerenciar pedidos</h3>
-                        </a>
-                    </li>
-                    <li class="suave">
-                        <a target="_blank" href="https://www.youtube.com/watch?v=xlIM2rX15gg&t=1s">
-                            <h6 class="upper mini-title">youtube</h6>
-                            <figure>
-                                <img src="img/banner/video-dicas-chart-js.webp" alt="youtube-4-dicas-indispensaveis-para-usar-chart-js" class="suave">
-                            </figure>
-                            <h3>4 Dicas indispensáveis para usar Chart JS</h3>
-                        </a>
-                    </li>
-                    <li class="suave">
-                        <a target="_blank" href="https://www.youtube.com/watch?v=bm3xjdZ1dZE">
-                            <h6 class="upper mini-title">youtube</h6>
-                            <figure>
-                                <img src="img/banner/video-wireframes.webp" alt="youtube-wireframes" class="suave">
-                            </figure>
-                            <h3>Desenhando wireframe de dashboard</h3>
-                        </a>
-                    </li>
-                    <li class="suave">
-                        <a target="_blank" href="http://pombocriativo.com/materiais/checklist-marca.pdf">
-                            <h6 class="upper mini-title">material</h6>
-                            <figure>
-                                <img src="img/banner/montando-minha-marca.webp" alt="montando-minha-marca" class="suave">
-                            </figure>
-                            <h3>Checklist - Montando minha marca</h3>
-                        </a>
-                    </li>
-                </ul>
+        <link rel="stylesheet" type="text/css" href="css/index.css" media="all"/>
+        <section id="banner">
+            <ul>
+                <li class="suave" data-banner="b1">
+                    <figure>
+                        <img src="img/banner/banner1.webp" alt="Registre-sua-marca" class="suave">
+                    </figure>
+                    <div class="conteudo">
+                        <h1 class="condesed"><b>Registre sua marca de forma <span class="amarelo-text">segura</span></b></h1>
+                        <p>Investir em um negócio e não registrar sua marca pode trazer grandes riscos.</p>
+                        <h5>- Ser processado</h5>
+                        <h5>- Ser copiado</h5>
+                        <h5>- Ter que mudar sua marca</h5>
+                        <a href="#!">Solicitar Pesquisa</a>
+                    </div>
+                    <form action="" method="post">
+                        <p class="azul-text">Preencha os campos abaixo e solicite uma pesquisa agora mesmo.</p>
+                        <div class="detalhe amarelo"></div>
+                        <h6 class="azul-text">Nome</h6>
+                        <input type="text" name="nome" placeholder="Digite seu nome">
+                        <h6 class="azul-text">Email</h6>
+                        <input type="email" name="email" placeholder="Digite seu email">
+                        <h6 class="azul-text">Telefone</h6>
+                        <input type="tel" name="telefone" placeholder="Ex: (00) 0000-0000">
+                        <h6 class="azul-text">Marca</h6>
+                        <input type="text" name="marca" placeholder="Nome da sua marca">
+                        <h6 class="azul-text">Área de atuação</h6>
+                        <input type="text" name="ramo" placeholder="Qual o ramo da sua empresa">
+                        <button type="submit" class="click suave">Solicitar pesquisa</button>
+                    </form>
+                </li>
+            </ul>
+            <div class="passadores"></div>
+        </section>
+        <section id="quem">
+            <ul class="numeros">
+                <li class="suave">
+                    <h1 class="suave condesed"><b>+100</b></h1>
+                    <h6 class="suave">Casos finalizados</h6>
+                </li>
+                <li class="suave">
+                    <h1 class="suave condesed"><b>+2000</b></h1>
+                    <h6 class="suave">Clientes satisfeitos</h6>
+                </li>
+                <li class="suave">
+                    <h1 class="suave condesed"><b>+50</b></h1>
+                    <h6 class="suave">Marcas Registradas</h6>
+                </li>
+                <li class="suave">
+                    <h1 class="suave condesed"><b>+5000</b></h1>
+                    <h6 class="suave">Horas de trabalho</h6>
+                </li>
+            </ul>
+            <div class="conteudo">
+                <h2 class="condesed azul-text"><b>Quem somos</b></h2>
+                <p>Com sede na cidade de fortaleza/CE, Fernandes Coelho Maia Advogados é formado por três sócios que, de forma interdisciplinar e integrada, se empenham em buscar soluções jurídicas para os mais diiversos problemas nas variadas áreas do direito pessoal e empresarial, sempre tendo em mente os valores que os fizeram se unir: Honestidade, Dedicação e Qualidade do serviço prestado.</p>
             </div>
+
         </section>
-        <section id="quem" class="hide">
-            <h2 class="font cor1-text">Quem somos</h2>
+        <section id="atuacao">
+            <h2 class="condesed azul-text"><b>Nossa atuação é</b></h2>
+            <ul class="atuacoes">
+                <li>
+                    <figure>
+                        <img src="img/consultiva-e-extrajudicial.webp" alt="Consultiva e Extrajudicial">
+                    </figure>
+                    <h5 class="condesed azul-escuro-text"><b>Consultiva e Extrajudicial</b></h5>
+                    <div class="separador"></div>
+                    <p>Atuação em defesa dos direitos dos nossos clientes em demandas judiciais, com propositura, acompanhamento e defesas em ações.</p>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/contenciosa.webp" alt="Contenciosa">
+                    </figure>
+                    <h5 class="condesed azul-escuro-text"><b>Contenciosa</b></h5>
+                    <div class="separador"></div>
+                    <p>Ação preventiva dos direitos dos nossos clientes, com realização de consultas, pareceres e assessoria, visando a redução de custos, riscos e litígios.</p>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/correspondencia-juridica.webp" alt="Correspondência Jurídica">
+                    </figure>
+                    <h5 class="condesed azul-escuro-text"><b>Correspondência Jurídica</b></h5>
+                    <div class="separador"></div>
+                    <p>Representação de advogados e escritórios de outras Cidades e Estados na realização de diligências administrativas, processuais, judiciais e extrajudiciais.</p>
+                </li>
+            </ul>
+            <ul class="areas">
+                <li>
+                    <figure>
+                        <img src="img/ambiental.webp" alt="Ambiental">
+                        <h6>Ambiental</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/auditoria-legal.webp" alt="Auditoria Legal">
+                        <h6>Auditoria Legal</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/civil-e-arbitragem.webp" alt="Civil e Arbitragem">
+                        <h6>Civil e Arbitragem</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/consultiva-e-extrajudicial.webp" alt="Consultiva e Extrajudicial">
+                        <h6>Consultiva e Extrajudicial</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/consumidor.webp" alt="Consumidor">
+                        <h6>Consumidor</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/criminal.webp" alt="Criminal">
+                        <h6>Criminal</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/familia-e-sucessoes.webp" alt="Família e Sucessões">
+                        <h6>Família e Sucessões</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/imobiliario.webp" alt="Imobiliário">
+                        <h6>Imobiliário</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/internacional.webp" alt="Internacional">
+                        <h6>Internacional</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/publico-e-administrativo.webp" alt="Público e Administrativo">
+                        <h6>Público e Administrativo</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/recuperacao-judicial.webp" alt="Recuperação Judicial">
+                        <h6>Recuperação Judicial</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/societario.webp" alt="Societário">
+                        <h6>Societário</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/terceiro-setor.webp" alt="Terceiro Setor">
+                        <h6>Terceiro Setor</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/trabalhista-e-sindical.webp" alt="Trabalhista e Sindical">
+                        <h6>Trabalhista e Sindical</h6>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/tributario.webp" alt="Tributário">
+                        <h6>Tributário</h6>
+                    </figure>
+                </li>
+            </ul>
         </section>
-        <section id="servicos">
-            <h2 class="font">Como podemos servi-lo?</h2>
+        <section id="solucoes">
+            <div class="conteudo">
+                <h2 class="condesed azul-text"><b>Nossas soluções para sua empresa:</b></h2>
+                <p>A FCM Avogados conta com um leque de soluções para ajudar sua empresa a crescer e se previnir contra futuros problemas.</p>
+                <a href="#!" class="click suave">Solicite uma consulte</a>
+            </div>
+            <ul class="solucoes">
+                <li class="active">
+                    <h5 class="condesed click">Análise e elaboração de documentos:<i class="material-icons">keyboard_arrow_down</i></h5>
+                    <p>Contratos, notificações extrajudiciais, convenções, atas de reuniões, estatutos e demais documentos que necessitem de acessoria jurídica.</p>
+                </li>
+                <li>
+                    <h5 class="condesed click">Análise e elaboração de documentos:<i class="material-icons">keyboard_arrow_down</i></h5>
+                    <p>Contratos, notificações extrajudiciais, convenções, atas de reuniões, estatutos e demais documentos que necessitem de acessoria jurídica.</p>
+                </li>
+                <li>
+                    <h5 class="condesed click">Análise e elaboração de documentos:<i class="material-icons">keyboard_arrow_down</i></h5>
+                    <p>Contratos, notificações extrajudiciais, convenções, atas de reuniões, estatutos e demais documentos que necessitem de acessoria jurídica.</p>
+                </li>
+                <li>
+                    <h5 class="condesed">Análise e elaboração de documentos:<i class="material-icons">keyboard_arrow_down</i></h5>
+                    <p>Contratos, notificações extrajudiciais, convenções, atas de reuniões, estatutos e demais documentos que necessitem de acessoria jurídica.</p>
+                </li>
+                <li>
+                    <h5 class="condesed click">Análise e elaboração de documentos:<i class="material-icons">keyboard_arrow_down</i></h5>
+                    <p>Contratos, notificações extrajudiciais, convenções, atas de reuniões, estatutos e demais documentos que necessitem de acessoria jurídica.</p>
+                </li>
+                <li>
+                    <h5 class="condesed click">Análise e elaboração de documentos:<i class="material-icons">keyboard_arrow_down</i></h5>
+                    <p>Contratos, notificações extrajudiciais, convenções, atas de reuniões, estatutos e demais documentos que necessitem de acessoria jurídica.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="blog">
+            <div class="conteudo">
+                <h2 class="condesed"><b>Blog</b></h2>
+                <p>A FCM Avogados está em constante pesquisa a procura das informações mais relevantes para seus clientes.</p>
+                <a href="#!" class="click suave">Ver todas</a>
+            </div>
             <ul>
                 <li>
-                    <figure>
-                        <img src="img/ico1.png" alt="Criação">
-                    </figure>
-                    <h6 class="mini-title upper">Criação</h6>
-                    <h5 class="font">Site, blog ou landing page</h5>
-                    <p>Sendo a sua primeira empreitada na internet ou não o importante é entrar com o pé direito, aqui construímos o seu ambiente digital focado na real necessidade do seu negócio seja ela atração, retenção ou conversão.<span>Toda grande empresa começou pequena</span></p>
+                    <a href="">
+                        <figure>
+                            <img src="img/banner/banner1.webp" alt="Atraso na entrega de imóvel adquirido para investimento não gera multa">
+                        </figure>
+                        <h6 class="mini-title upper">11-11-2019</h6>
+                        <h5 class="condesed"><b>Atraso na entrega de imóvel adquirido para investimento não gera multa</b></h5>
+                        <p>Atraso na entrega de imóvel adquirido exclusivamente para investimento configura mero inadimplamento com</p>
+                        <span class="mini-title upper">Continuar lendo <i class="material-icons">arrow_forward</i></span>
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <img src="img/ico2.png" alt="Reforma digital">
-                    </figure>
-                    <h6 class="mini-title upper">Reforma digital</h6>
-                    <h5 class="font">Tapa no visu</h5>
-                    <p>Você já possui um ambiente digital e sente que está ficando no passado? sua concorrência tem uma política de constante atualização enquanto você ainda está na primeira versão do seu sistema? é hora de dar um tapa no visual do seu ambiente digital e estamos aqui para lhe ajudar.<span>Acompanhe as tendências</span></p>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/ico3.png" alt="Consultoria criativa">
-                    </figure>
-                    <h6 class="mini-title upper">Consultoria criativa</h6>
-                    <h5 class="font">Unindo as cabeças</h5>
-                    <p>Você sente que sua empresa está apenas fazendo mais do mesmo? está com dificuldades em inovar os seus processos, produtos e hábitos, sua empresa pode estar precisando de uma consultoria criativa para ajudar a libertar a criatividade de seus colaboradores e dar vida nova a sua empresa.<span>Duas cabeças pensam melhor que uma</span></p>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/ico4.png" alt="Prototipação">
-                    </figure>
-                    <h6 class="mini-title upper">Prototipação</h6>
-                    <h5 class="font">Andar antes de correr</h5>
-                    <p>Teve uma idéia milionária mas não sabe como validar? a forma mais fácil e rápida de fazer isso é com um protótipo, uma versão em miniatura da sua idéia que pode ser testada em menor escala e gerar as informações necessárias para comprovar sua eficiência.<span>Testar antes é a chave do sucesso!</span></p>
+                    <a href="">
+                        <figure>
+                            <img src="img/banner/banner1.webp" alt="Atraso na entrega de imóvel adquirido para investimento não gera multa">
+                        </figure>
+                        <h6 class="mini-title upper">11-11-2019</h6>
+                        <h5 class="condesed"><b>Atraso na entrega de imóvel adquirido para investimento não gera multa</b></h5>
+                        <p>Atraso na entrega de imóvel adquirido exclusivamente para investimento configura mero inadimplamento com</p>
+                        <span class="mini-title upper">Continuar lendo <i class="material-icons">arrow_forward</i></span>
+                    </a>
                 </li>
             </ul>
         </section>
         <section id="portfolio">
-            <h2 class="font">Conheça o nosso trabalho</h2>
+            <h2 class="condesed azul-text"><b>Empresas que confiam em nosso trabalho</b></h2>
             <ul>
                 <li>
-                    <figure>
-                        <img src="img/clientes/ame-clinica.webp" alt="ame-clinica" class="suave">
-                    </figure>
-                    <div class="suave frente">
-                        <h6 class="mini-title upper">website</h6>
-                        <h3>AME Clínica</h3>
-                    </div>
-                    <!-- <div class="suave verso">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#!" class="mini-title upper suave">Visitar</a>
-                    </div> -->
-                    <a target="_blank" href="https://ameclinica.com/" class="mini-title upper suave">Visitar</a>
+                    <a target="_blank" href="" class="mini-title upper suave">
+                        <figure>
+                            <img src="img/clientes/iguatemi.png" alt="nome do cliente" class="suave">
+                        </figure>
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <img src="img/clientes/direto-na-midia.webp" alt="direto-na-midia" class="suave">
-                    </figure>
-                    <div class="suave frente">
-                        <h6 class="mini-title upper">Logo e website</h6>
-                        <h3>Direto na Mídia</h3>
-                    </div>
-                    <a target="_blank" href="http://diretonamidia.com/" class="mini-title upper suave">Visitar</a>
-                    <!-- <div class="suave verso">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#!" class="mini-title upper suave">Visitar</a>
-                    </div> -->
+                    <a target="_blank" href="" class="mini-title upper suave">
+                        <figure>
+                            <img src="img/clientes/coco-bambu.png" alt="nome do cliente" class="suave">
+                        </figure>
+                    </a>
                 </li>
                 <li>
-                    <figure>
-                        <img src="img/clientes/locus-br.webp" alt="locus-escritorio-virtual" class="suave">
-                    </figure>
-                    <div class="suave frente">
-                        <h6 class="mini-title upper">website</h6>
-                        <h3>Locus BR</h3>
-                    </div>
-                    <a target="_blank" href="http://locusbr.com/" class="mini-title upper suave">Visitar</a>
-                    <!-- <div class="suave verso">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <a href="#!" class="mini-title upper suave">Visitar</a>
-                    </div> -->
+                    <a target="_blank" href="" class="mini-title upper suave">
+                        <figure>
+                            <img src="img/clientes/m-dias-branco.png" alt=nome do cliente"" class="suave">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="" class="mini-title upper suave">
+                        <figure>
+                            <img src="img/clientes/handara.png" alt="nome do cliente" class="suave">
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="" class="mini-title upper suave">
+                        <figure>
+                            <img src="img/clientes/normatel.png" alt="nome do cliente" class="suave">
+                        </figure>
+                    </a>
                 </li>
             </ul>
+            <div class="depoimento">
+                <p><em>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo </em></p>
+                <h5 class="condesed azul-text"><b>Nome do cliente</b></h5>
+                <h6 class="mini-title upper azul-escuro-text">Empresa</h6>
+            </div>
+            <div class="depoimento">
+                <p><em>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo </em></p>
+                <h5 class="condesed azul-text"><b>Nome do cliente</b></h5>
+                <h6 class="mini-title upper azul-escuro-text">Empresa</h6>
+            </div>
         </section>
-        <!-- <section id="newsletter">
-            <h2 class="font">Inscreva-se para novidades</h2>
-            <form method="post" action="enviarNewsletter.php" enctype="multipart/form-data">
-                <input type="text" name="nome" id="newsletter_nome" placeholder="Digite seu nome" required>
-                <span class="suave"></span>
-                <input type="email" name="email" id="newsletter_email" placeholder="Digite seu email" required>
-                <span class="suave"></span>
-                <button class="mini-title upper cta click suave">quero receber</button>
-            </form>
-            <span>Não se preocupe, também odiamos spans</span>
-        </section> -->
     </main>
     
-    <!-- <div class="pesquisa-externa suave">
-        <img src="img/favicon.png">
-        <p>O visual e o conteúdo do nosso site está lhe agradando?</p>
-        <i class="material-icons click suave" data-id="1" title="Muito Insatisfeito">sentiment_very_dissatisfied</i>
-        <i class="material-icons click suave" data-id="2" title="Pouco Insatisfeito">sentiment_dissatisfied</i>
-        <i class="material-icons click suave" data-id="3" title="Regular">sentiment_satisfied</i>
-        <i class="material-icons click suave" data-id="4" title="Pouco satisfeito">sentiment_satisfied_alt</i>
-        <i class="material-icons click suave" data-id="5" title="Muito Satisfeito">sentiment_very_satisfied</i>
-        <div class="clear"></div>
-        <textarea name="sugestao" placeholder="Deixe sua opnião"></textarea>
-        <button class="click mini-title suave upper enviar">enviar</button>
-        <button class="click mini-title suave upper enviar right">não enviar</button>
-    </div> -->
+    <script src="js/zepto.js" type="application/javascript"></script>
 
     <?php
         include("control/footer.php");
     ?>
 
-	<script src="js/jquery.js" type="application/javascript"></script>
-    <script async defer src="js/materialize.min.js" type="application/javascript"></script>
-    <script async defer src="js/goodscroll.js" type="application/javascript"></script>
-    <script async defer src="js/script.js" type="application/javascript"></script>
     <script>
-        function quadrado(a){
-            return $(a).height($(a).width());
-        }
-        quadrado("#portfolio li");
-
         function carrosel(){
             var tamanho = 0;
             $("#banner-carrosel .slides ul li").each(function(){
@@ -200,59 +331,53 @@
         }
         carrosel();
 
-        var tamanhoNav = 0;
-        $("nav ul li").each(function(){
-            $(this).each(function(){
-                tamanhoNav += $(this).width() + 3;
+        function banners(){
+            $("#banner ul li:nth-child(1)").removeClass("preactive");
+            $("#banner ul li:nth-child(1)").addClass("active");
+            var cont = 1;
+            $("#banner ul li").each(function(){
+                $(this).attr("data-posicao",cont);
+                $(".passadores").append('<div class="passador click" data-banner="'+$(this).attr("data-banner")+'" data-posicao="'+cont+'"></div>');
+                cont++;
             });
-            $("nav ul").width(tamanhoNav);
-        });
-        // function pesquisaExterna(){
-        //     $(".pesquisa-externa i").click(function(){
-        //         $(".pesquisa-externa i").removeClass("active");
-        //         $(this).addClass("active");
-        //         $(".pesquisa-externa").height(204);
-        //         setTimeout(() => {
-        //             $(".pesquisa-externa textarea, .pesquisa-externa button").css({"visibility":"visible","opacity":"1"});
-        //         }, 500);
-        //     });
-        // } pesquisaExterna();
+            $(".passadores .passador:nth-child(1)").addClass("active");
+        }banners();
+        
+        function solucoes(){
+            $(".solucoes li").click(function(){
+                $(".solucoes li").removeClass("active");
+                $(".solucoes li p").hide("fast");
+                $(this).addClass("active");
+                $(this).find("p").show("fast");
+            });
+        }solucoes();
 
-        // $(document).scroll(function(){
-        //     var scroll = window.pageYOffset;
-        //     if(scroll > 1500){
-        //         $(".pesquisa-externa").addClass("active");
-        //     }
-        // })
-        function loadCss(css) {
-            var added = false;
+        function banner(){
+            $(document).on("click", ".passador", function(){
+                var banner = $(this).attr("data-banner");
+                $("#banner ul li.active").removeClass("active");
+                $('#banner ul li[data-banner='+banner+']').addClass("active");
+                $(".passador").removeClass("active");
+                $(this).addClass("active");
+            });
 
-            function trigger()
-            {
-                if (added) return;
-
-                added = true;
-
-                var css = document.createElement("link");
-
-                css.onload = function() {
-                    document.body.appendChild(css);
-                };
-
-                css.rel = "stylesheet";
-                css.src = css;
-            }
-
-            if (document.readyState !== "loading") {
-                trigger();
-            } else {
-                document.addEventListener("DOMContentLoaded", trigger);
-            }
-        }
-
-        loadCss("css/https://fonts.googleapis.com/css?family=Comfortaa:400,800&display=swap");
-        loadCss("css/https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap");
-        // loadCss("css/font-awesome.css");
+            setInterval(function(){
+                var tamanho = $("#banner ul li").length;
+                var posicao = $("#banner ul li.active").attr("data-posicao");
+                var banner_next = $("#banner ul li.active + li").attr("data-posicao");
+                if(posicao < tamanho){
+                    $("#banner ul li.active").removeClass("active");
+                    $('#banner ul li[data-posicao='+banner_next+']').addClass("active");
+                    $(".passador.active").removeClass("active");
+                    $('.passador[data-posicao='+banner_next+']').addClass("active");
+                }else{
+                    $("#banner ul li.active").removeClass("active");
+                    $("#banner ul li:nth-child(1)").addClass("active");
+                    $(".passador.active").removeClass("active");
+                    $(".passador:nth-child(1)").addClass("active");
+                }
+            },6000);
+        } banner();
     </script>
     
 

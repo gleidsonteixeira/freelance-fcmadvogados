@@ -4,7 +4,7 @@ $(document).ready(function(){
     expandir();
     showVideo();
     como();
-    //banner();
+    banner();
     voltar();
 });
 $(window).resize(function(){

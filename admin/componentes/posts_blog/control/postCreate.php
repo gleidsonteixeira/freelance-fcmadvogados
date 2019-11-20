@@ -27,7 +27,7 @@
                     $extensao = strtolower ($extensao);
                     $novo_name = uniqid(time()).".".$extensao;  
 
-                    if (strstr ( '.jpg;.jpeg;.gif;.png', $extensao)) {
+                    if (strstr ( '.jpg;.jpeg;.gif;.png;.webp', $extensao)) {
                         $blo = new BLO();
                         $blo->setBLO_TITULO($post_titulo);
                         $blo->setBLO_CATEGORIA($post_categoria);

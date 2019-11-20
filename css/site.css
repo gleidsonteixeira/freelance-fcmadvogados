@@ -47,61 +47,10 @@
 #slide-out .perfil p a{color: white;}
 #slide-out li{padding: 6px 16px;}
 
-#topo{width: 100%;left: 0;top: 0;position: fixed;z-index: 10;background-color: white;}
-#topo .header{width: 100%;padding: 0 10%;box-sizing: border-box;}
-#topo .header .logo{overflow: hidden;text-align: right;}
-#topo .header .logo img,
-#topo .header .logo a{float: left;display: block;}
-#topo .header .logo a.addBannerClick{float: none;line-height: 20px;font-weight: bold;color: #673ab7;}
 
-#topo nav{background-color: transparent;box-shadow: none;width: auto;}
 
-#topo .menu{height: 50px;margin-top: 10px;text-align: right;}
-#topo .menu ul{width:50%;float:left;height: 50px;}
-#topo .menu ul li{position: relative;}
-#topo .menu ul li::before{content:"";width: 0;height: 3px;background-color: #18ffff;border-radius:3px;position: absolute;bottom:0;left:50%;transition-duration: .3s;}
-#topo .menu ul li:hover::before{width: 100%;left:0;}
-#topo .menu ul li ul{width:220px;height:auto;opacity: 0;visibility: hidden;background-color: white;box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .15);border-radius: 0 0 5px 5px;position: absolute;top: 100%;left: 0;will-change: opacity;}
-#topo .menu ul li:hover ul{opacity: 1;visibility: visible;}
-#topo .menu ul li ul li{float: none;border-left: 3px solid transparent;overflow: hidden;}
-#topo .menu ul li ul li:hover{border-color: #673ab7;}
-#topo .menu ul li a{display: block;line-height: 50px;padding: 0 16px;border-radius: 5px;position: relative;color:#673ab7;opacity:.7;font-size: 18px;}
-#topo .menu ul li.active a::before{content:"";width: 100%;height: 3px;background-color: #673ab7;position: absolute;left: 0;bottom: 0;}
-#topo .menu ul li a:hover{background-color: transparent;opacity: 1;}
-#topo .menu ul li a.cta{background-color: #673ab7;color: #673ab7;}
-#topo .menu ul li a.cta:hover{background-color: #673ab7;}
-#topo .menu ul li a.cta i{line-height: 50px !important;float: left;color: white;}
-#topo .menu a.rede-social{display: block;float:right;background-color: #673ab7;border-radius: 20px;height:40px;margin-left: 10px;}
-#topo .menu a.rede-social:hover{background-color: #4a148c;}
-#topo .mini-menu{display: block;float: right;height: 60px;width: 60px;}
-#topo .mini-menu i{line-height: 60px;width: 60px;text-align: center;color: #673ab7;font-size: 28px;}
-#topo .action{display: none;}
-#topo .action a i{line-height: 48px;margin-right: 16px;}
 
-main{margin-top: 120px;}
 
-#banner-carrosel{overflow: hidden;position: relative;}
-#banner-carrosel .slides{overflow: hidden;}
-#banner-carrosel ul{overflow: hidden;padding:16px 0 16px 10%;width: auto;position: relative;}/*width: 2350px;*/
-#banner-carrosel ul li{width: 320px;height: 480px;box-sizing: border-box;float: left;margin-right: 16px;position: relative;border-radius: 10px;}
-#banner-carrosel ul li:hover{box-shadow: 0px 6px 10px rgba(0, 0, 0, .15);}
-#banner-carrosel ul li a{display: block;}
-#banner-carrosel ul li a figure{position: absolute;top: 0;left: 0;width: 100%;height: 100%;padding: 0;margin: 0;overflow: hidden;border-radius: 10px;}
-#banner-carrosel ul li a figure::before{content:"";width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: rgba(103, 58, 183, .5);z-index: 2;transition-duration: .3s;}
-#banner-carrosel ul li a figure img{height: 100%;position: relative;top: 0;left: 50%;transform: translateX(-50%);display: block;}
-#banner-carrosel ul li:hover a figure img{transform: translateX(-50%) scale(1.1,1.1);}
-#banner-carrosel ul li:hover a figure::before{background-color: transparent;}
-#banner-carrosel ul li a h3{position: absolute;bottom: 0;left: 0;width: 100%;padding: 16px;margin: 0;font-size: 28px;font-weight: bold;color: white;z-index: 3;}
-#banner-carrosel ul li a h6{position: absolute;top: 16px;left: 16px;padding: 6px 16px;margin: 0;z-index: 3;background-color: #4a148c;color: #18ffff;border-radius:5px;}
-#banner-carrosel .prev,
-#banner-carrosel .next{width: 50px;height:50px;position: absolute;top: calc(50% - 25px);left: 40px;border-radius: 25px;z-index: 5;background-color: #673ab7;}
-#banner-carrosel .next{left: initial;right: 40px;}
-#banner-carrosel .prev::before,
-#banner-carrosel .next::before{content:"";width: 0;height:0;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background-color: #4a148c;border-radius: 25px;transition-duration: .3s;}
-#banner-carrosel .prev:hover::before,
-#banner-carrosel .next:hover::before{width: 50px;height:50px;}
-#banner-carrosel .prev i,
-#banner-carrosel .next i{width: 50px;text-align: center;line-height: 50px;font-size: 30px;color: white;position: relative;z-index: 1;}
 
 #sobre{padding: 50px 10%;overflow: hidden;}
 #sobre h2{font-size: 48px;text-align: center;margin-bottom: 26px;}
@@ -339,13 +288,6 @@ footer .rodape i{color: #673ab7;font-size: 20px !important;animation: coracao in
 #contratar table h1{line-height:40px;}
 #contratar table h1 span{font-weight: lighter;font-size:36px;display:inline-block;}
 #contratar .detalhe2{width: 50%;height:100%;position: absolute;top:0;right:0;}
-
-
-
-.voltar{position: fixed;bottom: 72px;right: 16px; line-height: 40px;background-color: #673ab7;border-radius: 20px;z-index: 15;width: 40px;text-align: center;display: block;opacity: 0;visibility: hidden;}
-.voltar:after{content: "";width: 100%;height: 40px;box-sizing: border-box;border: 3px solid #673ab7;border-radius: 200px;position: absolute;top: 0;left: 0;transform-origin: center center;}/*animation: expandir linear infinite 2s;-webkit-animation: expandir linear infinite 2s;*/
-.voltar.active{opacity: 1;visibility: visible;}
-.voltar i{color: white;line-height: 40px;display: block;transform: rotate(-90deg);}
 
 .pesquisa-externa{width: 250px;height:80px;position: fixed;padding: 15px;bottom: 21px;left: -280px;border-radius: 3px;background-color: white;border-bottom: 0;z-index: 15;box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, .15);transition-timing-function: cubic-bezier(0.79, 0, 0, 1);}
 .pesquisa-externa.active{left: 16px;}

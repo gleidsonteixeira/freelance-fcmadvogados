@@ -1,0 +1,83 @@
+
+/* SUBTOP */
+#subtop{background-image: linear-gradient(-45deg, #1b5678,#56aeff);padding: 30px 10%;padding-top: 200px;border-bottom-left-radius: 150px;position: relative;}
+#subtop h1{color: transparent;-webkit-text-stroke-width: 2px;-webkit-text-stroke-color: white;font-size: 90px;}
+/* QUEM SOMOS */
+#quem{padding: 100px 10%;padding-bottom: 0;overflow: hidden;}
+#quem ul{width: 50%;float: left;overflow: hidden;padding-bottom: 30px;}
+#quem ul li{position: relative;width: calc(50% - 32px);float: left;overflow: hidden;padding: 30px 0;border-radius: 10px;box-shadow: 0px 8px 15px rgba(46, 141, 204, .2);margin: 16px;}
+#quem ul li::before{content:"";width: 0;height: 100%;background-image: linear-gradient(-45deg, #1b5678,#56aeff);transition-duration: .2s;z-index: -1;position: absolute;top:0;left:0;}
+#quem ul li:hover::before{width: 100%;}
+#quem ul li:nth-child(2){margin-top: 60px;}
+#quem ul li:nth-child(3){margin-top: -28px;}
+#quem ul li h1{width: 100%;text-align: center;margin: 0;color: #2e8dcc;font-size: 50px;}
+#quem ul li h6{font-size: 20px;text-align: center;color: #666;}
+#quem ul li:hover h1,
+#quem ul li:hover h6{color: white;}
+#quem .conteudo{max-width: 500px;border-left: 4px solid #1b5678;float: right;font-size: 18px;padding-left: 20px;padding-bottom: 30px;margin-top: 40px;}
+#quem .conteudo p{color: #666;}
+/* ATUAÇÃO */
+#atuacao{padding: 60px 10%;text-align: center;}
+#atuacao h2{margin-bottom: 60px;}
+#atuacao ul.atuacoes{overflow: hidden;}
+#atuacao ul.atuacoes li{width: 33.333%;float: left;padding: 0 25px;}
+#atuacao ul.atuacoes li figure{margin: 0;}
+#atuacao ul.atuacoes li h5{font-size: 28px;}
+#atuacao ul.atuacoes li .separador{width: 60px;height: 4px;background-color: #ffc200;display: block;margin: 16px auto;}
+#atuacao ul.atuacoes li p{color: #666;font-size: 18px;}
+#atuacao h4{margin-top: 50px;}
+#atuacao ul.areas{overflow: hidden;margin-top: 30px;}
+#atuacao ul.areas li{width: 20%;float: left;margin-bottom: 26px;}
+#atuacao ul.areas li:last-of-type{float: none;margin: 0 auto;}
+#atuacao ul.areas li figure{margin: 0;}
+#atuacao ul.areas li h6{font-size: 18px;color: #666;}
+/* EQUIPE */
+#equipe{padding: 0 10%;padding-top: 100px;}
+#equipe h2{text-align: center;}
+#equipe ul{overflow: hidden;}
+#equipe ul li{width: calc(33.333% - 16px);float: left;padding: 16px;position: relative;border: 1px solid #ededed;border-radius: 10px;margin: 0 8px;}
+#equipe ul li figure{width: 80px;height: 80px;float: left;margin-right: 16px;margin-bottom: 16px;}
+#equipe ul li figure img{width: 80px;height: 80px;border-radius: 40px;}
+#equipe ul li h5{margin-top: 20px;margin-bottom: 6px;}
+#equipe ul li h6{margin-top: 0;}
+#equipe ul li p{margin-top: 10px;font-size: 14px;color: #666;}
+#equipe ul li .pill{margin-top: 10px;display: inline-block;background-color: #1b5678;color:white;padding: 0px 10px;line-height: 26px;border-radius: 5px;margin-right: 6px;}
+#equipe ul.atributos{margin-top: 40px;}
+#equipe .detalhe{width: 60px;height: 4px;border-radius: 2px;background-color: #ffc200;display: block;}
+/* SETORES */
+#setores{padding: 80px 10%;overflow: hidden;padding-top: 0;}
+#setores h4{text-align: center;margin-bottom: 60px;}
+#setores ul{width: calc(50% - 16px);float: left;margin: 8px;}
+#setores ul li{padding: 16px;box-sizing: border-box;border-radius: 10px;border: 1px solid #ededed;margin-bottom: 16px;}
+#setores ul li .detalhe{width: 60px;height: 4px;border-radius: 2px;background-color: #ffc200;display: block;}
+#setores ul li p{color: #666;font-size: 18px;margin-top: 16px;}
+
+
+@media only screen and (max-width: 480px){
+    #subtop{border-bottom-left-radius: 50px;}
+    #subtop h1{font-size: 50px;-webkit-text-stroke-width: 1px;margin: 0;}
+    #quem{padding: 50px 16px;}
+    #quem ul{width: 100%;float: none;padding: 0;}
+    #quem ul li{width: calc(50% - 16px);margin: 16px 8px;}
+    #quem ul li h1{font-size: 28px;}
+    #quem ul li h6{font-size: 16px;}
+    #quem .conteudo h2{font-size: 28px;}
+    #quem .conteudo p{font-size: 16px;text-align: justify;padding-right: 10px;}
+    #atuacao{padding: 0 16px;}
+    #atuacao h2{font-size: 28px;}
+    #atuacao ul.atuacoes li{width: 100%;float: none;margin-bottom: 50px;padding: 0;}
+    #atuacao ul.atuacoes li:last-child{margin: 0;}
+    #atuacao ul.atuacoes li p{font-size: 16px;}
+    #atuacao ul.areas li{width: 50%;}
+    #atuacao ul.areas li h6{font-size: 16px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;}
+    #equipe{padding-top: 0;padding: 0 16px;}
+    #equipe ul li{width: 100%;float: none;margin: 0;margin-bottom: 16px;}
+    #setores{padding: 0 16px;}
+    #setores ul{margin: 0;float: none;width: 100%;margin-bottom: 16px;}
+
+}
+
+
+
+
+

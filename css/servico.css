@@ -1,0 +1,105 @@
+/* BANNER */
+#banner{position: relative;}
+#banner ul{height: 100vh;position: relative;overflow: hidden;}
+#banner ul li{width:100%;height: 100%;box-sizing: border-box;overflow: hidden;position: absolute;top: 0;opacity: 0;visibility: hidden;border-bottom-left-radius: 150px;}
+#banner ul li.active{opacity: 1;visibility: visible;}
+#banner ul li figure{width: 100%;height: 100vh;position: relative;margin: 0;}
+#banner ul li img{position: absolute;top: -1%;left: -1%;width: 102%;height: 102%;opacity: 1;filter: blur(5px);}
+#banner ul li .conteudo{width: 45%;position: absolute;top: 50%;left:10%;transform: translateY(-30%);border-left: 4px solid #ffc200;padding-left: 20px;padding-bottom: 20px;}
+#banner ul li .conteudo.direita{left: initial;right: 10%;}
+#banner ul li .conteudo h1{font-size: 60px;color: white;line-height: 60px;margin-bottom: 20px;max-width: 500px;}
+#banner ul li .conteudo p{font-size: 18px;color: white;max-width: 500px;margin: 40px 0 30px 0;}
+#banner ul li .conteudo a{display: none;}
+#banner ul li .conteudo h5{font-size: 18px;font-weight: bold;color: white;}
+#banner ul li form{width: 350px;background-color: white;padding: 16px;box-sizing: border-box;border-radius: 25px 25px 0 0;position: absolute;bottom: 0;right: 15%;z-index: 2;}
+#banner ul li form::before{content:"";width: 50px;height: 50px;position: absolute;bottom: 0;right: 100%;background-image: url("../img/canto-esquerdo.png");}
+#banner ul li form::after{content:"";width: 50px;height: 50px;position: absolute;bottom: 0;left: 100%;background-image: url("../img/canto-direito.png");}
+#banner ul li form p{font-size: 18px;font-weight: bold;line-height: 20px;margin-bottom: 10px;}
+#banner ul li form .detalhe{width: 60px;height:4px;border-radius: 2px;margin: 0 auto;}
+#banner ul li form label{font-weight: bold;}
+#banner ul li form input{margin-bottom: 5px !important;}
+#banner ul li form button{display: block;background-color: #ffc200;color: white;font-size: 18px;margin-top: 10px;width: 100%;line-height: 50px;border-radius: 25px;box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);}
+#banner ul li form button:hover{background-color: #f1a80a;}
+#banner ul li a{margin-top: 40px;border-radius: 5px;background-color: #ffc200;}
+#banner ul li a:hover{background-color: #f1a80a;}
+#banner ul li a i{float: left;display: block;line-height: 40px;color: white;margin-right: 16px;}
+#banner .passadores{width:100%;position: absolute;bottom:20px;left:0;text-align: center;padding: 10px;z-index: 2;box-sizing: border-box;}
+#banner .passadores .passador{width: 20px;height: 20px;display: inline-block;margin: 0 5px;border-radius: 20px;border: 2px solid white;position: relative;box-sizing: border-box;}
+#banner .passadores .passador::before{content:"";width:8px;height:8px;background-color: white;position: absolute;top: calc(50% - 4px);left: calc(50% - 4px);border-radius:10px;transform: scale(0,0);transition-duration: .2s;}
+#banner .passadores .passador.active::before{transform: scale(1,1);}
+/* ETAPAS */
+#etapas{padding: 120px 10%;padding-bottom: 0;overflow: hidden;}
+#etapas h2{text-align: center;}
+#etapas ul{overflow: hidden;}
+#etapas ul li{position: relative;width: calc(25% - 32px);float: left;overflow: hidden;padding: 30px 0;border-radius: 10px;box-shadow: 0px 8px 15px rgba(46, 141, 204, .2);margin: 16px;padding: 16px 10px;}
+#etapas ul li::before{content:"";width: 0;height: 100%;background-image: linear-gradient(-45deg, #1b5678,#56aeff);transition-duration: .2s;z-index: -1;position: absolute;top:0;left:0;}
+#etapas ul li:hover::before{width: 100%;}
+#etapas ul li h1{width: 60px;height: 60px;border-radius: 30px;margin: 16px auto;display: block;line-height: 60px;text-align: center;background-image: linear-gradient(-45deg, #1b5678,#56aeff);color: white;font-size: 22px;font-weight: bold;}
+#etapas ul li p{font-size: 16px;text-align: center;color: #666;}
+#etapas ul li:hover h1{background-color: white;background-image: none;color:#1b5678;}
+#etapas ul li:hover p{color: white;}
+#etapas .conteudo{max-width: 500px;border-left: 4px solid #1b5678;float: right;font-size: 18px;padding-left: 20px;padding-bottom: 30px;margin-top: 40px;}
+#etapas .conteudo p{color: #666;}
+/* BENEFICIOS */
+#beneficios{padding: 120px 10%;padding-top: 270px;overflow: hidden;background-image: linear-gradient(-45deg, #1b5678,#56aeff);position: relative;border-bottom-left-radius: 150px;}
+#beneficios::before{content: "";width: 100%;height: 150px;border-bottom-left-radius: 150px;position: absolute;top: 0;left: 0;background-color: white;}
+#beneficios h2{text-align: center;color: white;max-width: 55%;margin: 0 auto;font-size: 40px;}
+#beneficios ul{overflow: hidden;margin-top: 70px;}
+#beneficios ul li{float: left;width: calc(33.333% - 40px);margin: 0 20px;background-color: white;border-radius: 10px;padding: 16px;text-align: center;box-sizing: border-box;}
+#beneficios ul li:first-child,
+#beneficios ul li:last-child{margin-top: 60px;}
+#beneficios ul li figure{width: 130px;margin: 40px auto;}
+#beneficios ul li figure img{width: 100%;display: block;}
+#beneficios ul li h4{font-size: 28px;}
+#beneficios ul li .detalhe{width: 60px;height: 4px;border-radius: 2px;margin: 0 auto;display:block;background-color: #ffc200;margin-bottom: 10px;}
+#beneficios ul li p{font-size: 18px;color: #666;}
+#beneficios a{width: 300px;display: block;margin: 50px auto;margin-bottom: 0;line-height: 50px;border-radius: 25px;color: white;background-color: #ffc200;text-align: center;font-size: 18px;font-weight: bold;letter-spacing: .5px;}
+#beneficios a:hover{background-color: #f1a80a;}
+/* PORTFOLIO */
+#portfolio{padding: 60px 10%;overflow: hidden;}
+#portfolio h2{text-align: center;}
+#portfolio ul{overflow: hidden;margin: 50px 0;}
+#portfolio ul li{width: 20%;float: left;border: 1px solid #ededed;box-sizing: border-box;border-collapse: collapse;}
+#portfolio ul li a{display: block;margin-top: 65px;}
+#portfolio ul li figure{margin: 0;}
+#portfolio ul li figure img{width: 100%;filter: grayscale(1);}
+#portfolio ul li:hover figure img{filter: grayscale(0);}
+#portfolio .depoimento{width: calc(50% - 100px);background-color: white;border-left: 4px solid #2e8dcc;padding: 20px;float: left;margin: 0 50px;box-sizing: border-box;box-shadow: 0px 5px 8px rgba(0, 0, 0, .15);border-radius: 0 10px 25px 0;}
+#portfolio .depoimento p{color: #666;}
+#portfolio .depoimento h5{font-size: 18px;margin-top: 26px;margin-bottom: 0;}
+
+@media only screen and (max-width: 480px){
+    #banner ul{height: 110vh;}
+    #banner ul li{border-bottom-left-radius: 50px;}
+    #banner ul li img{left: -51%;width: auto;}
+    #banner ul li figure{height: 110vh;}
+    #banner ul li .conteudo{width: calc(100% - 32px);left: 0;top: 200px;transform: none;margin: 0 16px;}
+    #banner ul li .conteudo h1{font-size: 40px;line-height: 50px;}
+    #banner ul li .conteudo p{margin: 20px 0;}
+    #banner ul li .conteudo a{display: inline-block;background-color: #ffc200;color: white;font-size: 18px;margin-top: 10px;line-height: 50px;border-radius: 25px;box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);padding: 0 36px;}
+    #banner ul li form{display: none;}
+    #etapas{padding: 50px 16px;}
+    #etapas h2{font-size: 28px;}
+    #etapas ul{width: 100%;float: none;padding: 0;overflow: initial;}
+    #etapas ul li{width: 100%;margin: 0px;margin-bottom: 26px;float: none;}
+    #beneficios{padding: 50px 16px;padding-top: 100px;border-bottom-left-radius: 50px;}
+    #beneficios::before{height: 50px;border-bottom-left-radius: 50px;}
+    #beneficios h2{max-width: initial;width: 100%;font-size: 28px;}
+    #beneficios ul{margin-top: 40px;}
+    #beneficios ul li{float: none;margin: 0;margin-bottom: 26px;width: 100%;}
+    #beneficios ul li:first-child,
+    #beneficios ul li:last-child{margin-top: 0px;}
+    #beneficios a{margin-top: 20px;}
+    #portfolio{padding: 50px 16px;}
+    #portfolio h2{font-size: 28px;}
+    #portfolio ul{text-align: center;}
+    #portfolio ul li{float: none;display: inline-block;width: 48%;margin-bottom: 4px;}
+    #portfolio .depoimento{width: 100%;float: none;margin: 0;margin-bottom: 20px;}
+
+
+}
+
+
+
+
+

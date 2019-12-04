@@ -17,16 +17,20 @@
             </div>
             <ul>
                 <li class="title condesed azul-text">A FCM Advogados</li>
-                <li class="mini-title upper"><a href="#!">Registrar minha marca</a></li>
-                <li class="mini-title upper"><a href="#!">Quem somos</a></li>
-                <li class="mini-title upper"><a href="#!">Soluções</a></li>
-                <li class="mini-title upper"><a href="#!">Blog</a></li>
+                <li class="mini-title upper"><a href="registro-de-marca">Registro de marca</a></li>
+                <li class="mini-title upper"><a href="consultoria-contratual">Consultoria contratual</a></li>
+                <li class="mini-title upper"><a href="compliance-trabalhista">Compliance trabalhista</a></li>
+                <li class="mini-title upper"><a href="assessoria-em-licitacoes">Assessoria em Licitações</a></li>
+                <li class="mini-title upper"><a href="contencioso-judicial">Contencioso judicial</a></li>
+                <li class="mini-title upper"><a href="quem-somos">Quem somos</a></li>
+                <li class="mini-title upper"><a href="blog">Blog</a></li>
+                <li class="mini-title upper"><a href="duvidas-frequentes">FAQ</a></li>
             </ul>    
             <ul>
                 <li class="title condesed azul-text">Escritório</li>
-                <li class="mini-title upper">Rua Coronel Linhares, 950</li>
-                <li class="mini-title upper">Sala 1008, Aldeota</li>
-                <li class="mini-title upper">Fortaleza - CE</li>
+                <li class="mini-title upper"><a target="_blank" href="https://maps.google.com/maps?cid=16255778370338512237">Rua Coronel Linhares, 950</a></li>
+                <li class="mini-title upper"><a target="_blank" href="https://maps.google.com/maps?cid=16255778370338512237">Sala 1008, Aldeota</a></li>
+                <li class="mini-title upper"><a target="_blank" href="https://maps.google.com/maps?cid=16255778370338512237">Fortaleza - CE</a></li>
             </ul>
             <ul>
                 <li class="title condesed azul-text">Contatos</li>
@@ -36,19 +40,30 @@
                 </li>
             </ul>
         </div>
+        <div class="clear"></div>
         <h6 class="rodape">
             &copy 2018-<?php echo date('Y');?> Todos os direitos reservados a <span class="azul-text">FCM Advogados</span><br>
-            Mantido e desenvolvido por <a target="_blank" href="https://www.pombocriativo.com/"><span class="amarelo-text">Pombo Criativo</span></a>
+            Desenvolvido por <a target="_blank" href="https://www.pombocriativo.com/"><span class="amarelo-text">Pombo Criativo</span></a>
         </h6>
     </div>
 </footer>
-<a href="#topo" class="voltar suave click"><i class="material-icons">arrow_forward</i></a>
+<a id="voltar" class="voltar suave click"><i class="material-icons">arrow_forward</i></a>
 <script>
     $(document).ready(function(){
         voltar();
     });
     $(window).scroll(function(){
         voltar();
+    });
+    function scrollTo(element) {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop
+        });
+    }
+    document.getElementById("voltar").addEventListener('click', () => {
+        scrollTo(document.getElementById("topo"));
     });
     function menu(){
         $(".mini-menu").click(function(){

@@ -12,8 +12,7 @@ footer .conteudo .infos .sitacao{height: 140px;}
 footer .conteudo .infos .sitacao h1{font-size: 30px;font-weight: 300;text-align: right;margin: 0;padding-right: 8px;}
 footer .conteudo .infos .sitacao h5{font-size: 22px;color: #666;text-align: right;}
 footer .conteudo .infos h3{margin-bottom: 26px;}
-footer .conteudo .infos ul{width: 33.333% !important;float: left;margin-bottom: 16px;}
-footer .conteudo .infos ul:last-of-type{width: 100%;}
+footer .conteudo .infos ul{width: 33.333%;float: left;margin-bottom: 16px;}
 footer .conteudo .infos ul li.title{font-size: 22px;font-weight: bold;padding-bottom: 16px;color: #444;opacity: .9;}
 footer .conteudo .infos ul li{color: #666;opacity: .9;}
 footer .conteudo .infos ul li a{line-height: 20px;color: #666;opacity: .9;}
@@ -28,11 +27,12 @@ footer .conteudo .rodape{position: absolute;bottom: 0;right: 0;display:block;col
 @media only screen and (max-width: 480px){
     footer{margin: 0;padding: 50px 16px;}
     footer .conteudo .pombo{width: 100%;float: none;overflow: hidden;}
-    footer .conteudo .infos{width: 100%;padding: 0 16px;margin-top: 30px;}
+    footer .conteudo .infos{width: 100%;padding: 0 16px;margin-top: 30px;margin-bottom: 70px;}
     footer .conteudo .infos .sitacao h1{text-align: center;font-size: 24px;}
     footer .conteudo .infos .sitacao h1 br{display: none;}
     footer .conteudo .infos .sitacao h5{text-align: center;font-size: 18px;}
-    footer .conteudo .infos ul{width: 50% !important;min-height: 170px;}
+    footer .conteudo .infos ul{width: 100%;text-align: center;float: none;}
+    footer .conteudo .infos ul:first-of-type{display: none;}
     footer .conteudo .infos ul li.title{font-size: 18px;}
     footer .conteudo .rodape{width: 70%;text-align: center;right: 15%;}
     .voltar{right: 16px;}

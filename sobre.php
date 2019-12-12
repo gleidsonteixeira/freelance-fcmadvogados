@@ -8,24 +8,29 @@
             <h1 class="condesed"><b>Quem somos</b></h1>
         </section>
         <section id="quem">
-            <ul class="numeros">
-                <li class="suave">
-                    <h1 class="suave condesed"><b>3 Anos</b></h1>
-                    <h6 class="suave">Tempo de escritório</h6>
-                </li>
-                <li class="suave">
-                    <h1 class="suave condesed"><b>4</b></h1>
-                    <h6 class="suave">Estados atendidos</h6>
-                </li>
-                <li class="suave">
-                    <h1 class="suave condesed"><b>+500</b></h1>
-                    <h6 class="suave">Clientes satisfeitos</h6>
-                </li>
-                <li class="suave">
-                    <h1 class="suave condesed"><b>+18.500</b></h1>
-                    <h6 class="suave">Horas trabalhadas</h6>
-                </li>
-            </ul>
+            <div class="numeros">
+                <ul>
+                    <li class="suave">
+                        <h1 class="suave condesed"><b>3 Anos</b></h1>
+                        <h6 class="suave">de escritório</h6>
+                    </li>
+                    <li class="suave">
+                        <h6 class="suave">Atuamos em</h6>
+                        <h1 class="suave condesed"><b>4</b></h1>
+                        <h6 class="suave">estados</h6>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="suave">
+                        <h1 class="suave condesed"><b>+500</b></h1>
+                        <h6 class="suave">Clientes satisfeitos</h6>
+                    </li>
+                    <li class="suave">
+                        <h1 class="suave condesed"><b>+18.500</b></h1>
+                        <h6 class="suave">Horas trabalhadas</h6>
+                    </li>
+                </ul>
+            </div>
             <div class="conteudo">
                 <h2 class="condesed azul-text"><b>Quem somos</b></h2>
                 <p>Com sede na cidade de fortaleza/CE, Fernandes Coelho Maia Advogados é formado por três sócios que, de forma interdisciplinar e integrada, se empenham em buscar soluções jurídicas para os mais diiversos problemas nas variadas áreas do direito pessoal e empresarial, sempre tendo em mente os valores que os fizeram se unir: Honestidade, Dedicação e Qualidade do serviço prestado.</p>
@@ -206,55 +211,55 @@
         <section id="setores">
             <h4 class="condesed azul-text"><b>Setores atendidos</b></h4>
             <ul>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Agências Reguladoras</b></h5>
+                <li data-ativo="1" class="click active">
+                    <h5 class="condesed azul-escuro-text"><b>Agências Reguladoras<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Solicitações, impugnações e defesas em documentos e autorizações junto à Receita Federal, Secretaria da Fazenda, Vigilância Sanitária, Prefeitura, Corpo de Bombeiros, Vigilância Sanitária, ANVISA – Agência Nacional de Vigilância Sanitária, ANP – Agência Nacional de Petróleo, Gás Natural e Biocombustíveis, Polícias, Órgãos Ambientais Estadual e Municipal, IBAMA, Ministério Público, entidades representativas, dentre outros.</p>
                 </li>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Agronegócio</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Agronegócio<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Contamos com equipe técnica para assessoria jurídica, consultiva e contenciosa, de empresas que atuam ou desejam atuar no mercado do agronegócio, oferecendo soluções jurídicas a questões relacionadas às operações societárias, títulos de crédito ligados ao setor, cobranças judiciais e extrajudiciais, contratos de prestação de serviços, além de demandas regulatórias envolvendo registro, produção, embalagem, comercialização, propaganda, importação e exportação, fiscalização, etc.</p>
                 </li>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Alimentação</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Alimentação<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Diante da complexidade e rigidez da legislação brasileira em relação ao segmento de alimentos e bebidas, o FCM Advogados orienta e acompanha o cliente para o atendimento das normas sanitárias e regulatórias do setor, adotando práticas preventivas para evitar danos ao estabelecimento, assistindo ainda em questões trabalhistas, tributárias, societárias, consumeristas, entre outros.</p>
                 </li>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Associações e Sindicatos</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Associações e Sindicatos<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Atuamos na defesa dos interesses de nossos clientes e parceiros perante a Justiça Especializada do Trabalho, Ministério do Trabalho e Emprego e Ministério Público do Trabalho, dentre outros Órgãos da Administração Pública, bem como na assessoria preventiva.</p>
                 </li>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Construção Civil</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Construção Civil<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Nossos sócios possuem grande experiência no setor da Construção Civil. Atendendo a empresas de pequeno, médio e grande porte, somos habituados com as práticas do ramo, oferecendo aos clientes variadas estruturas contratuais que melhor atende a cada projeto, com base em aspectos tributários, imobiliários, trabalhistas, consumeristas, entre outros. Além disso, prestamos assessoria relacionada às licenças e autorizações necessárias para cada empreendimento, incluindo ambientais e regulatórias e apoio em processos de licitações.</p>
                 </li>
             </ul>
             <ul>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Educação</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Educação<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>O FCM Advogados atua na prestação de serviços jurídicos a Instituições de Ensino, oferecendo consultoria e assessoria em todos os aspectos legais do negócio, com orientações e soluções de questões trabalhistas e regulatórias, contratos de prestação de serviços, recuperação de crédito, acompanhamento e condução de processos fiscais, administrativos e judiciais.</p>
                 </li>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Energia</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Energia<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Acompanhando a expansão e desenvolvimento das energias renováveis, o FCM Advogados presta consultoria e assessoria jurídica ao setor de energia solar fotovoltaica, popularmente conhecida como “energia solar”. Questões regulatórias junto à ANEEL, contratos de prestações de serviços, consultoria em geral, apoio em financiamentos, são alguns dos serviços prestados.</p>
                 </li>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Negócios Imobiliários</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Negócios Imobiliários<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Assessoria completa, consultiva ou contenciosa associada à compra e venda de imóveis, incorporações, loteamentos, garantias imobiliárias, assistência em transações imobiliárias, imóveis rurais, arrendamentos, elaboração e negociação de variados contratos, acompanhamento de licenças, autorizações e fiscalizações regulatórias.</p>
                 </li>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Saúde</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Saúde<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Prestamos assessoria completa a clínicas de saúde, envolvendo vários ramos, como psicologia, fisioterapia e outros, atuando em questões jurídicas em geral, especialmente em relação aos conselhos de classe e ambiente regulatório e normas de vigilância sanitária.</p>
                 </li>
-                <li>
-                    <h5 class="condesed azul-escuro-text"><b>Shopping Center</b></h5>
+                <li data-ativo="0" class="click">
+                    <h5 class="condesed azul-escuro-text"><b>Shopping Center<i class="material-icons">keyboard_arrow_down</i></b></h5>
                     <div class="detalhe"></div>
                     <p>Compra e venda de Shopping Centers, negociação de contratos de locação, intermediação e resolução de conflitos entre lojistas e Administradora, cobrança extrajudicial e judicial.</p>
                 </li>
@@ -269,6 +274,20 @@
     ?>
 
     <script>
+        function setores(){
+            $("#setores li").click(function(){
+                var a = $(this).attr("data-ativo");
+                if(a == 0){
+                    $("#setores li").attr("data-ativo",0);
+                    $("#setores li p").hide("fast");
+                    $(this).find("p").show("fast");
+                    $(this).attr("data-ativo",1);
+                }else{
+                    $(this).find("p").hide("fast");
+                    $(this).attr("data-ativo",0);
+                }
+            });
+        }setores();
         $("#portfolio ul li").height($("#portfolio ul li").width());
     </script>
     

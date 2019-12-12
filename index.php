@@ -11,11 +11,11 @@
                         <img src="img/banner/banner1.webp" alt="Registre-sua-marca" class="suave">
                     </figure>
                     <div class="conteudo">
-                        <!-- <h1 class="condesed"><b>Registre sua marca de forma <span class="amarelo-text">segura</span></b></h1> -->
                         <h1 class="condesed"><b>Registro de marca</b></h1>
                         <p>Pesquisamos e registramos sua marca, protegendo-a contra utilização indevida e garantindo a exclusividade sobre sua utilização.</p>
+                        <a class="suave click contato">Registrar minha marca</a>
                     </div>
-                    <form action="" method="post">
+                    <form action="solicitar-registro.php" method="post">
                         <p class="azul-text">Preencha os campos abaixo e solicite uma pesquisa agora mesmo.</p>
                         <div class="detalhe amarelo"></div>
                         <label class="azul-text">Nome</label>
@@ -23,7 +23,7 @@
                         <label class="azul-text">Email</label>
                         <input type="email" name="email" placeholder="Digite seu email">
                         <label class="azul-text">Telefone</label>
-                        <input type="tel" name="telefone" placeholder="Ex: (00) 0000-0000">
+                        <input type="tel" name="telefone" class="telefone" placeholder="Ex: (00) 0000-0000">
                         <label class="azul-text">Marca</label>
                         <input type="text" name="marca" placeholder="Nome da sua marca">
                         <label class="azul-text">Área de atuação</label>
@@ -38,6 +38,7 @@
                     <div class="conteudo">
                         <h1 class="condesed"><b>Consultoria contratual</b></h1>
                         <p>Realizamos amplo trabalho na elaboração e análise de contratos, adequando-os às especificidades de cada relação contratual.</p>
+                        <a class="suave click contato">Saiba mais</a>
                     </div>
                 </li>
                 <li class="suave">
@@ -47,6 +48,7 @@
                     <div class="conteudo">
                         <h1 class="condesed"><b>Compliance trabalhista</b></h1>
                         <p>Atuamos com ações e medidas de prevenção de incidentes no âmbito do trabalho, por meio da busca efetiva da aplicação do ordenamento jurídico trabalhista vigente.</p>
+                        <a class="suave click contato">Saiba mais</a>
                     </div>
                 </li>
                 <li class="suave">
@@ -56,6 +58,7 @@
                     <div class="conteudo">
                         <h1 class="condesed"><b>Assessoria em Licitações Públicas</b></h1>
                         <p>Assessoramos nossos clientes na participação em processos licitatórios, analisando minunciosamente o Edital, a documentação e a proposta. Defendendo os interesses do cliente administrativa e judicialmente.</p>
+                        <a class="suave click contato">Saiba mais</a>
                     </div>
                 </li>
                 <li class="suave">
@@ -65,33 +68,39 @@
                     <div class="conteudo">
                         <h1 class="condesed"><b>Contencioso judicial</b></h1>
                         <p>Atuamos com acompanhamento integral em processos judiciais com equipe especializada na elaboração da peça inicial, defesa, réplica, manifestações e recursos, assim como acompanhamento em audiências, inspeções judiciais e perícias.</p>
+                        <a class="suave click contato">Saiba mais</a>
                     </div>
                 </li>
             </ul>
             <div class="passadores"></div>
         </section>
         <section id="quem">
-            <ul class="numeros">
-                <li class="suave">
-                    <h1 class="suave condesed"><b>3 Anos</b></h1>
-                    <h6 class="suave">Tempo de escritório</h6>
-                </li>
-                <li class="suave">
-                    <h1 class="suave condesed"><b>4</b></h1>
-                    <h6 class="suave">Estados atendidos</h6>
-                </li>
-                <li class="suave">
-                    <h1 class="suave condesed"><b>+500</b></h1>
-                    <h6 class="suave">Clientes satisfeitos</h6>
-                </li>
-                <li class="suave">
-                    <h1 class="suave condesed"><b>+18.500</b></h1>
-                    <h6 class="suave">Horas trabalhadas</h6>
-                </li>
-            </ul>
+            <div class="numeros">
+                <ul>
+                    <li class="suave">
+                        <h1 class="suave condesed"><b>3 Anos</b></h1>
+                        <h6 class="suave">de escritório</h6>
+                    </li>
+                    <li class="suave">
+                        <h6 class="suave">Atuamos em</h6>
+                        <h1 class="suave condesed"><b>4</b></h1>
+                        <h6 class="suave">estados</h6>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="suave">
+                        <h1 class="suave condesed"><b>+500</b></h1>
+                        <h6 class="suave">Clientes satisfeitos</h6>
+                    </li>
+                    <li class="suave">
+                        <h1 class="suave condesed"><b>+18.500</b></h1>
+                        <h6 class="suave">Horas trabalhadas</h6>
+                    </li>
+                </ul>
+            </div>
             <div class="conteudo">
                 <h2 class="condesed azul-text"><b>Quem somos</b></h2>
-                <p>Com sede na cidade de fortaleza/CE, Fernandes Coelho Maia Advogados é formado por três sócios que, de forma interdisciplinar e integrada, se empenham em buscar soluções jurídicas para os mais diiversos problemas nas variadas áreas do direito pessoal e empresarial, sempre tendo em mente os valores que os fizeram se unir: Honestidade, Dedicação e Qualidade do serviço prestado.</p>
+                <p>Com sede na cidade de Fortaleza/CE, Fernandes Coelho Maia Advogados é formado por três sócios que, de forma interdisciplinar e integrada, se empenham em buscar soluções jurídicas para os mais diiversos problemas nas variadas áreas do direito pessoal e empresarial, sempre tendo em mente os valores que os fizeram se unir: Honestidade, Dedicação e Qualidade do serviço prestado.</p>
             </div>
         </section>
         <section id="diferenciais">
@@ -215,7 +224,7 @@
             <div class="conteudo">
                 <h2 class="condesed azul-text"><b>Nossas soluções para sua empresa:</b></h2>
                 <p>A FCM Avogados conta com um leque de soluções para ajudar sua empresa a crescer e se previnir contra futuros problemas.</p>
-                <a href="#!" class="click suave">Solicite uma consulta</a>
+                <a class="click suave contato">Solicite uma consulta</a>
             </div>
             <ul class="solucoes">
                 <li class="active">
@@ -240,7 +249,7 @@
                 </li>
             </ul>
         </section>
-        <section id="blog">
+        <!-- <section id="blog">
             <div class="conteudo">
                 <h2 class="condesed"><b>Blog</b></h2>
                 <p>A FCM Avogados está em constante pesquisa a procura das informações mais relevantes para seus clientes.</p>
@@ -270,7 +279,7 @@
                     </a>
                 </li>
             </ul>
-        </section>
+        </section> -->
         <section id="portfolio">
             <h2 class="condesed azul-text"><b>Empresas que confiam em nosso trabalho</b></h2>
             <ul>

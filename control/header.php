@@ -110,6 +110,26 @@
         #topo .mini-menu.active i{background-color: #56aeff;color: white;}
         #topo .action{display: none;}
         #topo .action a i{line-height: 48px;margin-right: 16px;}
+        #contato{width: 100%;height: 100%;position: fixed;top: 100%;left: 0;z-index: 100;background-image: linear-gradient(-45deg, #1b5678, #2e8dcc);overflow: hidden;visibility: hidden;opacity: 0;}
+        #contato.active{visibility: visible;opacity: 1;top: 0%;}
+        #contato .sair{position: absolute;top: 0;right: 0;color: white;text-align: center;padding: 30px;z-index: 10;}
+        #contato .sair i{display: block;font-size: 28px;}
+        #contato form{width: 400px;position: absolute;top: 50%;right: 10%;transform: translateY(-50%);background-color: white;padding: 16px;box-sizing: border-box;border-radius: 10px;}
+        #contato form input,
+        #contato form select,
+        #contato form textarea{margin-bottom: 10px !important;}
+        #contato form button{display: block;line-height: 50px;text-align: center;background-color: #ffc200;color: white;font-size: 18px;width: 100%;border-radius: 30px;margin-top: 16px;}
+        #contato form button:hover{background-color: #f1a80a;}
+        #contato .conteudo{width: 450px;position: absolute;top: 50%;left: 10%;transform: translateY(-50%);color: white;border-left: 4px solid white;padding-left: 20px;padding-bottom: 26px;}
+        #contato .conteudo h2{font-weight: bold;color: white;}
+        #contato .conteudo p{font-size: 18px;color: white;}
+        #contato .conteudo i{font-size: 50px;color: white;margin-top: 30px;}
+
+        @media only screen and (max-width:768px){
+            #contato{padding: 5%;overflow: auto;}
+            #contato .conteudo{position: relative;top: initial;left: initial;transform: none;}
+            #contato form{position: relative;top: initial;right: initial;transform: none;margin: 0 auto;margin-top: 50px;}
+        }
 
         @media only screen and (max-width: 480px){
             #topo .header{padding: 0 16px;}
@@ -131,6 +151,11 @@
             #topo .menu ul li ul li a{font-size: 16px;color: #56aeff;}
             #topo .sombra{width: 100%;height: 100%;position: fixed;top:0;left:0;background-color: rgba(0,0,0,.7);visibility: hidden;opacity: 0;z-index: 5;}
             #topo .sombra.active{visibility: visible;opacity: 1}
+            #contato{padding: 16px;padding-bottom: 100px;}
+            #contato .conteudo{width: 100%;}
+            #contato .conteudo h2{font-size: 36px;}
+            #contato .conteudo i{font-size: 28px;}
+            #contato form{width: 100%;margin-top: 30px;}
         }
     </style>
 
@@ -184,13 +209,15 @@
     <!-- End Facebook Pixel Code -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async defer type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-112375115-1"></script>
-    <script async defer type="text/javascript">
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-112375115-1');
-    </script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151690881-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151690881-1');
+    </script>
+
     
     <!--Start of Tawk.to Script-->
     <!-- <script async defer type="text/javascript">
@@ -216,17 +243,17 @@
             </div>
             <div class="logo suave">
                 <a href="inicio" class="suave imagem">
-                    <img src="img/logo-fcm-advogados.webp" alt="FCM_Advogados_Logo" title="FCM Advogados" />
+                    <img src="img/logo-fcm-advogados.webp" alt="Logo FCM Advogados" title="FCM Advogados" />
                 </a>
                 <a class="condesed hide-on-small-only suave addBannerClick" data-id="7" data-tipo="CTT" href="mailto:contato@fcmadvogados.adv.br">contato@fcmadvogados.adv.br</a>
                 <a class="condesed hide-on-small-only suave addBannerClick" data-id="6" data-tipo="CTT" href="tel:8531818341">(85) 3181-8341</a>
             </div>
             <div class="sombra suave"></div>
             <nav class="menu suave">
-                <a class="suave rede-social addBannerClick" data-id="9" data-tipo="CTT" href="" target="_blank"><img src="img/ico7.webp" alt="icone-youtube"></a>
-                <a class="suave rede-social addBannerClick" data-id="11" data-tipo="CTT" href="https://api.whatsapp.com/send?phone=5585987974616&amp;text=Olá%20Pombo%20Criativo,%20gostaria%20de%20solicitar%20um%20orçamento...&amp;l=pt-br" target="_blank"><img src="img/ico9.webp" alt="icone-whatsapp"></a>
-                <a class="suave rede-social addBannerClick" data-id="10" data-tipo="CTT" href="" target="_blank"><img src="img/ico8.webp" alt="icone-instagram"></a>
-                <a class="suave rede-social addBannerClick" data-id="8" data-tipo="CTT" href="" target="_blank"><img src="img/ico6.webp" alt="icone-facebook"></a>
+                <!-- <a class="suave rede-social addBannerClick" data-id="9" data-tipo="CTT" href="" target="_blank"><img src="img/ico7.webp" alt="icone-youtube"></a> -->
+                <!-- <a class="suave rede-social addBannerClick" data-id="11" data-tipo="CTT" href="https://api.whatsapp.com/send?phone=5585987974616&amp;text=Olá%20Pombo%20Criativo,%20gostaria%20de%20solicitar%20um%20orçamento...&amp;l=pt-br" target="_blank"><img src="img/ico9.webp" alt="icone-whatsapp"></a> -->
+                <a class="suave rede-social addBannerClick" data-id="10" data-tipo="CTT" href="https://www.instagram.com/fcmadvogados/" target="_blank"><img src="img/ico8.webp" alt="icone-instagram"></a>
+                <a class="suave rede-social addBannerClick" data-id="8" data-tipo="CTT" href="https://www.facebook.com/advogadosfcm/" target="_blank"><img src="img/ico6.webp" alt="icone-facebook"></a>
                 <figure>
                     <img src="img/logo-fcm-advogados-azul.webp" alt="Logo FCM Advogados" class="hide-on-med-and-up">
                 </figure>
@@ -250,18 +277,18 @@
                         </a>
                         <ul class="suave">
                             <li><a href="registro-de-marca" class="condesed">Registro de marca</a></li>
-                            <li><a href="consultoria-contratual" class="condesed">Consultoria contratual</a></li>
+                            <!-- <li><a href="consultoria-contratual" class="condesed">Consultoria contratual</a></li>
                             <li><a href="compliance-trabalhista" class="condesed">Compliance trabalhista</a></li>
                             <li><a href="assessoria-em-licitacoes" class="condesed">Assessoria em Licitações Públicas</a></li>
-                            <li><a href="contencioso-judicial" class="condesed">Contencioso judicial</a></li>
+                            <li><a href="contencioso-judicial" class="condesed">Contencioso judicial</a></li> -->
                         </ul>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="blog" class="condesed">
                             <i class="material-icons hide-on-med-and-up">forum</i>
                             Blog
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="duvidas-frequentes" class="condesed">
                             <i class="material-icons hide-on-med-and-up">help</i>
@@ -269,7 +296,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#contato" class="condesed">
+                        <a class="condesed click contato">
                             <i class="material-icons hide-on-med-and-up">call</i>
                             Contato
                         </a>
@@ -286,3 +313,29 @@
             <div class="clear"></div>
         </div>
     </header>
+    <section id="contato" class="suave">
+        <div class="sair click"><i class="material-icons">close</i> Sair</div>
+        <div class="conteudo">
+            <h2 class="condensed">Contato</h2>
+            <p>Interessado em algum de nossos serviços? ou possui alguma necessidade específica, entre em contato conosco teremos prazer em atende-lo.</p>
+        </div>
+        <form action="contato.php" method="post">
+            <label class="mini-title upper" for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label class="mini-title upper" for="nome">Email</label>
+            <input type="email" name="email" id="email">
+            <label class="mini-title upper" for="nome">Telefone</label>
+            <input type="tel" name="telefone" class="telefone" id="telefone">
+            <label class="mini-title upper" for="nome">Assunto</label>
+            <select name="assunto" id="assunto">
+                <option value="registro-de-marca">Registro de marca</option>
+                <option value="consultoria-contratual">Consultoria contratual</option>
+                <option value="compliance trabalhista">Compliance trabalhista</option>
+                <option value="assessoria-em-licitacoes-publicas">Assessoria em Licitações Públicas</option>
+                <option value="cotencioso-judicial">Contencioso judicial</option>
+            </select>
+            <label class="mini-title upper" for="nome">Mensagem</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+            <button type="submit" class="suave">Enviar</button>
+        </form>
+    </section>

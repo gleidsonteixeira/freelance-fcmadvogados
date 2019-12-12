@@ -11,7 +11,7 @@
 #banner ul li .conteudo p{font-size: 18px;color: white;max-width: 500px;margin: 40px 0 30px 0;}
 #banner ul li .conteudo a{display: none;}
 #banner ul li .conteudo h5{font-size: 18px;font-weight: bold;color: white;}
-#banner ul li form{width: 350px;background-color: white;padding: 16px;box-sizing: border-box;border-radius: 25px 25px 0 0;position: absolute;bottom: 0;right: 15%;z-index: 2;}
+#banner ul li form{width: 350px;background-color: white;padding: 16px;box-sizing: border-box;border-radius: 25px 25px 0 0;position: absolute;bottom: 0;right: 15%;z-index: 10;}
 #banner ul li form::before{content:"";width: 50px;height: 50px;position: absolute;bottom: 0;right: 100%;background-image: url("../img/canto-esquerdo.png");}
 #banner ul li form::after{content:"";width: 50px;height: 50px;position: absolute;bottom: 0;left: 100%;background-image: url("../img/canto-direito.png");}
 #banner ul li form p{font-size: 18px;font-weight: bold;line-height: 20px;margin-bottom: 10px;}
@@ -29,12 +29,12 @@
 #banner .passadores .passador.active::before{transform: scale(1,1);}
 /* QUEM SOMOS */
 #quem{padding: 120px 10%;padding-bottom: 0;overflow: hidden;}
-#quem ul{width: 50%;float: left;overflow: hidden;padding-bottom: 30px;}
-#quem ul li{position: relative;width: calc(50% - 32px);float: left;overflow: hidden;padding: 30px 0;border-radius: 10px;box-shadow: 0px 8px 15px rgba(46, 141, 204, .2);margin: 16px;}
+#quem .numeros{width: 50%;float: left;overflow: hidden;padding-bottom: 30px;}
+#quem ul{float: left;width: 50%;}
+#quem ul:nth-child(2){margin-top: 60px;}
+#quem ul li{position: relative;width: calc(100% - 32px);float: left;overflow: hidden;padding: 30px 0;border-radius: 10px;box-shadow: 0px 8px 15px rgba(46, 141, 204, .2);margin: 16px;}
 #quem ul li::before{content:"";width: 0;height: 100%;background-image: linear-gradient(-45deg, #1b5678,#56aeff);transition-duration: .2s;z-index: -1;position: absolute;top:0;left:0;}
 #quem ul li:hover::before{width: 100%;}
-#quem ul li:nth-child(2){margin-top: 60px;}
-#quem ul li:nth-child(3){margin-top: -28px;}
 #quem ul li h1{width: 100%;text-align: center;margin: 0;color: #2e8dcc;font-size: 50px;}
 #quem ul li h6{font-size: 20px;text-align: center;color: #666;}
 #quem ul li:hover h1,
@@ -109,18 +109,19 @@
 #portfolio .depoimento h5{font-size: 18px;margin-top: 26px;margin-bottom: 0;}
 
 @media only screen and (max-width: 480px){
-    #banner ul{height: 110vh;}
+    #banner ul{height: 100vh;}
     #banner ul li{border-bottom-left-radius: 50px;}
     #banner ul li img{left: -51%;width: auto;}
-    #banner ul li figure{height: 110vh;}
+    #banner ul li figure{height: 100vh;}
     #banner ul li .conteudo{width: calc(100% - 32px);left: 0;top: 200px;transform: none;margin: 0 16px;}
     #banner ul li .conteudo h1{font-size: 40px;line-height: 50px;}
     #banner ul li .conteudo p{margin: 20px 0;}
     #banner ul li .conteudo a{display: inline-block;background-color: #ffc200;color: white;font-size: 18px;margin-top: 10px;line-height: 50px;border-radius: 25px;box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);padding: 0 36px;}
     #banner ul li form{display: none;}
     #quem{padding: 50px 16px;}
-    #quem ul{width: 100%;float: none;padding: 0;overflow: initial;}
-    #quem ul li{width: calc(50% - 16px);margin: 16px 8px;}
+    #quem .numeros{width: 100%;}
+    #quem ul{padding: 0;overflow: initial;}
+    #quem ul li{width: calc(100% - 16px);margin: 8px;}
     #quem ul li h1{font-size: 22px;}
     #quem ul li h6{font-size: 16px;}
     #quem .conteudo h2{font-size: 28px;}

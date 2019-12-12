@@ -8,47 +8,36 @@
 
 <!-- URL DO SITE -->
 <url>
-  <loc>https://www.pombocriativo.com</loc>
-  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
+  <loc>https://www.fcmadvogados.adv.br</loc>
+  <lastmod>2019-12-11T14:21:13+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.pombocriativo.com/inicio</loc>
-  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
+  <loc>https://www.fcmadvogados.adv.br/inicio</loc>
+  <lastmod>2019-12-11T14:21:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.pombocriativo.com/blog.php</loc>
-  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
+  <loc>https://www.fcmadvogados.adv.br/quem-somos</loc>
+  <lastmod>2019-12-11T14:21:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.pombocriativo.com/pombo-news</loc>
-  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
+  <loc>https://www.fcmadvogados.adv.br/registro-de-marca</loc>
+  <lastmod>2019-12-11T14:21:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.fcmadvogados.adv.br/faq</loc>
+  <lastmod>2019-12-11T14:21:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
 <!-- URL DO BLOG -->
-<url>
+<!-- <url>
   <loc>https://www.pombocriativo.com/blogpost/marca-para-que-serve-e-como-fazer/27</loc>
   <lastmod>2019-10-28T14:21:13+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.pombocriativo.com/blogpost/como-patentear-minha-marca/29</loc>
-  <lastmod>2019-10-28T14:21:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.pombocriativo.com/blogpost/5-motivos-para-participar-de-eventos/30</loc>
-  <lastmod>2019-11-06T14:21:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.pombocriativo.com/blogpost/minha-empresa-precisa-de-um-site-mesmo-tendo-redes-sociais/31</loc>
-  <lastmod>2019-11-13T14:21:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
+</url> -->
 
 </urlset>

@@ -4,12 +4,12 @@
 #subtop h1{color: transparent;-webkit-text-stroke-width: 2px;-webkit-text-stroke-color: white;font-size: 90px;}
 /* QUEM SOMOS */
 #quem{padding: 100px 10%;padding-bottom: 0;overflow: hidden;}
-#quem ul{width: 50%;float: left;overflow: hidden;padding-bottom: 30px;}
-#quem ul li{position: relative;width: calc(50% - 32px);float: left;overflow: hidden;padding: 30px 0;border-radius: 10px;box-shadow: 0px 8px 15px rgba(46, 141, 204, .2);margin: 16px;}
+#quem .numeros{width: 50%;float: left;overflow: hidden;padding-bottom: 30px;}
+#quem ul{float: left;width: 50%;}
+#quem ul:nth-child(2){margin-top: 60px;}
+#quem ul li{position: relative;width: calc(100% - 32px);float: left;overflow: hidden;padding: 30px 0;border-radius: 10px;box-shadow: 0px 8px 15px rgba(46, 141, 204, .2);margin: 16px;}
 #quem ul li::before{content:"";width: 0;height: 100%;background-image: linear-gradient(-45deg, #1b5678,#56aeff);transition-duration: .2s;z-index: -1;position: absolute;top:0;left:0;}
 #quem ul li:hover::before{width: 100%;}
-#quem ul li:nth-child(2){margin-top: 60px;}
-#quem ul li:nth-child(3){margin-top: -28px;}
 #quem ul li h1{width: 100%;text-align: center;margin: 0;color: #2e8dcc;font-size: 50px;}
 #quem ul li h6{font-size: 20px;text-align: center;color: #666;}
 #quem ul li:hover h1,
@@ -49,16 +49,22 @@
 #setores h4{text-align: center;margin-bottom: 60px;}
 #setores ul{width: calc(50% - 16px);float: left;margin: 8px;}
 #setores ul li{padding: 16px;box-sizing: border-box;border-radius: 10px;border: 1px solid #ededed;margin-bottom: 16px;}
+#setores ul li:hover,
+#setores ul li[data-ativo="1"]{border-color: #56aeff;}
 #setores ul li .detalhe{width: 60px;height: 4px;border-radius: 2px;background-color: #ffc200;display: block;}
-#setores ul li p{color: #666;font-size: 18px;margin-top: 16px;}
+#setores ul li p{color: #666;font-size: 18px;margin-top: 16px;display: none;}
+#setores ul li[data-ativo="1"] p{display: block;}
+#setores ul li i{float: right;}
+#setores ul li[data-ativo="1"] i{transform: rotate(180deg);}
 
 
 @media only screen and (max-width: 480px){
     #subtop{border-bottom-left-radius: 50px;}
     #subtop h1{font-size: 50px;-webkit-text-stroke-width: 1px;margin: 0;}
     #quem{padding: 50px 16px;}
-    #quem ul{width: 100%;float: none;padding: 0;}
-    #quem ul li{width: calc(50% - 16px);margin: 16px 8px;}
+    #quem .numeros{width: 100%;}
+    #quem ul{padding: 0;}
+    #quem ul li{width: calc(100% - 16px);margin: 8px;}
     #quem ul li h1{font-size: 28px;}
     #quem ul li h6{font-size: 16px;}
     #quem .conteudo h2{font-size: 28px;}

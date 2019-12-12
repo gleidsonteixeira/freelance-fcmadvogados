@@ -1,15 +1,22 @@
 /* SUBTOP */
 #subtop{background-image: linear-gradient(-45deg, #1b5678,#56aeff);padding: 30px 10%;padding-top: 200px;border-bottom-left-radius: 150px;position: relative;}
 #subtop h1{color: transparent;-webkit-text-stroke-width: 2px;-webkit-text-stroke-color: white;font-size: 90px;}
-#faq{padding: 80px 10%;}
-#faq ul{width: 80%;margin: 0 auto;}
+#faq{padding: 80px 10%;overflow: hidden;}
+#faq ul{width: calc(80% - 16px);box-sizing: border-box;float: left;}
 #faq ul li{padding: 16px;box-sizing: border-box;border-radius: 10px;margin-bottom: 16px;}
 #faq ul li.bordered{border: 1px solid #ededed;}
+#faq ul li.bordered:hover{border-color: #56aeff;}
 #faq ul li .detalhe{width: 60px;height: 4px;border-radius: 2px;background-color: #ffc200;display: block;}
-#faq ul li p{font-size: 18px;color: #666;margin-top: 16px;}
+#faq ul li[data-ativo="1"] p{display: block;}
+#faq ul li p{font-size: 18px;color: #666;margin-top: 16px;display: none;}
+#faq aside{width: 20%;float: right;border-left: 3px solid #56aeff;padding-left: 16px;}
+#faq aside a{display: block;color: #666;}
+#faq aside a:hover{color: #56aeff;}
+
 @media only screen and (max-width: 480px){
     #subtop{border-bottom-left-radius: 50px;}
     #subtop h1{font-size: 50px;-webkit-text-stroke-width: 1px;margin: 0;}
     #faq{padding: 50px 16px;}
     #faq ul{width: 100%;margin: 0;}
+    #faq aside{display:none;}
 }

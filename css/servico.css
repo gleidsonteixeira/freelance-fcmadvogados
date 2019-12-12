@@ -67,6 +67,18 @@
 #portfolio .depoimento{width: calc(50% - 100px);background-color: white;border-left: 4px solid #2e8dcc;padding: 20px;float: left;margin: 0 50px;box-sizing: border-box;box-shadow: 0px 5px 8px rgba(0, 0, 0, .15);border-radius: 0 10px 25px 0;}
 #portfolio .depoimento p{color: #666;}
 #portfolio .depoimento h5{font-size: 18px;margin-top: 26px;margin-bottom: 0;}
+#faq{padding: 80px 10%;padding-bottom: 0;}
+#faq ul{width: 80%;margin: 0 auto;}
+#faq ul li{padding: 16px;box-sizing: border-box;border-radius: 10px;margin-bottom: 16px;}
+#faq ul li.bordered{border: 1px solid #ededed;}
+#faq ul li.bordered:hover,
+#faq ul li.bordered[data-ativo="1"]{border: 1px solid #56aeff;}
+#faq ul li .detalhe{width: 60px;height: 4px;border-radius: 2px;background-color: #ffc200;display: block;}
+#faq ul li p{font-size: 18px;color: #666;margin-top: 16px;display: none;}
+#faq ul li[data-ativo="1"] p{display: block;}
+#faq ul li i{float: right;}
+#faq ul li[data-ativo="1"] i{float: right;transform: rotate(180deg);}
+#faq ul li h4{text-align: center;}
 
 @media only screen and (max-width: 480px){
     #banner ul{height: 110vh;}
@@ -95,7 +107,8 @@
     #portfolio ul{text-align: center;}
     #portfolio ul li{float: none;display: inline-block;width: 48%;margin-bottom: 4px;}
     #portfolio .depoimento{width: 100%;float: none;margin: 0;margin-bottom: 20px;}
-
+    #faq{padding: 50px 16px;}
+    #faq ul{width: 100%;margin: 0;}
 
 }
 
